@@ -15,9 +15,6 @@
 ### 📈 GitHub 统计
 <!-- ![GitHub Stats](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=VincentZyu233&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0a1929&title_color=64b5f6&icon_color=1976d2&text_color=ffffff&include_all_commits=true) -->
 
-### 💻 最常用语言
-<!-- ![Top Langs](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=VincentZyu233&layout=compact&theme=tokyonight&hide_border=true&bg_color=0a1929&title_color=64b5f6&text_color=ffffff&langs_count=10) -->
-
 <!-- ORG_LANG_STATS_START -->
 ### 📊 组织语言分布
 <p align="center">
