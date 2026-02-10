@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="357" viewBox="0 0 480 357">
+<defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap');
+    .bg { fill: #0d1117; }
+    .title { font-family: 'Inter', 'Segoe UI', sans-serif; font-size: 16px; font-weight: 600; fill: #64b5f6; }
+    .subtitle { font-family: 'Inter', 'Segoe UI', sans-serif; font-size: 11px; fill: #8b949e; }
+    .stat-label { font-family: 'Inter', 'Segoe UI', sans-serif; font-size: 13px; fill: #8b949e; }
+    .stat-value { font-family: 'Inter', 'Segoe UI', sans-serif; font-size: 13px; font-weight: 600; fill: #e6edf3; }
+    .rank-text { font-family: 'Inter', 'Segoe UI', sans-serif; font-size: 22px; font-weight: 700; fill: #64b5f6; }
+    .rank-label { font-family: 'Inter', 'Segoe UI', sans-serif; font-size: 10px; fill: #8b949e; }
+    .rank-ring-bg { fill: none; stroke: #161b22; stroke-width: 6; }
+    .rank-ring { fill: none; stroke: #64b5f6; stroke-width: 6; stroke-linecap: round;
+      stroke-dasharray: 251.3; stroke-dashoffset: 150.8;
+      transform-origin: 420px 188px; transform: rotate(-90deg);
+      animation: rankAnim 1.5s ease-in-out forwards; }
+    @keyframes rankAnim {
+      from { stroke-dashoffset: 251.3; }
+      to { stroke-dashoffset: 150.8; }
+    }
+    .stat-icon { font-size: 14px; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateX(-5px); } to { opacity: 1; transform: translateX(0); } }
+    .stat-row { animation: fadeIn 0.5s ease forwards; opacity: 0; }
+  </style>
+</defs>
+<rect class="bg" width="480" height="357" rx="10"/>
+<text class="title" x="20" y="28">📊 VincentZyu233 · GitHub Stats</text>
+<text class="subtitle" x="20" y="44">VincentZyu233 + VincentZyuApps · 自动更新于 2026-02-10</text>
+<g class="stat-row" style="animation-delay: 0.0s;">
+  <text class="stat-icon" x="24" y="71.0">⭐</text>
+  <text class="stat-label" x="46" y="71.0">Total Stars</text>
+  <text class="stat-value" x="350" y="71.0" text-anchor="end">171</text>
+</g>
+<g class="stat-row" style="animation-delay: 0.1s;">
+  <text class="stat-icon" x="24" y="105.0">📦</text>
+  <text class="stat-label" x="46" y="105.0">Total Repos</text>
+  <text class="stat-value" x="350" y="105.0" text-anchor="end">60</text>
+</g>
+<g class="stat-row" style="animation-delay: 0.2s;">
+  <text class="stat-icon" x="24" y="139.0">🔀</text>
+  <text class="stat-label" x="46" y="139.0">Total Forks</text>
+  <text class="stat-value" x="350" y="139.0" text-anchor="end">18</text>
+</g>
+<g class="stat-row" style="animation-delay: 0.3s;">
+  <text class="stat-icon" x="24" y="173.0">📝</text>
+  <text class="stat-label" x="46" y="173.0">Total Commits</text>
+  <text class="stat-value" x="350" y="173.0" text-anchor="end">149</text>
+</g>
+<g class="stat-row" style="animation-delay: 0.4s;">
+  <text class="stat-icon" x="24" y="207.0">🔃</text>
+  <text class="stat-label" x="46" y="207.0">Total PRs</text>
+  <text class="stat-value" x="350" y="207.0" text-anchor="end">14</text>
+</g>
+<g class="stat-row" style="animation-delay: 0.5s;">
+  <text class="stat-icon" x="24" y="241.0">❗</text>
+  <text class="stat-label" x="46" y="241.0">Total Issues</text>
+  <text class="stat-value" x="350" y="241.0" text-anchor="end">6</text>
+</g>
+<g class="stat-row" style="animation-delay: 0.6s;">
+  <text class="stat-icon" x="24" y="275.0">👀</text>
+  <text class="stat-label" x="46" y="275.0">PR Reviews</text>
+  <text class="stat-value" x="350" y="275.0" text-anchor="end">0</text>
+</g>
+<g class="stat-row" style="animation-delay: 0.7s;">
+  <text class="stat-icon" x="24" y="309.0">🤝</text>
+  <text class="stat-label" x="46" y="309.0">Contributed To</text>
+  <text class="stat-value" x="350" y="309.0" text-anchor="end">18</text>
+</g>
+<circle class="rank-ring-bg" cx="420" cy="188" r="40"/>
+<circle class="rank-ring" cx="420" cy="188" r="40"/>
+<text class="rank-text" x="420" y="184" text-anchor="middle" dominant-baseline="central">A</text>
+<text class="rank-label" x="420" y="206" text-anchor="middle">Top 40%</text>
+</svg>
