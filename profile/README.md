@@ -12,8 +12,12 @@
 
 <div align="center">
 
+<!-- GIT_STATS_START -->
 ### 📈 GitHub 统计
-<!-- ![GitHub Stats](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=VincentZyu233&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0a1929&title_color=64b5f6&icon_color=1976d2&text_color=ffffff&include_all_commits=true) -->
+<p align="center">
+  <img src="github-stats.svg" alt="GitHub Stats" />
+</p>
+<!-- GIT_STATS_END -->
 
 <!-- ORG_LANG_STATS_START -->
 ### 📊 组织语言分布
