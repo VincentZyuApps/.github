@@ -19,6 +19,13 @@
 </p>
 <!-- GIT_STATS_END -->
 
+<!-- LINE_STATS_START -->
+### 📏 代码行数统计
+<p align="center">
+  <img src="line-stats.svg" alt="Line Stats" />
+</p>
+<!-- LINE_STATS_END -->
+
 <!-- ORG_LANG_STATS_START -->
 ### 📊 组织语言分布
 <p align="center">

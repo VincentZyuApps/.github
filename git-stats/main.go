@@ -2,10 +2,12 @@ package main
 
 import (
 	"encoding/json"
+	"flag"
 	"fmt"
 	"io"
 	"log"
 	"net/http"
+	"net/url"
 	"os"
 	"path/filepath"
 	"strings"
@@ -93,7 +95,7 @@ func getOrgRepos(token string) ([]Repo, error) {
 			req.Header.Set("Authorization", "Bearer "+token)
 		}
 
-		resp, err := http.DefaultClient.Do(req)
+		resp, err := httpClient.Do(req)
 		if err != nil {
 			return nil, fmt.Errorf("fetch repos: %w", err)
 		}
@@ -126,7 +128,7 @@ func getUserRepos(token string) ([]Repo, error) {
 			req.Header.Set("Authorization", "Bearer "+token)
 		}
 
-		resp, err := http.DefaultClient.Do(req)
+		resp, err := httpClient.Do(req)
 		if err != nil {
 			return nil, fmt.Errorf("fetch user repos: %w", err)
 		}
@@ -180,7 +182,7 @@ func getUserContributions(token string) (*GraphQLResponse, error) {
 	req.Header.Set("Authorization", "Bearer "+token)
 	req.Header.Set("Content-Type", "application/json")
 
-	resp, err := http.DefaultClient.Do(req)
+	resp, err := httpClient.Do(req)
 	if err != nil {
 		return nil, fmt.Errorf("graphql request: %w", err)
 	}
@@ -307,17 +309,26 @@ func generateSVG(stats *GitStats) string {
 	sb.WriteString(fmt.Sprintf(`<svg xmlns="http://www.w3.org/2000/svg" width="%d" height="%.0f" viewBox="0 0 %d %.0f">
 `, svgWidth, height, svgWidth, height))
 
+	// 读取字体 CSS
+	fontCSS, fontErr := os.ReadFile("../sub-font/output/font_face.css")
+	if fontErr != nil {
+		log.Printf("⚠️  无法读取字体 CSS: %v (将使用 fallback 字体)", fontErr)
+		fontCSS = []byte{}
+	}
+
 	// 样式
-	sb.WriteString(fmt.Sprintf(`<defs>
+	sb.WriteString(`<defs>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap');
+`)
+	sb.Write(fontCSS)
+	sb.WriteString(fmt.Sprintf(`
     .bg { fill: #0d1117; }
-    .title { font-family: 'Inter', 'Segoe UI', sans-serif; font-size: 16px; font-weight: 600; fill: #64b5f6; }
-    .subtitle { font-family: 'Inter', 'Segoe UI', sans-serif; font-size: 11px; fill: #8b949e; }
-    .stat-label { font-family: 'Inter', 'Segoe UI', sans-serif; font-size: 13px; fill: #8b949e; }
-    .stat-value { font-family: 'Inter', 'Segoe UI', sans-serif; font-size: 13px; font-weight: 600; fill: #e6edf3; }
-    .rank-text { font-family: 'Inter', 'Segoe UI', sans-serif; font-size: 22px; font-weight: 700; fill: #64b5f6; }
-    .rank-label { font-family: 'Inter', 'Segoe UI', sans-serif; font-size: 10px; fill: #8b949e; }
+    .title { font-family: 'LXGW WenKai Mono', 'Inter', 'Segoe UI', sans-serif; font-size: 16px; font-weight: 600; fill: #64b5f6; }
+    .subtitle { font-family: 'LXGW WenKai Mono', 'Inter', 'Segoe UI', sans-serif; font-size: 11px; fill: #8b949e; }
+    .stat-label { font-family: 'LXGW WenKai Mono', 'Inter', 'Segoe UI', sans-serif; font-size: 13px; fill: #8b949e; }
+    .stat-value { font-family: 'LXGW WenKai Mono', 'Inter', 'Segoe UI', sans-serif; font-size: 13px; font-weight: 600; fill: #e6edf3; }
+    .rank-text { font-family: 'LXGW WenKai Mono', 'Inter', 'Segoe UI', sans-serif; font-size: 22px; font-weight: 700; fill: #64b5f6; }
+    .rank-label { font-family: 'LXGW WenKai Mono', 'Inter', 'Segoe UI', sans-serif; font-size: 10px; fill: #8b949e; }
     .rank-ring-bg { fill: none; stroke: #161b22; stroke-width: 6; }
     .rank-ring { fill: none; stroke: #64b5f6; stroke-width: 6; stroke-linecap: round;
       stroke-dasharray: %.1f; stroke-dashoffset: %.1f;
@@ -329,7 +340,9 @@ func generateSVG(stats *GitStats) string {
     }
     .stat-icon { font-size: 14px; }
     @keyframes fadeIn { from { opacity: 0; transform: translateX(-5px); } to { opacity: 1; transform: translateX(0); } }
+    @keyframes fadeInDown { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
     .stat-row { animation: fadeIn 0.5s ease forwards; opacity: 0; }
+    .title-anim { animation: fadeInDown 0.8s ease forwards; opacity: 0; }
   </style>
 </defs>
 `, circumference, progress, rankCX, rankCY, circumference, progress))
@@ -339,9 +352,9 @@ func generateSVG(stats *GitStats) string {
 `, svgWidth, height))
 
 	// 标题
-	sb.WriteString(fmt.Sprintf(`<text class="title" x="20" y="28">📊 %s · GitHub Stats</text>
+	sb.WriteString(fmt.Sprintf(`<text class="title title-anim" x="20" y="28">📊 %s · GitHub Stats</text>
 `, user))
-	sb.WriteString(fmt.Sprintf(`<text class="subtitle" x="20" y="44">%s + %s · 自动更新于 %s</text>
+	sb.WriteString(fmt.Sprintf(`<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="44">%s + %s · 自动更新于 %s</text>
 `, user, org, time.Now().Format("2006-01-02")))
 
 	// 统计行
@@ -423,7 +436,37 @@ func updateReadme(readmePath, svgFile string) error {
 
 // ========== 主函数 ==========
 
+// 全局变量
+var (
+	proxyURL        string
+	useTmp          bool
+	actualOutputDir string
+	httpClient      *http.Client
+)
+
 func main() {
+	flag.StringVar(&proxyURL, "proxy", "", "HTTP proxy URL (e.g. http://192.168.31.233:7890)")
+	flag.BoolVar(&useTmp, "tmp", false, "Output to ../tmp instead of ../profile")
+	flag.Parse()
+
+	if useTmp {
+		actualOutputDir = "../tmp"
+		log.Println("📁 Output directory: ../tmp")
+	} else {
+		actualOutputDir = outputDir
+	}
+
+	httpClient = http.DefaultClient
+	if proxyURL != "" {
+		log.Printf("🌐 Using proxy: %s", proxyURL)
+		parsed, err := url.Parse(proxyURL)
+		if err == nil {
+			httpClient = &http.Client{
+				Transport: &http.Transport{Proxy: http.ProxyURL(parsed)},
+			}
+		}
+	}
+
 	token := os.Getenv("GH_TOKEN")
 	if token == "" {
 		token = os.Getenv("GITHUB_TOKEN")
@@ -493,8 +536,8 @@ func main() {
 	log.Println("🎨 正在生成 SVG...")
 	svg := generateSVG(stats)
 
-	svgPath := filepath.Join(outputDir, svgFileName)
-	if err := os.MkdirAll(outputDir, 0755); err != nil {
+	svgPath := filepath.Join(actualOutputDir, svgFileName)
+	if err := os.MkdirAll(actualOutputDir, 0755); err != nil {
 		log.Fatalf("❌ 创建目录失败: %v", err)
 	}
 	if err := os.WriteFile(svgPath, []byte(svg), 0644); err != nil {
@@ -502,12 +545,16 @@ func main() {
 	}
 	log.Printf("✅ SVG 已保存: %s", svgPath)
 
-	// 6. 更新 README
-	readmePath := filepath.Join(outputDir, "README.md")
-	if err := updateReadme(readmePath, svgFileName); err != nil {
-		log.Fatalf("❌ 更新 README 失败: %v", err)
+	// 6. 更新 README（--tmp 模式下跳过）
+	if useTmp {
+		log.Println("⏭️  --tmp 模式，跳过 README 更新")
+	} else {
+		readmePath := filepath.Join(actualOutputDir, "README.md")
+		if err := updateReadme(readmePath, svgFileName); err != nil {
+			log.Fatalf("❌ 更新 README 失败: %v", err)
+		}
+		log.Println("✅ README 已更新!")
 	}
-	log.Println("✅ README 已更新!")
 
 	// 打印总结
 	log.Println("\n📊 GitHub Stats 总结：")

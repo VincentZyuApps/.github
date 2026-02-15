@@ -2,11 +2,13 @@ package main
 
 import (
 	"encoding/json"
+	"flag"
 	"fmt"
 	"io"
 	"log"
 	"math"
 	"net/http"
+	"net/url"
 	"os"
 	"path/filepath"
 	"sort"
@@ -83,7 +85,7 @@ func getRepos(token string) ([]Repo, error) {
 			req.Header.Set("Authorization", "Bearer "+token)
 		}
 
-		resp, err := http.DefaultClient.Do(req)
+		resp, err := httpClient.Do(req)
 		if err != nil {
 			return nil, fmt.Errorf("fetch repos: %w", err)
 		}
@@ -114,7 +116,7 @@ func getLanguages(url, token string) (map[string]int64, error) {
 		req.Header.Set("Authorization", "Bearer "+token)
 	}
 
-	resp, err := http.DefaultClient.Do(req)
+	resp, err := httpClient.Do(req)
 	if err != nil {
 		return nil, err
 	}
@@ -242,17 +244,30 @@ func generateSVG(stats []LangStat, totalBytes int64) string {
 	sb.WriteString(fmt.Sprintf(`<svg xmlns="http://www.w3.org/2000/svg" width="%d" height="%.0f" viewBox="0 0 %d %.0f">
 `, svgWidth, height, svgWidth, height))
 
+	// 读取字体 CSS
+	fontCSS, err := os.ReadFile("../sub-font/output/font_face.css")
+	if err != nil {
+		log.Printf("⚠️  无法读取字体 CSS: %v (将使用 fallback 字体)", err)
+		fontCSS = []byte{}
+	}
+
 	// 定义样式
 	sb.WriteString(`<defs>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap');
+`)
+	sb.Write(fontCSS)
+	sb.WriteString(`
     .bg { fill: #0d1117; rx: 10; }
-    .title { font-family: 'Inter', 'Segoe UI', sans-serif; font-size: 16px; font-weight: 600; fill: #64b5f6; }
-    .subtitle { font-family: 'Inter', 'Segoe UI', sans-serif; font-size: 11px; fill: #8b949e; }
-    .lang-name { font-family: 'Inter', 'Segoe UI', sans-serif; font-size: 12px; fill: #e6edf3; }
-    .lang-pct { font-family: 'Inter', 'Segoe UI', sans-serif; font-size: 11px; fill: #8b949e; }
+    .title { font-family: 'LXGW WenKai Mono', 'Inter', 'Segoe UI', sans-serif; font-size: 16px; font-weight: 600; fill: #64b5f6; }
+    .subtitle { font-family: 'LXGW WenKai Mono', 'Inter', 'Segoe UI', sans-serif; font-size: 11px; fill: #8b949e; }
+    .lang-name { font-family: 'LXGW WenKai Mono', 'Inter', 'Segoe UI', sans-serif; font-size: 12px; fill: #e6edf3; }
+    .lang-pct { font-family: 'LXGW WenKai Mono', 'Inter', 'Segoe UI', sans-serif; font-size: 11px; fill: #8b949e; }
     .bar-bg { fill: #161b22; rx: 4; }
     .top-bar-bg { fill: #161b22; rx: 6; }
+    @keyframes fadeInRight { from { opacity: 0; transform: translateX(-8px); } to { opacity: 1; transform: translateX(0); } }
+    @keyframes fadeInDown { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
+    .row { animation: fadeInRight 0.6s ease forwards; opacity: 0; }
+    .title-anim { animation: fadeInDown 0.8s ease forwards; opacity: 0; }
   </style>
 </defs>
 `)
@@ -262,52 +277,70 @@ func generateSVG(stats []LangStat, totalBytes int64) string {
 `, svgWidth, height))
 
 	// 标题
-	sb.WriteString(fmt.Sprintf(`<text class="title" x="20" y="30">📊 %s · 语言分布</text>
+	sb.WriteString(fmt.Sprintf(`<text class="title title-anim" x="20" y="30">📊 %s · 语言分布</text>
 `, org))
-	sb.WriteString(fmt.Sprintf(`<text class="subtitle" x="20" y="48">共 %s 代码 · 自动更新于 %s</text>
+	sb.WriteString(fmt.Sprintf(`<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 %s 代码 · 自动更新于 %s</text>
 `, formatBytes(totalBytes), time.Now().Format("2006-01-02")))
 
-	// 顶部汇总条
+	// 顶部汇总条（带展开动画 + 圆角裁剪）
+	sb.WriteString(fmt.Sprintf(`<clipPath id="top-bar-clip">
+  <rect x="20" y="%.0f" width="%d" height="%.0f" rx="6"/>
+</clipPath>
+`, topBarY, svgWidth-40, topBarHeight))
 	sb.WriteString(fmt.Sprintf(`<rect class="top-bar-bg" x="20" y="%.0f" width="%d" height="%.0f"/>
 `, topBarY, svgWidth-40, topBarHeight))
+	sb.WriteString(fmt.Sprintf(`<g clip-path="url(#top-bar-clip)">
+`))
 	barW := float64(svgWidth - 40)
 	offsetX := 20.0
-	for _, s := range stats {
+	for i, s := range stats {
 		w := math.Max(barW*s.Percent/100, 1)
-		sb.WriteString(fmt.Sprintf(`<rect x="%.1f" y="%.0f" width="%.1f" height="%.0f" rx="0" fill="%s"/>
-`, offsetX, topBarY, w, topBarHeight, s.Color))
+		delay := 0.3 + float64(i)*0.05
+		sb.WriteString(fmt.Sprintf(`<rect x="%.1f" y="%.0f" width="0" height="%.0f" fill="%s">
+  <animate attributeName="width" from="0" to="%.1f" dur="0.6s" begin="%.2fs" fill="freeze" />
+</rect>
+`, offsetX, topBarY, topBarHeight, s.Color, w, delay))
 		offsetX += w
 	}
-	// 圆角遮罩
-	sb.WriteString(fmt.Sprintf(`<rect x="20" y="%.0f" width="%d" height="%.0f" rx="6" fill="none" stroke="#0d1117" stroke-width="0.5"/>
-`, topBarY, svgWidth-40, topBarHeight))
+	sb.WriteString(`</g>
+`)
 
 	// 每种语言的行
 	for i, s := range stats {
 		y := contentStartY + float64(i)*rowHeight
+		delay := 0.4 + float64(i)*0.1
+
+		sb.WriteString(fmt.Sprintf(`<g class="row" style="animation-delay: %.1fs;">
+`, delay))
 
 		// 语言颜色圆点
-		sb.WriteString(fmt.Sprintf(`<circle cx="30" cy="%.1f" r="5" fill="%s"/>
+		sb.WriteString(fmt.Sprintf(`  <circle cx="30" cy="%.1f" r="5" fill="%s"/>
 `, y+float64(barHeight)/2, s.Color))
 
 		// 语言名
-		sb.WriteString(fmt.Sprintf(`<text class="lang-name" x="44" y="%.1f">%s</text>
+		sb.WriteString(fmt.Sprintf(`  <text class="lang-name" x="44" y="%.1f">%s</text>
 `, y+float64(barHeight)/2+4, s.Name))
 
 		// 进度条背景
 		progX := 160.0
 		progW := float64(svgWidth) - progX - 80
-		sb.WriteString(fmt.Sprintf(`<rect class="bar-bg" x="%.0f" y="%.1f" width="%.0f" height="%.0f"/>
+		sb.WriteString(fmt.Sprintf(`  <rect class="bar-bg" x="%.0f" y="%.1f" width="%.0f" height="%.0f"/>
 `, progX, y+4, progW, float64(barHeight)-8))
 
-		// 进度条
-		fillW := math.Max(progW*s.Percent/100, 2)
-		sb.WriteString(fmt.Sprintf(`<rect x="%.0f" y="%.1f" width="%.1f" height="%.0f" rx="4" fill="%s" opacity="0.85"/>
-`, progX, y+4, fillW, float64(barHeight)-8, s.Color))
+		// 进度条（带 width 动画）—— 相对于最大值，第一名占满
+		maxPercent := stats[0].Percent
+		fillW := math.Max(progW*s.Percent/maxPercent, 2)
+		sb.WriteString(fmt.Sprintf(`  <rect x="%.0f" y="%.1f" width="0" height="%.0f" rx="4" fill="%s" opacity="0.85">
+    <animate attributeName="width" from="0" to="%.1f" dur="0.8s" begin="%.1fs" fill="freeze" />
+  </rect>
+`, progX, y+4, float64(barHeight)-8, s.Color, fillW, delay))
 
 		// 百分比
-		sb.WriteString(fmt.Sprintf(`<text class="lang-pct" x="%.0f" y="%.1f">%.1f%%</text>
+		sb.WriteString(fmt.Sprintf(`  <text class="lang-pct" x="%.0f" y="%.1f">%.1f%%</text>
 `, float64(svgWidth)-70, y+float64(barHeight)/2+4, s.Percent))
+
+		sb.WriteString(`</g>
+`)
 	}
 
 	sb.WriteString(`</svg>`)
@@ -355,7 +388,37 @@ func updateReadme(readmePath, svgFile string) error {
 
 // ========== 主函数 ==========
 
+// 全局变量
+var (
+	proxyURL        string
+	useTmp          bool
+	actualOutputDir string
+	httpClient      *http.Client
+)
+
 func main() {
+	flag.StringVar(&proxyURL, "proxy", "", "HTTP proxy URL (e.g. http://192.168.31.233:7890)")
+	flag.BoolVar(&useTmp, "tmp", false, "Output to ../tmp instead of ../profile")
+	flag.Parse()
+
+	if useTmp {
+		actualOutputDir = "../tmp"
+		log.Println("📁 Output directory: ../tmp")
+	} else {
+		actualOutputDir = outputDir
+	}
+
+	httpClient = http.DefaultClient
+	if proxyURL != "" {
+		log.Printf("🌐 Using proxy: %s", proxyURL)
+		parsed, err := url.Parse(proxyURL)
+		if err == nil {
+			httpClient = &http.Client{
+				Transport: &http.Transport{Proxy: http.ProxyURL(parsed)},
+			}
+		}
+	}
+
 	token := os.Getenv("GH_TOKEN")
 	if token == "" {
 		token = os.Getenv("GITHUB_TOKEN")
@@ -375,8 +438,8 @@ func main() {
 	svg := generateSVG(stats, totalBytes)
 
 	// 写 SVG 文件
-	svgPath := filepath.Join(outputDir, svgFileName)
-	if err := os.MkdirAll(outputDir, 0755); err != nil {
+	svgPath := filepath.Join(actualOutputDir, svgFileName)
+	if err := os.MkdirAll(actualOutputDir, 0755); err != nil {
 		log.Fatalf("❌ 创建目录失败: %v", err)
 	}
 	if err := os.WriteFile(svgPath, []byte(svg), 0644); err != nil {
@@ -384,12 +447,16 @@ func main() {
 	}
 	log.Printf("✅ SVG 已保存: %s", svgPath)
 
-	// 更新 README
-	readmePath := filepath.Join(outputDir, "README.md")
-	if err := updateReadme(readmePath, svgFileName); err != nil {
-		log.Fatalf("❌ 更新 README 失败: %v", err)
+	// 更新 README（--tmp 模式下跳过）
+	if useTmp {
+		log.Println("⏭️  --tmp 模式，跳过 README 更新")
+	} else {
+		readmePath := filepath.Join(actualOutputDir, "README.md")
+		if err := updateReadme(readmePath, svgFileName); err != nil {
+			log.Fatalf("❌ 更新 README 失败: %v", err)
+		}
+		log.Println("✅ README 已更新!")
 	}
-	log.Println("✅ README 已更新!")
 
 	// 打印统计结果
 	log.Println("\n📊 语言统计排行：")
