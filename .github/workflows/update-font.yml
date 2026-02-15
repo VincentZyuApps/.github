@@ -1,0 +1,37 @@
+name: Update Font Subset
+
+on:
+  push:
+    paths:
+      - 'sub-font/**'        # 字体子集化脚本变更时触发
+      - 'assets/*.ttf'        # 字体源文件变更时也触发
+
+jobs:
+  update-font:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        working-directory: ./sub-font
+        run: pip install -r requirements.txt
+
+      - name: Run font subset
+        working-directory: ./sub-font
+        run: python subset.py
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add sub-font/output/
+          git diff --staged --quiet || (git commit -m "chore: auto-update font subset [skip ci]" && git push)

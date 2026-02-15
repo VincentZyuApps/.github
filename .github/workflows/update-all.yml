@@ -1,0 +1,61 @@
+name: Update All Stats
+
+on:
+  workflow_dispatch:          # 仅手动触发
+
+jobs:
+  update-all:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # ===== 字体子集化 =====
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install font dependencies
+        working-directory: ./sub-font
+        run: pip install -r requirements.txt
+
+      - name: Run font subset
+        working-directory: ./sub-font
+        run: python subset.py
+
+      # ===== Go 出图 =====
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.21'
+          cache: false
+
+      - name: Run lang-stats
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        working-directory: ./lang-stats
+        run: go run main.go
+
+      - name: Run git-stats
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        working-directory: ./git-stats
+        run: go run main.go
+
+      - name: Run line-stats
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        working-directory: ./line-stats
+        run: go run main.go
+
+      # ===== 提交 =====
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add sub-font/output/ profile/
+          git diff --staged --quiet || (git commit -m "chore: auto-update all stats [skip ci]" && git push)
