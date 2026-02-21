@@ -58,7 +58,7 @@
 <g class="stat-row" style="animation-delay: 0.2s;">
   <text class="stat-icon" x="24" y="139.0">🔀</text>
   <text class="stat-label" x="46" y="139.0">Total Forks</text>
-  <text class="stat-value" x="350" y="139.0" text-anchor="end">19</text>
+  <text class="stat-value" x="350" y="139.0" text-anchor="end">20</text>
 </g>
 <g class="stat-row" style="animation-delay: 0.3s;">
   <text class="stat-icon" x="24" y="173.0">📝</text>
