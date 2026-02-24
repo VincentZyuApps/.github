@@ -33,7 +33,7 @@
 </defs>
 <rect class="bg" width="480" height="435" rx="10"/>
 <text class="header title-anim" x="20" y="30">📏 VincentZyuApps · 代码行数统计</text>
-<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 25,530 行代码（不含空行和注释）· 自动更新于 2026-02-24</text>
+<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 25,485 行代码（不含空行和注释）· 自动更新于 2026-02-24</text>
 <g class="row" style="animation-delay: 0.3s;">
   <circle cx="30" cy="84" r="5" fill="#3178c6"/>
   <text x="44" y="84" class="lang-name" dominant-baseline="central">TypeScript</text>
@@ -68,7 +68,7 @@
   <rect x="120" y="176" width="0" height="20" fill="#3572A5" rx="4" opacity="0.85">
     <animate attributeName="width" from="0" to="63" dur="0.8s" begin="0.6s" fill="freeze" />
   </rect>
-  <text x="460" y="186" class="lang-count" dominant-baseline="central" text-anchor="end">2,462</text>
+  <text x="460" y="186" class="lang-count" dominant-baseline="central" text-anchor="end">2,464</text>
 </g>
 <g class="row" style="animation-delay: 0.7s;">
   <circle cx="30" cy="220" r="5" fill="#00ADD8"/>
@@ -80,22 +80,22 @@
   <text x="460" y="220" class="lang-count" dominant-baseline="central" text-anchor="end">1,227</text>
 </g>
 <g class="row" style="animation-delay: 0.8s;">
-  <circle cx="30" cy="254" r="5" fill="#dea584"/>
-  <text x="44" y="254" class="lang-name" dominant-baseline="central">Rust</text>
+  <circle cx="30" cy="254" r="5" fill="#b07219"/>
+  <text x="44" y="254" class="lang-name" dominant-baseline="central">Java</text>
   <rect class="bar-bg" x="120" y="244" width="290" height="20"/>
-  <rect x="120" y="244" width="0" height="20" fill="#dea584" rx="4" opacity="0.85">
-    <animate attributeName="width" from="0" to="30" dur="0.8s" begin="0.8s" fill="freeze" />
+  <rect x="120" y="244" width="0" height="20" fill="#b07219" rx="4" opacity="0.85">
+    <animate attributeName="width" from="0" to="29" dur="0.8s" begin="0.8s" fill="freeze" />
   </rect>
-  <text x="460" y="254" class="lang-count" dominant-baseline="central" text-anchor="end">1,185</text>
+  <text x="460" y="254" class="lang-count" dominant-baseline="central" text-anchor="end">1,156</text>
 </g>
 <g class="row" style="animation-delay: 0.9s;">
-  <circle cx="30" cy="288" r="5" fill="#b07219"/>
-  <text x="44" y="288" class="lang-name" dominant-baseline="central">Java</text>
+  <circle cx="30" cy="288" r="5" fill="#dea584"/>
+  <text x="44" y="288" class="lang-name" dominant-baseline="central">Rust</text>
   <rect class="bar-bg" x="120" y="278" width="290" height="20"/>
-  <rect x="120" y="278" width="0" height="20" fill="#b07219" rx="4" opacity="0.85">
+  <rect x="120" y="278" width="0" height="20" fill="#dea584" rx="4" opacity="0.85">
     <animate attributeName="width" from="0" to="29" dur="0.8s" begin="0.9s" fill="freeze" />
   </rect>
-  <text x="460" y="288" class="lang-count" dominant-baseline="central" text-anchor="end">1,156</text>
+  <text x="460" y="288" class="lang-count" dominant-baseline="central" text-anchor="end">1,138</text>
 </g>
 <g class="row" style="animation-delay: 1.0s;">
   <circle cx="30" cy="322" r="5" fill="#f34b7d"/>
