@@ -34,7 +34,7 @@
 </defs>
 <rect class="bg" width="480" height="506" rx="10"/>
 <text class="title title-anim" x="20" y="30">📊 VincentZyuApps · 语言分布</text>
-<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 997.7 KB 代码 · 自动更新于 2026-03-02</text>
+<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 997.8 KB 代码 · 自动更新于 2026-03-02</text>
 <clipPath id="top-bar-clip">
   <rect x="20" y="60" width="440" height="12" rx="6"/>
 </clipPath>
@@ -50,10 +50,10 @@
   <animate attributeName="width" from="0" to="53.7" dur="0.6s" begin="0.40s" fill="freeze" />
 </rect>
 <rect x="341.9" y="60" width="0" height="12" fill="#00ADD8">
-  <animate attributeName="width" from="0" to="38.8" dur="0.6s" begin="0.45s" fill="freeze" />
+  <animate attributeName="width" from="0" to="38.7" dur="0.6s" begin="0.45s" fill="freeze" />
 </rect>
 <rect x="380.7" y="60" width="0" height="12" fill="#dea584">
-  <animate attributeName="width" from="0" to="29.0" dur="0.6s" begin="0.50s" fill="freeze" />
+  <animate attributeName="width" from="0" to="29.1" dur="0.6s" begin="0.50s" fill="freeze" />
 </rect>
 <rect x="409.7" y="60" width="0" height="12" fill="#b07219">
   <animate attributeName="width" from="0" to="28.7" dur="0.6s" begin="0.55s" fill="freeze" />
@@ -88,7 +88,7 @@
   <text class="lang-name" x="44" y="154.0">JavaScript</text>
   <rect class="bar-bg" x="160" y="140.0" width="240" height="20"/>
   <rect x="160" y="140.0" width="0" height="20" rx="4" fill="#f1e05a" opacity="0.85">
-    <animate attributeName="width" from="0" to="70.0" dur="0.8s" begin="0.5s" fill="freeze" />
+    <animate attributeName="width" from="0" to="70.1" dur="0.8s" begin="0.5s" fill="freeze" />
   </rect>
   <text class="lang-pct" x="410" y="154.0">13.8%</text>
 </g>
