@@ -33,7 +33,7 @@
 </defs>
 <rect class="bg" width="480" height="435" rx="10"/>
 <text class="header title-anim" x="20" y="30">📏 VincentZyuApps · 代码行数统计</text>
-<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 39,690 行代码（不含空行和注释）· 自动更新于 2026-03-11</text>
+<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 39,941 行代码（不含空行和注释）· 自动更新于 2026-03-12</text>
 <g class="row" style="animation-delay: 0.3s;">
   <circle cx="30" cy="84" r="5" fill="#3178c6"/>
   <text x="44" y="84" class="lang-name" dominant-baseline="central">TypeScript</text>
@@ -48,9 +48,9 @@
   <text x="44" y="118" class="lang-name" dominant-baseline="central">Vue</text>
   <rect class="bar-bg" x="120" y="108" width="290" height="20"/>
   <rect x="120" y="108" width="0" height="20" fill="#41b883" rx="4" opacity="0.85">
-    <animate attributeName="width" from="0" to="109" dur="0.8s" begin="0.4s" fill="freeze" />
+    <animate attributeName="width" from="0" to="113" dur="0.8s" begin="0.4s" fill="freeze" />
   </rect>
-  <text x="460" y="118" class="lang-count" dominant-baseline="central" text-anchor="end">7,270</text>
+  <text x="460" y="118" class="lang-count" dominant-baseline="central" text-anchor="end">7,521</text>
 </g>
 <g class="row" style="animation-delay: 0.5s;">
   <circle cx="30" cy="152" r="5" fill="#3572A5"/>
