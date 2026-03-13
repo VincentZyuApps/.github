@@ -68,7 +68,7 @@
 <g class="stat-row" style="animation-delay: 0.4s;">
   <text class="stat-icon" x="24" y="207.0">🔃</text>
   <text class="stat-label" x="46" y="207.0">Total PRs</text>
-  <text class="stat-value" x="350" y="207.0" text-anchor="end">13</text>
+  <text class="stat-value" x="350" y="207.0" text-anchor="end">14</text>
 </g>
 <g class="stat-row" style="animation-delay: 0.5s;">
   <text class="stat-icon" x="24" y="241.0">❗</text>
@@ -78,12 +78,12 @@
 <g class="stat-row" style="animation-delay: 0.6s;">
   <text class="stat-icon" x="24" y="275.0">👀</text>
   <text class="stat-label" x="46" y="275.0">PR Reviews</text>
-  <text class="stat-value" x="350" y="275.0" text-anchor="end">0</text>
+  <text class="stat-value" x="350" y="275.0" text-anchor="end">1</text>
 </g>
 <g class="stat-row" style="animation-delay: 0.7s;">
   <text class="stat-icon" x="24" y="309.0">🤝</text>
   <text class="stat-label" x="46" y="309.0">Contributed To</text>
-  <text class="stat-value" x="350" y="309.0" text-anchor="end">23</text>
+  <text class="stat-value" x="350" y="309.0" text-anchor="end">24</text>
 </g>
 <circle class="rank-ring-bg" cx="420" cy="188" r="40"/>
 <circle class="rank-ring" cx="420" cy="188" r="40"/>
