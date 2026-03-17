@@ -48,12 +48,12 @@
 <g class="stat-row" style="animation-delay: 0.0s;">
   <text class="stat-icon" x="24" y="71.0">⭐</text>
   <text class="stat-label" x="46" y="71.0">Total Stars</text>
-  <text class="stat-value" x="350" y="71.0" text-anchor="end">224</text>
+  <text class="stat-value" x="350" y="71.0" text-anchor="end">228</text>
 </g>
 <g class="stat-row" style="animation-delay: 0.1s;">
   <text class="stat-icon" x="24" y="105.0">📦</text>
   <text class="stat-label" x="46" y="105.0">Total Repos</text>
-  <text class="stat-value" x="350" y="105.0" text-anchor="end">79</text>
+  <text class="stat-value" x="350" y="105.0" text-anchor="end">80</text>
 </g>
 <g class="stat-row" style="animation-delay: 0.2s;">
   <text class="stat-icon" x="24" y="139.0">🔀</text>
