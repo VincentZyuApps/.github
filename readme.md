@@ -27,7 +27,8 @@
 
 组织的完整统计信息和门面展示，请访问：
 
-[🚀 VincentZyuApps 组织主页](./profile/README.md)
+[![VincentZyuApps 组织门面主页](https://img.shields.io/badge/VincentZyuApps-ff69b4?style=for-the-badge&logo=github&logoColor=white&label=🚀%20组织门面主页)](https://github.com/VincentZyuApps)
+[![组织主页 README](https://img.shields.io/badge/README-181717?style=for-the-badge&logo=github&logoColor=white&label=📄%20左侧有文件树)](./profile/README.md)
 
 ## 📚 相关文档
 
@@ -76,11 +77,6 @@
 - **自动化**：GitHub Actions
 - **前端**：SVG + CSS
 - **字体**：LXGW WenKai Mono
-
-## 📄 许可证
-
-本仓库采用 MIT 许可证，详情请查看 [LICENSE](LICENSE) 文件。
-
 ---
 
 <p align="center">

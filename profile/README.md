@@ -1,6 +1,6 @@
 # 你好
 
-![header](https://capsule-render.vercel.app/api?type=waving&color=0:0a1929,50:1976d2,100:64b5f6&height=200&section=header&text=VincentZyu%20Apps&fontSize=70&fontColor=fff&animation=fadeIn)
+![header](https://capsule-render.vercel.app/api?type=waving&color=0:ff69b4,50:ff85c1,100:da70d6&height=200&section=header&text=VincentZyu%20Apps&fontSize=70&fontColor=fff&animation=fadeIn)
 
 <p align="center">
   <img src="https://visitor-badge.laobi.icu/badge?page_id=VincentZyuApps.VincentZyuApps.github" />
