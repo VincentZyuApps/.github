@@ -20,7 +20,7 @@ import (
 
 const (
 	org         = "VincentZyuApps"
-	maxLangs    = 10           // 显示前 N 种语言
+	maxLangs    = 114514       // 2026年3月21日20:36:48 改成 无限制~
 	svgWidth    = 480          // SVG 宽度
 	barHeight   = 28           // 每行高度
 	barPadding  = 6            // 行间距

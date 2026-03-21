@@ -50,7 +50,7 @@ var extToLang = map[string]string{
 	".go": "Go",
 	".py": "Python",
 	".js": "JavaScript", ".jsx": "JavaScript", ".mjs": "JavaScript",
-	".ts": "TypeScript", ".tsx": "TypeScript",
+	".ts": "TypeScript", ".tsx": "TSX",
 	".java": "Java",
 	".c":    "C", ".h": "C",
 	".cpp": "C++", ".hpp": "C++", ".cc": "C++", ".cxx": "C++",
@@ -77,6 +77,7 @@ var langColors = map[string]string{
 	"Python":     "#3572A5",
 	"JavaScript": "#f1e05a",
 	"TypeScript": "#3178c6",
+	"TSX":        "#3178c6",
 	"Java":       "#b07219",
 	"C":          "#555555",
 	"C++":        "#f34b7d",
@@ -219,11 +220,6 @@ func main() {
 	sort.Slice(finalStats, func(i, j int) bool {
 		return finalStats[i].Lines > finalStats[j].Lines
 	})
-
-	// 取前 10 名
-	if len(finalStats) > 10 {
-		finalStats = finalStats[:10]
-	}
 
 	fmt.Printf("Total Lines: %d\n", totalLines)
 	for _, s := range finalStats {
