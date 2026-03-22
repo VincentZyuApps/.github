@@ -1,17 +1,26 @@
 name: Update All Stats
 
 on:
-  workflow_dispatch:          # 仅手动触发
+  workflow_dispatch:          # 手动触发
+  push:
+    branches:
+      - main
 
 jobs:
   update-all:
     runs-on: ubuntu-latest
+    if: contains(github.event.head_commit.message, 'update-all') || github.event_name == 'workflow_dispatch'
     permissions:
       contents: write
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check commit message
+        run: echo "Triggered by: ${{ github.event.head_commit.message }}"
 
       # ===== 字体子集化 =====
       - name: Setup Python

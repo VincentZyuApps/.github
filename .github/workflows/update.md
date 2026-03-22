@@ -21,6 +21,19 @@
 - `update-git-stats.yml`: 当 `git-stats/**` 变更时触发
 - `update-line-stats.yml`: 当 `line-stats/**` 变更时触发
 
+### Commit Message 触发 update-all
+
+Push 时如果 commit message 包含 `update-all`，会自动触发全量更新：
+
+```bash
+git commit -m "update-all"
+git push
+```
+
+这会执行 `update-all.yml`，一次性更新字体、语言统计、GitHub统计和代码行数统计。
+
+
+
 ## 🖱️ 手动触发
 
 可以在 GitHub 网页界面手动执行工作流：
@@ -42,7 +55,7 @@
 - **日常使用**: 依赖定时任务自动更新即可
 - **代码修改后**: Push 会自动触发对应工作流
 - **急需更新**: 使用手动触发方式快速更新
-- **批量更新**: 使用 `update-all.yml` 一次性更新所有统计
+- **批量更新**: Push 时 commit message 包含 `update-all`，会自动触发全量更新
 
 ## 📝 本地更新Git手动推送流程
 
