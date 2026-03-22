@@ -20,7 +20,9 @@ jobs:
           fetch-depth: 0
 
       - name: Check commit message
-        run: echo "Triggered by: ${{ github.event.head_commit.message }}"
+        run: |
+          echo "Triggered by commit:"
+          echo "${{ github.event.head_commit.message }}"
 
       # ===== 字体子集化 =====
       - name: Setup Python
