@@ -233,7 +233,7 @@ func formatBytes(bytes int64) string {
 
 func generateSVG(stats []LangStat, totalBytes int64) string {
 	topBarHeight := 12.0
-	topBarY := 60.0
+	topBarY := 100.0
 	contentStartY := topBarY + topBarHeight + 30
 	rowHeight := float64(barHeight + barPadding)
 	height := contentStartY + float64(len(stats))*rowHeight + 30
@@ -279,8 +279,13 @@ func generateSVG(stats []LangStat, totalBytes int64) string {
 	// 标题
 	sb.WriteString(fmt.Sprintf(`<text class="title title-anim" x="20" y="30">📊 %s · 语言分布</text>
 `, org))
-	sb.WriteString(fmt.Sprintf(`<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 %s 代码 · 自动更新于 %s</text>
-`, formatBytes(totalBytes), time.Now().Format("2006-01-02 15:04:05")))
+	tz, _ := time.LoadLocation("Asia/Shanghai")
+	sb.WriteString(fmt.Sprintf(`<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 %s 代码</text>
+`, formatBytes(totalBytes)))
+	sb.WriteString(fmt.Sprintf(`<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="68">Auto update: %s (UTC)</text>
+`, time.Now().Format("2006-01-02 15:04:05")))
+	sb.WriteString(fmt.Sprintf(`<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="88">自动更新于 %s (UTC+8)</text>
+`, time.Now().In(tz).Format("2006-01-02 15:04:05")))
 
 	// 顶部汇总条（带展开动画 + 圆角裁剪）
 	sb.WriteString(fmt.Sprintf(`<clipPath id="top-bar-clip">

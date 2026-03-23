@@ -293,7 +293,7 @@ func generateSVG(stats *GitStats) string {
 	}
 
 	rowHeight := 34.0
-	headerHeight := 55.0
+	headerHeight := 95.0
 	height := headerHeight + float64(len(rows))*rowHeight + 30
 
 	// Rank 圆环参数
@@ -354,8 +354,13 @@ func generateSVG(stats *GitStats) string {
 	// 标题
 	sb.WriteString(fmt.Sprintf(`<text class="title title-anim" x="20" y="28">📊 %s · GitHub Stats</text>
 `, user))
-	sb.WriteString(fmt.Sprintf(`<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="44">%s + %s · 自动更新于 %s</text>
-`, user, org, time.Now().Format("2006-01-02 15:04:05")))
+	tz, _ := time.LoadLocation("Asia/Shanghai")
+	sb.WriteString(fmt.Sprintf(`<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="44">%s + %s</text>
+`, user, org))
+	sb.WriteString(fmt.Sprintf(`<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="64">Auto update: %s (UTC)</text>
+`, time.Now().Format("2006-01-02 15:04:05")))
+	sb.WriteString(fmt.Sprintf(`<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="84">自动更新于 %s (UTC+8)</text>
+`, time.Now().In(tz).Format("2006-01-02 15:04:05")))
 
 	// 统计行
 	for i, row := range rows {

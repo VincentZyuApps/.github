@@ -371,7 +371,7 @@ func generateSVG(stats []LangStat, total int) error {
 	p := messagePrinter(total)
 
 	// SVG 高度 = header(45) + subtitle(20) + bars + padding
-	headerAreaHeight := 70
+	headerAreaHeight := 110
 	svgContentHeight := headerAreaHeight + totalHeight + 25
 
 	var sb strings.Builder
@@ -414,8 +414,13 @@ func generateSVG(stats []LangStat, total int) error {
 	// 标题
 	sb.WriteString(fmt.Sprintf(`<text class="header title-anim" x="20" y="30">📏 %s · 代码行数统计</text>
 `, org))
-	sb.WriteString(fmt.Sprintf(`<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 %s 行代码（不含空行和注释）· 自动更新于 %s</text>
-`, p, time.Now().Format("2006-01-02 15:04:05")))
+	tz, _ := time.LoadLocation("Asia/Shanghai")
+	sb.WriteString(fmt.Sprintf(`<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 %s 行代码（不含空行和注释）</text>
+`, p))
+	sb.WriteString(fmt.Sprintf(`<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="68">Auto update: %s (UTC)</text>
+`, time.Now().Format("2006-01-02 15:04:05")))
+	sb.WriteString(fmt.Sprintf(`<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="88">自动更新于 %s (UTC+8)</text>
+`, time.Now().In(tz).Format("2006-01-02 15:04:05")))
 
 	// 生成条形图内容
 	maxLines := stats[0].Lines         // stats 已排序，第一个是最大值
