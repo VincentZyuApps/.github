@@ -415,7 +415,7 @@ func generateSVG(stats []LangStat, total int) error {
 	sb.WriteString(fmt.Sprintf(`<text class="header title-anim" x="20" y="30">📏 %s · 代码行数统计</text>
 `, org))
 	sb.WriteString(fmt.Sprintf(`<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 %s 行代码（不含空行和注释）· 自动更新于 %s</text>
-`, p, time.Now().Format("2006-01-02")))
+`, p, time.Now().Format("2006-01-02 15:04:05")))
 
 	// 生成条形图内容
 	maxLines := stats[0].Lines         // stats 已排序，第一个是最大值

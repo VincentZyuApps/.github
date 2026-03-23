@@ -355,7 +355,7 @@ func generateSVG(stats *GitStats) string {
 	sb.WriteString(fmt.Sprintf(`<text class="title title-anim" x="20" y="28">📊 %s · GitHub Stats</text>
 `, user))
 	sb.WriteString(fmt.Sprintf(`<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="44">%s + %s · 自动更新于 %s</text>
-`, user, org, time.Now().Format("2006-01-02")))
+`, user, org, time.Now().Format("2006-01-02 15:04:05")))
 
 	// 统计行
 	for i, row := range rows {

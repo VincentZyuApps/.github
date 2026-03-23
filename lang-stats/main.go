@@ -280,7 +280,7 @@ func generateSVG(stats []LangStat, totalBytes int64) string {
 	sb.WriteString(fmt.Sprintf(`<text class="title title-anim" x="20" y="30">📊 %s · 语言分布</text>
 `, org))
 	sb.WriteString(fmt.Sprintf(`<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 %s 代码 · 自动更新于 %s</text>
-`, formatBytes(totalBytes), time.Now().Format("2006-01-02")))
+`, formatBytes(totalBytes), time.Now().Format("2006-01-02 15:04:05")))
 
 	// 顶部汇总条（带展开动画 + 圆角裁剪）
 	sb.WriteString(fmt.Sprintf(`<clipPath id="top-bar-clip">

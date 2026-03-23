@@ -6,3 +6,7 @@ profile/line-stats.svg
 
 # 本地调试输出
 tmp/
+
+# Python 虚拟环境
+.venv/
+venv/

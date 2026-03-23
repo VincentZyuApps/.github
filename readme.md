@@ -73,7 +73,7 @@
 
 ## 🌟 技术栈
 
-- **后端**：Go 语言
+- **后端**：Py(字体子集化) + Go(svg出图)
 - **自动化**：GitHub Actions
 - **前端**：SVG + CSS
 - **字体**：LXGW WenKai Mono
