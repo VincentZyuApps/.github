@@ -33,7 +33,7 @@
 </defs>
 <rect class="bg" width="480" height="639" rx="10"/>
 <text class="header title-anim" x="20" y="30">📏 VincentZyuApps · 代码行数统计</text>
-<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 46,893 行代码（不含空行和注释）· 自动更新于 2026-03-23 03:42:35</text>
+<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 46,893 行代码（不含空行和注释）· 自动更新于 2026-03-23 05:29:01</text>
 <g class="row" style="animation-delay: 0.3s;">
   <circle cx="30" cy="84" r="5" fill="#3178c6"/>
   <text x="44" y="84" class="lang-name" dominant-baseline="central">TypeScript</text>
