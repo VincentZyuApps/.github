@@ -33,7 +33,7 @@
 </defs>
 <rect class="bg" width="480" height="673" rx="10"/>
 <text class="header title-anim" x="20" y="30">📏 VincentZyuApps · 代码行数统计</text>
-<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 51,334 行代码（不含空行和注释）· 自动更新于 2026-03-25 10:47:03</text>
+<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 51,191 行代码（不含空行和注释）· 自动更新于 2026-03-25 14:17:50</text>
 <g class="row" style="animation-delay: 0.3s;">
   <circle cx="30" cy="84" r="5" fill="#3178c6"/>
   <text x="44" y="84" class="lang-name" dominant-baseline="central">TypeScript</text>
@@ -41,14 +41,14 @@
   <rect x="120" y="74" width="0" height="20" fill="#3178c6" rx="4" opacity="0.85">
     <animate attributeName="width" from="0" to="290" dur="0.8s" begin="0.3s" fill="freeze" />
   </rect>
-  <text x="460" y="84" class="lang-count" dominant-baseline="central" text-anchor="end">22,087</text>
+  <text x="460" y="84" class="lang-count" dominant-baseline="central" text-anchor="end">22,104</text>
 </g>
 <g class="row" style="animation-delay: 0.4s;">
   <circle cx="30" cy="118" r="5" fill="#41b883"/>
   <text x="44" y="118" class="lang-name" dominant-baseline="central">Vue</text>
   <rect class="bar-bg" x="120" y="108" width="290" height="20"/>
   <rect x="120" y="108" width="0" height="20" fill="#41b883" rx="4" opacity="0.85">
-    <animate attributeName="width" from="0" to="105" dur="0.8s" begin="0.4s" fill="freeze" />
+    <animate attributeName="width" from="0" to="104" dur="0.8s" begin="0.4s" fill="freeze" />
   </rect>
   <text x="460" y="118" class="lang-count" dominant-baseline="central" text-anchor="end">8,002</text>
 </g>
@@ -66,9 +66,9 @@
   <text x="44" y="186" class="lang-name" dominant-baseline="central">JavaScript</text>
   <rect class="bar-bg" x="120" y="176" width="290" height="20"/>
   <rect x="120" y="176" width="0" height="20" fill="#f1e05a" rx="4" opacity="0.85">
-    <animate attributeName="width" from="0" to="53" dur="0.8s" begin="0.6s" fill="freeze" />
+    <animate attributeName="width" from="0" to="51" dur="0.8s" begin="0.6s" fill="freeze" />
   </rect>
-  <text x="460" y="186" class="lang-count" dominant-baseline="central" text-anchor="end">4,060</text>
+  <text x="460" y="186" class="lang-count" dominant-baseline="central" text-anchor="end">3,900</text>
 </g>
 <g class="row" style="animation-delay: 0.7s;">
   <circle cx="30" cy="220" r="5" fill="#3178c6"/>
