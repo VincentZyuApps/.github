@@ -98,3 +98,28 @@ git push origin main
 4. 继续 rebase：`git rebase --continue`
 
 这个流程特别适合处理 GitHub Actions 自动更新后的远程仓库同步！
+
+### ⚠️ 本项目特殊情况：生成文件冲突
+
+本项目的 `profile/*.svg`、`sub-font/output/` 是由 Actions 自动生成的，每次 Actions 跑完都会提交新版本。
+本地 push 时 `git pull --rebase` 经常会与这些文件产生冲突，**不需要手动合并，直接用本地版本覆盖即可**：
+
+```bash
+# 一键解决所有生成文件冲突（用本地版本）
+git checkout --ours profile/github-stats.svg profile/line-stats.svg profile/org-languages.svg
+git checkout --ours sub-font/output/LXGWWenKaiMono-Medium.subset.woff2 sub-font/output/LXGWWenKaiMono-Regular.subset.woff2 sub-font/output/font_face.css
+git add profile/ sub-font/output/
+git rebase --continue
+```
+
+> **注意**：rebase 可能有多轮冲突（远程有几个 Actions commit 就冲突几轮），每轮重复上面的步骤直到 `Successfully rebased`。
+
+#### 一次性配置（只需做一次）
+
+`.gitattributes` 已配置 `merge=ours`，还需在本地执行一次：
+
+```bash
+git config merge.ours.driver true
+```
+
+配置后 rebase 遇到这些文件时会自动选本地版本，无需手动解决。
