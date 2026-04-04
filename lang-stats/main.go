@@ -38,6 +38,7 @@ var langColors = map[string]string{
 	"Python":     "#3572A5",
 	"JavaScript": "#f1e05a",
 	"TypeScript": "#3178c6",
+	"TSX":        "#3178c6",
 	"Go":         "#00ADD8",
 	"C++":        "#f34b7d",
 	"C":          "#555555",
@@ -236,7 +237,18 @@ func generateSVG(stats []LangStat, totalBytes int64) string {
 	topBarY := 100.0
 	contentStartY := topBarY + topBarHeight + 30
 	rowHeight := float64(barHeight + barPadding)
-	height := contentStartY + float64(len(stats))*rowHeight + 30
+
+	// 底部备注行数：1行"统计单位" + excluded语言（若有）
+	excludeNames := make([]string, 0, len(excludeLangs))
+	for k := range excludeLangs {
+		excludeNames = append(excludeNames, k)
+	}
+	sort.Strings(excludeNames)
+	footerLines := 1 // "统计单位: 字节"
+	if len(excludeNames) > 0 {
+		footerLines++ // "已排除: ..."
+	}
+	height := contentStartY + float64(len(stats))*rowHeight + float64(footerLines)*16 + 20
 
 	var sb strings.Builder
 
@@ -346,6 +358,15 @@ func generateSVG(stats []LangStat, totalBytes int64) string {
 
 		sb.WriteString(`</g>
 `)
+	}
+
+	// 底部备注
+	footerY := contentStartY + float64(len(stats))*rowHeight + 14
+	sb.WriteString(fmt.Sprintf(`<text class="subtitle" x="%d" y="%.0f" text-anchor="end">统计单位: 字节</text>
+`, svgWidth-20, footerY))
+	if len(excludeNames) > 0 {
+		sb.WriteString(fmt.Sprintf(`<text class="subtitle" x="%d" y="%.0f" text-anchor="end">已排除: %s</text>
+`, svgWidth-20, footerY+16, strings.Join(excludeNames, ", ")))
 	}
 
 	sb.WriteString(`</svg>`)

@@ -372,7 +372,7 @@ func generateSVG(stats []LangStat, total int) error {
 
 	// SVG 高度 = header(45) + subtitle(20) + bars + padding
 	headerAreaHeight := 110
-	svgContentHeight := headerAreaHeight + totalHeight + 25
+	svgContentHeight := headerAreaHeight + totalHeight + 40
 
 	var sb strings.Builder
 
@@ -462,6 +462,11 @@ func generateSVG(stats []LangStat, total int) error {
 		sb.WriteString(`</g>
 `)
 	}
+
+	// 底部备注
+	footerY := headerAreaHeight + totalHeight + 20
+	sb.WriteString(fmt.Sprintf(`<text class="subtitle" x="%d" y="%d" text-anchor="end">统计单位: 行数（不含空行和注释）</text>
+`, svgWidth-20, footerY))
 
 	sb.WriteString(`</svg>`)
 
