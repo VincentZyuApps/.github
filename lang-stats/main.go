@@ -159,9 +159,6 @@ func calcStats(repos []Repo, token string) ([]LangStat, int64) {
 	totals := make(map[string]int64)
 
 	for _, repo := range repos {
-		if repo.Fork {
-			continue
-		}
 		langs, err := getLanguages(repo.LanguagesURL, token)
 		if err != nil {
 			log.Printf("⚠️  skip %s: %v", repo.Name, err)
