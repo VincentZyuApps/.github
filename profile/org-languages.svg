@@ -35,8 +35,8 @@
 <rect class="bg" width="480" height="704" rx="10"/>
 <text class="title title-anim" x="20" y="30">📊 VincentZyuApps · 语言分布</text>
 <text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 2.1 MB 代码</text>
-<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="68">Auto update: 2026-04-08 21:50:56 (UTC)</text>
-<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="88">自动更新于 2026-04-09 05:50:56 (UTC+8)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="68">Auto update: 2026-04-09 02:51:51 (UTC)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="88">自动更新于 2026-04-09 10:51:51 (UTC+8)</text>
 <clipPath id="top-bar-clip">
   <rect x="20" y="100" width="440" height="12" rx="6"/>
 </clipPath>
