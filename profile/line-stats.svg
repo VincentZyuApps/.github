@@ -33,9 +33,9 @@
 </defs>
 <rect class="bg" width="480" height="762" rx="10"/>
 <text class="header title-anim" x="20" y="30">📏 VincentZyuApps · 代码行数统计</text>
-<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 61,665 行代码（不含空行和注释）</text>
-<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="68">Auto update: 2026-04-19 08:05:17 (UTC)</text>
-<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="88">自动更新于 2026-04-19 16:05:17 (UTC+8)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 62,735 行代码（不含空行和注释）</text>
+<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="68">Auto update: 2026-04-19 10:37:15 (UTC)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="88">自动更新于 2026-04-19 18:37:15 (UTC+8)</text>
 <g class="row" style="animation-delay: 0.3s;">
   <circle cx="30" cy="124" r="5" fill="#3178c6"/>
   <text x="44" y="124" class="lang-name" dominant-baseline="central">TypeScript</text>
@@ -52,43 +52,43 @@
   <rect x="120" y="148" width="0" height="20" fill="#f1e05a" rx="4" opacity="0.85">
     <animate attributeName="width" from="0" to="138" dur="0.8s" begin="0.4s" fill="freeze" />
   </rect>
-  <text x="460" y="158" class="lang-count" dominant-baseline="central" text-anchor="end">11,495</text>
+  <text x="460" y="158" class="lang-count" dominant-baseline="central" text-anchor="end">11,508</text>
 </g>
 <g class="row" style="animation-delay: 0.5s;">
   <circle cx="30" cy="192" r="5" fill="#41b883"/>
   <text x="44" y="192" class="lang-name" dominant-baseline="central">Vue</text>
   <rect class="bar-bg" x="120" y="182" width="290" height="20"/>
   <rect x="120" y="182" width="0" height="20" fill="#41b883" rx="4" opacity="0.85">
-    <animate attributeName="width" from="0" to="96" dur="0.8s" begin="0.5s" fill="freeze" />
+    <animate attributeName="width" from="0" to="98" dur="0.8s" begin="0.5s" fill="freeze" />
   </rect>
-  <text x="460" y="192" class="lang-count" dominant-baseline="central" text-anchor="end">8,002</text>
+  <text x="460" y="192" class="lang-count" dominant-baseline="central" text-anchor="end">8,188</text>
 </g>
 <g class="row" style="animation-delay: 0.6s;">
   <circle cx="30" cy="226" r="5" fill="#3572A5"/>
   <text x="44" y="226" class="lang-name" dominant-baseline="central">Python</text>
   <rect class="bar-bg" x="120" y="216" width="290" height="20"/>
   <rect x="120" y="216" width="0" height="20" fill="#3572A5" rx="4" opacity="0.85">
-    <animate attributeName="width" from="0" to="71" dur="0.8s" begin="0.6s" fill="freeze" />
+    <animate attributeName="width" from="0" to="73" dur="0.8s" begin="0.6s" fill="freeze" />
   </rect>
-  <text x="460" y="226" class="lang-count" dominant-baseline="central" text-anchor="end">5,950</text>
+  <text x="460" y="226" class="lang-count" dominant-baseline="central" text-anchor="end">6,092</text>
 </g>
 <g class="row" style="animation-delay: 0.7s;">
-  <circle cx="30" cy="260" r="5" fill="#3178c6"/>
-  <text x="44" y="260" class="lang-name" dominant-baseline="central">TSX</text>
+  <circle cx="30" cy="260" r="5" fill="#00ADD8"/>
+  <text x="44" y="260" class="lang-name" dominant-baseline="central">Go</text>
   <rect class="bar-bg" x="120" y="250" width="290" height="20"/>
-  <rect x="120" y="250" width="0" height="20" fill="#3178c6" rx="4" opacity="0.85">
-    <animate attributeName="width" from="0" to="24" dur="0.8s" begin="0.7s" fill="freeze" />
+  <rect x="120" y="250" width="0" height="20" fill="#00ADD8" rx="4" opacity="0.85">
+    <animate attributeName="width" from="0" to="29" dur="0.8s" begin="0.7s" fill="freeze" />
   </rect>
-  <text x="460" y="260" class="lang-count" dominant-baseline="central" text-anchor="end">2,035</text>
+  <text x="460" y="260" class="lang-count" dominant-baseline="central" text-anchor="end">2,430</text>
 </g>
 <g class="row" style="animation-delay: 0.8s;">
-  <circle cx="30" cy="294" r="5" fill="#00ADD8"/>
-  <text x="44" y="294" class="lang-name" dominant-baseline="central">Go</text>
+  <circle cx="30" cy="294" r="5" fill="#3178c6"/>
+  <text x="44" y="294" class="lang-name" dominant-baseline="central">TSX</text>
   <rect class="bar-bg" x="120" y="284" width="290" height="20"/>
-  <rect x="120" y="284" width="0" height="20" fill="#00ADD8" rx="4" opacity="0.85">
-    <animate attributeName="width" from="0" to="23" dur="0.8s" begin="0.8s" fill="freeze" />
+  <rect x="120" y="284" width="0" height="20" fill="#3178c6" rx="4" opacity="0.85">
+    <animate attributeName="width" from="0" to="24" dur="0.8s" begin="0.8s" fill="freeze" />
   </rect>
-  <text x="460" y="294" class="lang-count" dominant-baseline="central" text-anchor="end">1,960</text>
+  <text x="460" y="294" class="lang-count" dominant-baseline="central" text-anchor="end">2,035</text>
 </g>
 <g class="row" style="animation-delay: 0.9s;">
   <circle cx="30" cy="328" r="5" fill="#563d7c"/>
@@ -136,31 +136,31 @@
   <text x="460" y="464" class="lang-count" dominant-baseline="central" text-anchor="end">1,042</text>
 </g>
 <g class="row" style="animation-delay: 1.4s;">
-  <circle cx="30" cy="498" r="5" fill="#178600"/>
-  <text x="44" y="498" class="lang-name" dominant-baseline="central">C#</text>
+  <circle cx="30" cy="498" r="5" fill="#e34c26"/>
+  <text x="44" y="498" class="lang-name" dominant-baseline="central">HTML</text>
   <rect class="bar-bg" x="120" y="488" width="290" height="20"/>
-  <rect x="120" y="488" width="0" height="20" fill="#178600" rx="4" opacity="0.85">
-    <animate attributeName="width" from="0" to="2" dur="0.8s" begin="1.4s" fill="freeze" />
+  <rect x="120" y="488" width="0" height="20" fill="#e34c26" rx="4" opacity="0.85">
+    <animate attributeName="width" from="0" to="5" dur="0.8s" begin="1.4s" fill="freeze" />
   </rect>
-  <text x="460" y="498" class="lang-count" dominant-baseline="central" text-anchor="end">243</text>
+  <text x="460" y="498" class="lang-count" dominant-baseline="central" text-anchor="end">440</text>
 </g>
 <g class="row" style="animation-delay: 1.5s;">
-  <circle cx="30" cy="532" r="5" fill="#012456"/>
-  <text x="44" y="532" class="lang-name" dominant-baseline="central">PowerShell</text>
+  <circle cx="30" cy="532" r="5" fill="#178600"/>
+  <text x="44" y="532" class="lang-name" dominant-baseline="central">C#</text>
   <rect class="bar-bg" x="120" y="522" width="290" height="20"/>
-  <rect x="120" y="522" width="0" height="20" fill="#012456" rx="4" opacity="0.85">
+  <rect x="120" y="522" width="0" height="20" fill="#178600" rx="4" opacity="0.85">
     <animate attributeName="width" from="0" to="2" dur="0.8s" begin="1.5s" fill="freeze" />
   </rect>
-  <text x="460" y="532" class="lang-count" dominant-baseline="central" text-anchor="end">207</text>
+  <text x="460" y="532" class="lang-count" dominant-baseline="central" text-anchor="end">243</text>
 </g>
 <g class="row" style="animation-delay: 1.6s;">
-  <circle cx="30" cy="566" r="5" fill="#e34c26"/>
-  <text x="44" y="566" class="lang-name" dominant-baseline="central">HTML</text>
+  <circle cx="30" cy="566" r="5" fill="#012456"/>
+  <text x="44" y="566" class="lang-name" dominant-baseline="central">PowerShell</text>
   <rect class="bar-bg" x="120" y="556" width="290" height="20"/>
-  <rect x="120" y="556" width="0" height="20" fill="#e34c26" rx="4" opacity="0.85">
+  <rect x="120" y="556" width="0" height="20" fill="#012456" rx="4" opacity="0.85">
     <animate attributeName="width" from="0" to="2" dur="0.8s" begin="1.6s" fill="freeze" />
   </rect>
-  <text x="460" y="566" class="lang-count" dominant-baseline="central" text-anchor="end">181</text>
+  <text x="460" y="566" class="lang-count" dominant-baseline="central" text-anchor="end">207</text>
 </g>
 <g class="row" style="animation-delay: 1.7s;">
   <circle cx="30" cy="600" r="5" fill="#555555"/>
