@@ -33,9 +33,9 @@
 </defs>
 <rect class="bg" width="480" height="762" rx="10"/>
 <text class="header title-anim" x="20" y="30">📏 VincentZyuApps · 代码行数统计</text>
-<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 62,735 行代码（不含空行和注释）</text>
-<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="68">Auto update: 2026-04-19 10:37:15 (UTC)</text>
-<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="88">自动更新于 2026-04-19 18:37:15 (UTC+8)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 62,444 行代码（不含空行和注释）</text>
+<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="68">Auto update: 2026-04-19 13:59:15 (UTC)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="88">自动更新于 2026-04-19 21:59:15 (UTC+8)</text>
 <g class="row" style="animation-delay: 0.3s;">
   <circle cx="30" cy="124" r="5" fill="#3178c6"/>
   <text x="44" y="124" class="lang-name" dominant-baseline="central">TypeScript</text>
@@ -52,16 +52,16 @@
   <rect x="120" y="148" width="0" height="20" fill="#f1e05a" rx="4" opacity="0.85">
     <animate attributeName="width" from="0" to="138" dur="0.8s" begin="0.4s" fill="freeze" />
   </rect>
-  <text x="460" y="158" class="lang-count" dominant-baseline="central" text-anchor="end">11,508</text>
+  <text x="460" y="158" class="lang-count" dominant-baseline="central" text-anchor="end">11,495</text>
 </g>
 <g class="row" style="animation-delay: 0.5s;">
   <circle cx="30" cy="192" r="5" fill="#41b883"/>
   <text x="44" y="192" class="lang-name" dominant-baseline="central">Vue</text>
   <rect class="bar-bg" x="120" y="182" width="290" height="20"/>
   <rect x="120" y="182" width="0" height="20" fill="#41b883" rx="4" opacity="0.85">
-    <animate attributeName="width" from="0" to="98" dur="0.8s" begin="0.5s" fill="freeze" />
+    <animate attributeName="width" from="0" to="96" dur="0.8s" begin="0.5s" fill="freeze" />
   </rect>
-  <text x="460" y="192" class="lang-count" dominant-baseline="central" text-anchor="end">8,188</text>
+  <text x="460" y="192" class="lang-count" dominant-baseline="central" text-anchor="end">8,002</text>
 </g>
 <g class="row" style="animation-delay: 0.6s;">
   <circle cx="30" cy="226" r="5" fill="#3572A5"/>
@@ -77,9 +77,9 @@
   <text x="44" y="260" class="lang-name" dominant-baseline="central">Go</text>
   <rect class="bar-bg" x="120" y="250" width="290" height="20"/>
   <rect x="120" y="250" width="0" height="20" fill="#00ADD8" rx="4" opacity="0.85">
-    <animate attributeName="width" from="0" to="29" dur="0.8s" begin="0.7s" fill="freeze" />
+    <animate attributeName="width" from="0" to="25" dur="0.8s" begin="0.7s" fill="freeze" />
   </rect>
-  <text x="460" y="260" class="lang-count" dominant-baseline="central" text-anchor="end">2,430</text>
+  <text x="460" y="260" class="lang-count" dominant-baseline="central" text-anchor="end">2,131</text>
 </g>
 <g class="row" style="animation-delay: 0.8s;">
   <circle cx="30" cy="294" r="5" fill="#3178c6"/>
@@ -140,9 +140,9 @@
   <text x="44" y="498" class="lang-name" dominant-baseline="central">HTML</text>
   <rect class="bar-bg" x="120" y="488" width="290" height="20"/>
   <rect x="120" y="488" width="0" height="20" fill="#e34c26" rx="4" opacity="0.85">
-    <animate attributeName="width" from="0" to="5" dur="0.8s" begin="1.4s" fill="freeze" />
+    <animate attributeName="width" from="0" to="7" dur="0.8s" begin="1.4s" fill="freeze" />
   </rect>
-  <text x="460" y="498" class="lang-count" dominant-baseline="central" text-anchor="end">440</text>
+  <text x="460" y="498" class="lang-count" dominant-baseline="central" text-anchor="end">647</text>
 </g>
 <g class="row" style="animation-delay: 1.5s;">
   <circle cx="30" cy="532" r="5" fill="#178600"/>
