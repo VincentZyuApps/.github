@@ -286,7 +286,7 @@ func generateSVG(stats []LangStat, totalBytes int64) string {
 `, svgWidth, height))
 
 	// 标题
-	sb.WriteString(fmt.Sprintf(`<text class="title title-anim" x="20" y="30">📊 %s · 语言分布</text>
+	sb.WriteString(fmt.Sprintf(`<text class="title title-anim" x="20" y="30">📊 %s · 不同语言的代码字节数占比捏</text>
 `, org))
 	tz, _ := time.LoadLocation("Asia/Shanghai")
 	sb.WriteString(fmt.Sprintf(`<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 %s 代码</text>
