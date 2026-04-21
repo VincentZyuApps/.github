@@ -385,7 +385,7 @@ func updateReadme(readmePath, svgFile string) error {
 	endMarker := "<!-- ORG_LANG_STATS_END -->"
 
 	newSection := fmt.Sprintf(`%s
-### 📊 组织语言分布
+### 📊 不同语言的代码字节数占比捏
 <p align="center">
   <img src="%s" alt="Organization Language Stats" />
 </p>

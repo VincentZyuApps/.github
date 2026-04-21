@@ -412,7 +412,7 @@ func generateSVG(stats []LangStat, total int) error {
 `, svgWidth, svgContentHeight))
 
 	// 标题
-	sb.WriteString(fmt.Sprintf(`<text class="header title-anim" x="20" y="30">📏 %s · 代码行数统计</text>
+	sb.WriteString(fmt.Sprintf(`<text class="header title-anim" x="20" y="30">📏 %s · 不同语言的代码行数排行捏</text>
 `, org))
 	tz, _ := time.LoadLocation("Asia/Shanghai")
 	sb.WriteString(fmt.Sprintf(`<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 %s 行代码（不含空行和注释）</text>

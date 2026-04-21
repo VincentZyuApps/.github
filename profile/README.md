@@ -15,21 +15,21 @@
 > 🤖 本页面统计数据通过 GitHub Actions 自动更新，支持[定时任务、Push 触发、手动执行](../.github/workflows/update.md)三种方式。
 
 <!-- GIT_STATS_START -->
-### 📈 GitHub 统计
+### 📈 GitHub Stat 统计捏
 <p align="center">
   <img src="github-stats.svg" alt="GitHub Stats" />
 </p>
 <!-- GIT_STATS_END -->
 
 <!-- LINE_STATS_START -->
-### 📏 代码行数统计
+### 📏 不同语言的代码行数排行捏
 <p align="center">
   <img src="line-stats.svg" alt="Line Stats" />
 </p>
 <!-- LINE_STATS_END -->
 
 <!-- ORG_LANG_STATS_START -->
-### 📊 组织语言分布
+### 📊 不同语言的代码字节数占比捏
 <p align="center">
   <img src="org-languages.svg" alt="Organization Language Stats" />
 </p>
