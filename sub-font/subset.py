@@ -33,7 +33,7 @@ BASE_CHARS = (
 )
 
 # SVG 文本中用到的中文和特殊字符
-CJK_CHARS = "代码行数统计语言分布共行不含空和注释自动更新于组织·单位字节排除已"
+CJK_CHARS = "代码行数统计语言分布共行不含空和注释自动更新于组织·单位字节排除已不同语言的代码行数排行捏不同语言的代码字节数占比捏"
 
 ALL_CHARS = "".join(sorted(set(BASE_CHARS + CJK_CHARS)))
 
