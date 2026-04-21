@@ -15,7 +15,7 @@
 > 🤖 本页面统计数据通过 GitHub Actions 自动更新，支持[定时任务、Push 触发、手动执行](../.github/workflows/update.md)三种方式。
 
 <!-- GIT_STATS_START -->
-### 📈 GitHub Stat 统计捏
+### 📈 GitHub 统计
 <p align="center">
   <img src="github-stats.svg" alt="GitHub Stats" />
 </p>
