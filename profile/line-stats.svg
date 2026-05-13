@@ -33,9 +33,9 @@
 </defs>
 <rect class="bg" width="480" height="898" rx="10"/>
 <text class="header title-anim" x="20" y="30">📏 VincentZyuApps · 不同语言的代码行数排行捏</text>
-<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 70,678 行代码（不含空行和注释）</text>
-<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="68">Auto update: 2026-05-12 22:58:36 (UTC)</text>
-<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="88">自动更新于 2026-05-13 06:58:36 (UTC+8)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 70,771 行代码（不含空行和注释）</text>
+<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="68">Auto update: 2026-05-13 04:41:47 (UTC)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="88">自动更新于 2026-05-13 12:41:47 (UTC+8)</text>
 <g class="row" style="animation-delay: 0.3s;">
   <circle cx="30" cy="124" r="5" fill="#3178c6"/>
   <text x="44" y="124" class="lang-name" dominant-baseline="central">TypeScript</text>
@@ -77,9 +77,9 @@
   <text x="44" y="260" class="lang-name" dominant-baseline="central">Dart</text>
   <rect class="bar-bg" x="120" y="250" width="290" height="20"/>
   <rect x="120" y="250" width="0" height="20" fill="#00B4AB" rx="4" opacity="0.85">
-    <animate attributeName="width" from="0" to="58" dur="0.8s" begin="0.7s" fill="freeze" />
+    <animate attributeName="width" from="0" to="59" dur="0.8s" begin="0.7s" fill="freeze" />
   </rect>
-  <text x="460" y="260" class="lang-count" dominant-baseline="central" text-anchor="end">4,824</text>
+  <text x="460" y="260" class="lang-count" dominant-baseline="central" text-anchor="end">4,899</text>
 </g>
 <g class="row" style="animation-delay: 0.8s;">
   <circle cx="30" cy="294" r="5" fill="#563d7c"/>
@@ -124,7 +124,7 @@
   <rect x="120" y="420" width="0" height="20" fill="#f34b7d" rx="4" opacity="0.85">
     <animate attributeName="width" from="0" to="21" dur="0.8s" begin="1.2s" fill="freeze" />
   </rect>
-  <text x="460" y="430" class="lang-count" dominant-baseline="central" text-anchor="end">1,795</text>
+  <text x="460" y="430" class="lang-count" dominant-baseline="central" text-anchor="end">1,813</text>
 </g>
 <g class="row" style="animation-delay: 1.3s;">
   <circle cx="30" cy="464" r="5" fill="#b07219"/>
