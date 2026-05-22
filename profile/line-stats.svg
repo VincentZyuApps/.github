@@ -33,9 +33,9 @@
 </defs>
 <rect class="bg" width="480" height="898" rx="10"/>
 <text class="header title-anim" x="20" y="30">📏 VincentZyuApps · 不同语言的代码行数排行捏</text>
-<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 73,996 行代码（不含空行和注释）</text>
-<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="68">Auto update: 2026-05-22 17:49:50 (UTC)</text>
-<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="88">自动更新于 2026-05-23 01:49:50 (UTC+8)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 74,064 行代码（不含空行和注释）</text>
+<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="68">Auto update: 2026-05-22 20:42:01 (UTC)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="88">自动更新于 2026-05-23 04:42:01 (UTC+8)</text>
 <g class="row" style="animation-delay: 0.3s;">
   <circle cx="30" cy="124" r="5" fill="#3178c6"/>
   <text x="44" y="124" class="lang-name" dominant-baseline="central">TypeScript</text>
@@ -70,7 +70,7 @@
   <rect x="120" y="216" width="0" height="20" fill="#41b883" rx="4" opacity="0.85">
     <animate attributeName="width" from="0" to="97" dur="0.8s" begin="0.6s" fill="freeze" />
   </rect>
-  <text x="460" y="226" class="lang-count" dominant-baseline="central" text-anchor="end">8,184</text>
+  <text x="460" y="226" class="lang-count" dominant-baseline="central" text-anchor="end">8,252</text>
 </g>
 <g class="row" style="animation-delay: 0.7s;">
   <circle cx="30" cy="260" r="5" fill="#00B4AB"/>
