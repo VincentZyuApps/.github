@@ -63,7 +63,32 @@ git push
 
 当本地有修改(比如doc修改)需要推送到远程仓库时，推荐使用以下优雅的流程：
 
-### 推荐步骤
+### 快速流程（仅未提交改动时推荐）
+
+适用于本地只有未提交的改动、远程有大量 Actions 自动 commit 的场景，避免 rebase 多轮冲突：
+
+```bash
+# 1. 查看当前修改状态
+git status
+
+# 2. 暂存本地改动
+git stash
+
+# 3. 拉取远程更新
+git pull origin main
+
+# 4. 恢复本地改动
+git stash pop
+
+# 5. 暂存并提交修改
+git add .
+git commit -m "feat: 功能描述"
+
+# 6. 推送修改到远程仓库
+git push origin main
+```
+
+### 完整流程（本地有未推送的 commit 时）
 
 ```bash
 # 1. 查看当前修改状态
