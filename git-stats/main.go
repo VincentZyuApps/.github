@@ -292,7 +292,7 @@ func generateSVG(stats *GitStats) string {
 		{"🤝", "Contributed To", formatNumber(stats.ContributedTo), "#00ADD8"},
 	}
 
-	rowHeight := 34.0
+	rowHeight := 32.0
 	headerHeight := 95.0
 	height := headerHeight + float64(len(rows))*rowHeight + 30
 
@@ -325,8 +325,8 @@ func generateSVG(stats *GitStats) string {
     .bg { fill: #0d1117; }
     .title { font-family: 'LXGW WenKai Mono', 'Inter', 'Segoe UI', sans-serif; font-size: 16px; font-weight: 600; fill: #64b5f6; }
     .subtitle { font-family: 'LXGW WenKai Mono', 'Inter', 'Segoe UI', sans-serif; font-size: 11px; fill: #8b949e; }
-    .stat-label { font-family: 'LXGW WenKai Mono', 'Inter', 'Segoe UI', sans-serif; font-size: 15px; fill: #8b949e; }
-    .stat-value { font-family: 'LXGW WenKai Mono', 'Inter', 'Segoe UI', sans-serif; font-size: 15px; font-weight: 600; fill: #e6edf3; }
+    .stat-label { font-family: 'LXGW WenKai Mono', 'Inter', 'Segoe UI', sans-serif; font-size: 16px; fill: #8b949e; }
+    .stat-value { font-family: 'LXGW WenKai Mono', 'Inter', 'Segoe UI', sans-serif; font-size: 16px; font-weight: 600; fill: #e6edf3; }
     .rank-text { font-family: 'LXGW WenKai Mono', 'Inter', 'Segoe UI', sans-serif; font-size: 22px; font-weight: 700; fill: #64b5f6; }
     .rank-label { font-family: 'LXGW WenKai Mono', 'Inter', 'Segoe UI', sans-serif; font-size: 10px; fill: #8b949e; }
     .rank-ring-bg { fill: none; stroke: #161b22; stroke-width: 6; }
@@ -338,7 +338,7 @@ func generateSVG(stats *GitStats) string {
       from { stroke-dashoffset: %.1f; }
       to { stroke-dashoffset: %.1f; }
     }
-    .stat-icon { font-size: 16px; }
+    .stat-icon { font-size: 18px; }
     @keyframes fadeIn { from { opacity: 0; transform: translateX(-5px); } to { opacity: 1; transform: translateX(0); } }
     @keyframes fadeInDown { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
     .stat-row { animation: fadeIn 0.5s ease forwards; opacity: 0; }
