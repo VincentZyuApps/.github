@@ -22,8 +22,8 @@
     .bg { fill: #0d1117; }
     .title { font-family: 'LXGW WenKai Mono', 'Inter', 'Segoe UI', sans-serif; font-size: 16px; font-weight: 600; fill: #64b5f6; }
     .subtitle { font-family: 'LXGW WenKai Mono', 'Inter', 'Segoe UI', sans-serif; font-size: 11px; fill: #8b949e; }
-    .stat-label { font-family: 'LXGW WenKai Mono', 'Inter', 'Segoe UI', sans-serif; font-size: 13px; fill: #8b949e; }
-    .stat-value { font-family: 'LXGW WenKai Mono', 'Inter', 'Segoe UI', sans-serif; font-size: 13px; font-weight: 600; fill: #e6edf3; }
+    .stat-label { font-family: 'LXGW WenKai Mono', 'Inter', 'Segoe UI', sans-serif; font-size: 15px; fill: #8b949e; }
+    .stat-value { font-family: 'LXGW WenKai Mono', 'Inter', 'Segoe UI', sans-serif; font-size: 15px; font-weight: 600; fill: #e6edf3; }
     .rank-text { font-family: 'LXGW WenKai Mono', 'Inter', 'Segoe UI', sans-serif; font-size: 22px; font-weight: 700; fill: #64b5f6; }
     .rank-label { font-family: 'LXGW WenKai Mono', 'Inter', 'Segoe UI', sans-serif; font-size: 10px; fill: #8b949e; }
     .rank-ring-bg { fill: none; stroke: #161b22; stroke-width: 6; }
@@ -35,7 +35,7 @@
       from { stroke-dashoffset: 251.3; }
       to { stroke-dashoffset: 188.5; }
     }
-    .stat-icon { font-size: 14px; }
+    .stat-icon { font-size: 16px; }
     @keyframes fadeIn { from { opacity: 0; transform: translateX(-5px); } to { opacity: 1; transform: translateX(0); } }
     @keyframes fadeInDown { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
     .stat-row { animation: fadeIn 0.5s ease forwards; opacity: 0; }
@@ -45,8 +45,8 @@
 <rect class="bg" width="480" height="397" rx="10"/>
 <text class="title title-anim" x="20" y="28">📊 VincentZyu233 · GitHub Stats</text>
 <text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="44">VincentZyu233 + VincentZyuApps</text>
-<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="64">Auto update: 2026-05-28 10:37:41 (UTC)</text>
-<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="84">自动更新于 2026-05-28 18:37:41 (UTC+8)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="64">Auto update: 2026-05-28 11:07:59 (UTC)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="84">自动更新于 2026-05-28 19:07:59 (UTC+8)</text>
 <g class="stat-row" style="animation-delay: 0.0s;">
   <text class="stat-icon" x="24" y="111.0">⭐</text>
   <text class="stat-label" x="46" y="111.0">Total Stars</text>
@@ -65,7 +65,7 @@
 <g class="stat-row" style="animation-delay: 0.3s;">
   <text class="stat-icon" x="24" y="213.0">📝</text>
   <text class="stat-label" x="46" y="213.0">Total Commits</text>
-  <text class="stat-value" x="350" y="213.0" text-anchor="end">550</text>
+  <text class="stat-value" x="350" y="213.0" text-anchor="end">552</text>
 </g>
 <g class="stat-row" style="animation-delay: 0.4s;">
   <text class="stat-icon" x="24" y="247.0">🔃</text>
@@ -85,7 +85,7 @@
 <g class="stat-row" style="animation-delay: 0.7s;">
   <text class="stat-icon" x="24" y="349.0">🤝</text>
   <text class="stat-label" x="46" y="349.0">Contributed To</text>
-  <text class="stat-value" x="350" y="349.0" text-anchor="end">37</text>
+  <text class="stat-value" x="350" y="349.0" text-anchor="end">38</text>
 </g>
 <circle class="rank-ring-bg" cx="420" cy="208" r="40"/>
 <circle class="rank-ring" cx="420" cy="208" r="40"/>
