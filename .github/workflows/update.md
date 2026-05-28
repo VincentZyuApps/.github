@@ -70,20 +70,15 @@ git push
 ```bash
 # 1. 查看当前修改状态
 git status
-
 # 2. 暂存本地改动
 git stash
-
 # 3. 拉取远程更新
 git pull origin main
-
 # 4. 恢复本地改动
 git stash pop
-
 # 5. 暂存并提交修改
 git add .
 git commit -m "feat: 功能描述"
-
 # 6. 推送修改到远程仓库
 git push origin main
 ```
@@ -93,18 +88,14 @@ git push origin main
 ```bash
 # 1. 查看当前修改状态
 git status
-
 # 2. 暂存所有修改
 git add .
-
 # 3. 提交修改（使用详细的提交信息）
 git commit -m "feat: 功能描述
 - 详细说明 1
 - 详细说明 2"
-
 # 4. 拉取远程更新（使用 rebase 保持提交历史整洁）
 git pull --rebase origin main
-
 # 5. 推送修改到远程仓库
 git push origin main
 ```

@@ -371,7 +371,7 @@ func generateSVG(stats *GitStats) string {
 `, delay))
 		sb.WriteString(fmt.Sprintf(`  <text class="stat-icon" x="24" y="%.1f">%s</text>
 `, y+16, row.Icon))
-		sb.WriteString(fmt.Sprintf(`  <text class="stat-label" x="46" y="%.1f">%s</text>
+		sb.WriteString(fmt.Sprintf(`  <text class="stat-label" x="54" y="%.1f">%s</text>
 `, y+16, row.Label))
 		sb.WriteString(fmt.Sprintf(`  <text class="stat-value" x="%.0f" y="%.1f" text-anchor="end">%s</text>
 `, float64(svgWidth)-130, y+16, row.Value))

@@ -10,3 +10,6 @@ tmp/
 # Python 虚拟环境
 .venv/
 venv/
+
+# Go 二进制
+*.exe
