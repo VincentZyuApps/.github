@@ -22,8 +22,8 @@ const (
 	org         = "VincentZyuApps"
 	maxLangs    = 114514       // 2026年3月21日20:36:48 改成 无限制~
 	svgWidth    = 480          // SVG 宽度
-	barHeight   = 28           // 每行高度
-	barPadding  = 6            // 行间距
+	barHeight   = 32           // 每行高度
+	barPadding  = 2            // 行间距
 	outputDir   = "../profile" // 输出目录
 	svgFileName = "org-languages.svg"
 )
@@ -269,8 +269,8 @@ func generateSVG(stats []LangStat, totalBytes int64) string {
     .bg { fill: #0d1117; rx: 10; }
     .title { font-family: 'LXGW WenKai Mono', 'Inter', 'Segoe UI', sans-serif; font-size: 16px; font-weight: 600; fill: #64b5f6; }
     .subtitle { font-family: 'LXGW WenKai Mono', 'Inter', 'Segoe UI', sans-serif; font-size: 11px; fill: #8b949e; }
-    .lang-name { font-family: 'LXGW WenKai Mono', 'Inter', 'Segoe UI', sans-serif; font-size: 12px; fill: #e6edf3; }
-    .lang-pct { font-family: 'LXGW WenKai Mono', 'Inter', 'Segoe UI', sans-serif; font-size: 11px; fill: #8b949e; }
+    .lang-name { font-family: 'LXGW WenKai Mono', 'Inter', 'Segoe UI', sans-serif; font-size: 14px; fill: #e6edf3; }
+    .lang-pct { font-family: 'LXGW WenKai Mono', 'Inter', 'Segoe UI', sans-serif; font-size: 13px; fill: #8b949e; }
     .bar-bg { fill: #161b22; rx: 4; }
     .top-bar-bg { fill: #161b22; rx: 6; }
     @keyframes fadeInRight { from { opacity: 0; transform: translateX(-8px); } to { opacity: 1; transform: translateX(0); } }
@@ -328,7 +328,7 @@ func generateSVG(stats []LangStat, totalBytes int64) string {
 `, delay))
 
 		// 语言颜色圆点
-		sb.WriteString(fmt.Sprintf(`  <circle cx="30" cy="%.1f" r="5" fill="%s"/>
+		sb.WriteString(fmt.Sprintf(`  <circle cx="30" cy="%.1f" r="6" fill="%s"/>
 `, y+float64(barHeight)/2, s.Color))
 
 		// 语言名

@@ -25,8 +25,8 @@ const (
 	outputDir   = "../profile"
 	svgFileName = "line-stats.svg"
 	svgWidth    = 480
-	barHeight   = 28
-	barPadding  = 6
+	barHeight   = 32
+	barPadding  = 2
 )
 
 // 需要忽略的文件夹和文件
@@ -396,8 +396,8 @@ func generateSVG(stats []LangStat, total int) error {
     .bg { fill: #0d1117; }
     .header { font-family: 'LXGW WenKai Mono', 'Inter', 'Segoe UI', sans-serif; font-size: 16px; font-weight: 600; fill: #64b5f6; }
     .subtitle { font-family: 'LXGW WenKai Mono', 'Inter', 'Segoe UI', sans-serif; font-size: 11px; fill: #8b949e; }
-    .lang-name { font-family: 'LXGW WenKai Mono', 'Inter', 'Segoe UI', sans-serif; font-size: 12px; fill: #e6edf3; }
-    .lang-count { font-family: 'LXGW WenKai Mono', 'Inter', 'Segoe UI', sans-serif; font-size: 12px; font-weight: 600; fill: #e6edf3; }
+    .lang-name { font-family: 'LXGW WenKai Mono', 'Inter', 'Segoe UI', sans-serif; font-size: 14px; fill: #e6edf3; }
+    .lang-count { font-family: 'LXGW WenKai Mono', 'Inter', 'Segoe UI', sans-serif; font-size: 14px; font-weight: 600; fill: #e6edf3; }
     .bar-bg { fill: #161b22; rx: 4; }
     @keyframes fadeInRight { from { opacity: 0; transform: translateX(-8px); } to { opacity: 1; transform: translateX(0); } }
     @keyframes fadeInDown { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
@@ -438,7 +438,7 @@ func generateSVG(stats []LangStat, total int) error {
 `, delay))
 
 		// 语言颜色圆点
-		sb.WriteString(fmt.Sprintf(`  <circle cx="30" cy="%d" r="5" fill="%s"/>
+		sb.WriteString(fmt.Sprintf(`  <circle cx="30" cy="%d" r="6" fill="%s"/>
 `, y+barHeight/2, stat.Color))
 
 		// 语言名称
