@@ -45,8 +45,8 @@
 <rect class="bg" width="480" height="381" rx="10"/>
 <text class="title title-anim" x="20" y="28">📊 VincentZyu233 · GitHub Stats</text>
 <text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="44">VincentZyu233 + VincentZyuApps</text>
-<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="64">Auto update: 2026-05-28 22:52:47 (UTC)</text>
-<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="84">自动更新于 2026-05-29 06:52:47 (UTC+8)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="64">Auto update: 2026-05-29 04:53:21 (UTC)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="84">自动更新于 2026-05-29 12:53:21 (UTC+8)</text>
 <g class="stat-row" style="animation-delay: 0.0s;">
   <text class="stat-icon" x="24" y="111.0">⭐</text>
   <text class="stat-label" x="54" y="111.0">Total Stars</text>
@@ -65,7 +65,7 @@
 <g class="stat-row" style="animation-delay: 0.3s;">
   <text class="stat-icon" x="24" y="207.0">📝</text>
   <text class="stat-label" x="54" y="207.0">Total Commits</text>
-  <text class="stat-value" x="350" y="207.0" text-anchor="end">557</text>
+  <text class="stat-value" x="350" y="207.0" text-anchor="end">558</text>
 </g>
 <g class="stat-row" style="animation-delay: 0.4s;">
   <text class="stat-icon" x="24" y="239.0">🔃</text>
