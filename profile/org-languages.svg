@@ -35,8 +35,8 @@
 <rect class="bg" width="480" height="1044" rx="10"/>
 <text class="title title-anim" x="20" y="30">📊 VincentZyuApps · 不同语言的代码字节数占比捏</text>
 <text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 3.5 MB 代码</text>
-<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="68">Auto update: 2026-06-16 17:07:18 (UTC)</text>
-<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="88">自动更新于 2026-06-17 01:07:18 (UTC+8)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="68">Auto update: 2026-06-16 21:10:33 (UTC)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="88">自动更新于 2026-06-17 05:10:33 (UTC+8)</text>
 <clipPath id="top-bar-clip">
   <rect x="20" y="100" width="440" height="12" rx="6"/>
 </clipPath>
@@ -48,7 +48,7 @@
 <rect x="241.7" y="100" width="0" height="12" fill="#3572A5">
   <animate attributeName="width" from="0" to="70.8" dur="0.6s" begin="0.35s" fill="freeze" />
 </rect>
-<rect x="312.5" y="100" width="0" height="12" fill="#f1e05a">
+<rect x="312.6" y="100" width="0" height="12" fill="#f1e05a">
   <animate attributeName="width" from="0" to="42.4" dur="0.6s" begin="0.40s" fill="freeze" />
 </rect>
 <rect x="355.0" y="100" width="0" height="12" fill="#00B4AB">
@@ -141,7 +141,7 @@
   <text class="lang-name" x="44" y="230.0">JavaScript</text>
   <rect class="bar-bg" x="160" y="214.0" width="240" height="24"/>
   <rect x="160" y="214.0" width="0" height="24" rx="4" fill="#f1e05a" opacity="0.85">
-    <animate attributeName="width" from="0" to="46.0" dur="0.8s" begin="0.6s" fill="freeze" />
+    <animate attributeName="width" from="0" to="45.9" dur="0.8s" begin="0.6s" fill="freeze" />
   </rect>
   <text class="lang-pct" x="410" y="230.0">9.6%</text>
 </g>
