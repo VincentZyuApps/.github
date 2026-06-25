@@ -6,7 +6,7 @@ on:
   workflow_dispatch:           # 允许手动触发
   push:
     paths:
-      - 'line-stats/**'       # Go 代码变更时也触发
+      - 'svg/line-stats/**'       # Go 代码变更时也触发
 
 jobs:
   update-line-stats:
@@ -27,7 +27,7 @@ jobs:
       - name: Run line stats generator
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        working-directory: ./line-stats
+        working-directory: ./svg/line-stats
         run: go run main.go
 
       - name: Commit and push changes

@@ -1,6 +1,6 @@
 """
 本地运行 SVG 出图流程
-按顺序执行: 字体子集化 -> lang-stats -> git-stats -> line-stats
+按顺序执行: 字体子集化 -> byte-stats -> git-stats -> line-stats
 """
 
 import os
@@ -46,24 +46,24 @@ def main():
 
     run_cmd(
         [sys.executable, "subset.py"],
-        cwd=ROOT_DIR / "sub-font",
+        cwd=ROOT_DIR / "scripts",
     )
 
     run_cmd(
         ["go", "run", "main.go"] + go_proxy_args,
-        cwd=ROOT_DIR / "lang-stats",
+        cwd=ROOT_DIR / "svg" / "byte-stats",
         env=env,
     )
 
     run_cmd(
         ["go", "run", "main.go"] + go_proxy_args,
-        cwd=ROOT_DIR / "git-stats",
+        cwd=ROOT_DIR / "svg" / "git-stats",
         env=env,
     )
 
     run_cmd(
         ["go", "run", "main.go"] + go_proxy_args,
-        cwd=ROOT_DIR / "line-stats",
+        cwd=ROOT_DIR / "svg" / "line-stats",
         env=env,
     )
 

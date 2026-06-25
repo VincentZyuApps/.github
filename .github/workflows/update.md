@@ -1,4 +1,4 @@
-![.github](https://socialify.git.ci/VincentZyuApps/.github/image?custom_description=%F0%9F%8F%A0+VincentZyuApps+%E7%BB%84%E7%BB%87%E9%97%A8%E9%9D%A2%E4%BB%93%E5%BA%93+-+%F0%9F%A4%96+%E4%BD%BF%E7%94%A8+GitHub+Actions+%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E7%BB%9F%E8%AE%A1%E6%95%B0%E6%8D%AE+SVG+%E5%9B%BE%E8%A1%A8%EF%BC%88Github+Stats%2C+Line+Stats.+Lang+Stats%29+Here+are+some+Workflow+YML+Files+%E2%86%93&custom_language=GitHub+Actions&description=1&forks=1&issues=1&language=1&name=1&owner=1&pulls=1&stargazers=1&theme=Light)
+![.github](https://socialify.git.ci/VincentZyuApps/.github/image?custom_description=%F0%9F%8F%A0+VincentZyuApps+%E7%BB%84%E7%BB%87%E9%97%A8%E9%9D%A2%E4%BB%93%E5%BA%93+-+%F0%9F%A4%96+%E4%BD%BF%E7%94%A8+GitHub+Actions+%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E7%BB%9F%E8%AE%A1%E6%95%B0%E6%8D%AE+SVG+%E5%9B%BE%E8%A1%A8%EF%BC%88Github+Stats%2C+Line+Stats%2C+Byte+Stats%29+Here+are+some+Workflow+YML+Files+%E2%86%93&custom_language=GitHub+Actions&description=1&forks=1&issues=1&language=1&name=1&owner=1&pulls=1&stargazers=1&theme=Light)
 
 # 工作流更新方式说明
 
@@ -10,18 +10,20 @@
 
 | 工作流 | 执行时间 | 说明 |
 |--------|---------|------|
-| `update-lang-stats.yml` | 每 3 小时（0:00, 3:00, 6:00...） | 组织语言分布统计 |
+| `update-byte-stats.yml` | 每 3 小时（0:00, 3:00, 6:00...） | 代码字节统计 |
 | `update-git-stats.yml` | 每 3 小时（0:30, 3:30, 6:30...） | GitHub 统计信息 |
 | `update-line-stats.yml` | 每 3 小时（1:00, 4:00, 7:00...） | 代码行数统计 |
+| `update-3d-stats.yml` | 每 6 小时（0:45, 6:45, 12:45...） | 3D GitHub 贡献图与统计面板 |
 
 ## 🔄 Push 触发
 
 当代码库中相关文件变更时，对应的工作流会自动执行：
 
-- `update-font.yml`: 当 `sub-font/**` 或 `assets/*.ttf` 变更时触发
-- `update-lang-stats.yml`: 当 `lang-stats/**` 变更时触发
-- `update-git-stats.yml`: 当 `git-stats/**` 变更时触发
-- `update-line-stats.yml`: 当 `line-stats/**` 变更时触发
+- `update-font.yml`: 当 `scripts/**` 或 `assets/*.ttf` 变更时触发
+- `update-byte-stats.yml`: 当 `svg/byte-stats/**` 变更时触发
+- `update-git-stats.yml`: 当 `svg/git-stats/**` 变更时触发
+- `update-line-stats.yml`: 当 `svg/line-stats/**` 变更时触发
+- `update-3d-stats.yml`: 当 `conf/profile-3d-night.json`、`profile/README.md` 或 workflow 自身变更时触发
 
 ### Commit Message 触发 update-all
 
@@ -32,7 +34,7 @@ git commit -m "update-all"
 git push
 ```
 
-这会执行 `update-all.yml`，一次性更新字体、语言统计、GitHub统计和代码行数统计。
+这会执行 `update-all.yml`，一次性更新字体、代码字节统计、GitHub 统计、代码行数统计和 3D GitHub 贡献图。
 
 
 
@@ -46,11 +48,12 @@ git push
 4. 选择分支并点击 **Run workflow**
 
 支持手动触发的工作流：
-- `update-all.yml`: 更新所有统计（包括字体子集化）
+- `update-all.yml`: 更新所有统计（包括字体子集化和 3D GitHub 贡献图）
 - `update-font.yml`: 仅更新字体子集
-- `update-lang-stats.yml`: 仅更新语言统计
+- `update-byte-stats.yml`: 仅更新代码字节统计
 - `update-git-stats.yml`: 仅更新 GitHub 统计
 - `update-line-stats.yml`: 仅更新代码行数统计
+- `update-3d-stats.yml`: 仅更新 3D GitHub 贡献图
 
 ## 💡 使用建议
 
@@ -119,14 +122,14 @@ git push origin main
 
 ### ⚠️ 本项目特殊情况：生成文件冲突
 
-本项目的 `profile/*.svg`、`sub-font/output/` 是由 Actions 自动生成的，每次 Actions 跑完都会提交新版本。
+本项目的 `profile/*.svg`、`scripts/output/` 是由 Actions 自动生成的，每次 Actions 跑完都会提交新版本。
 本地 push 时 `git pull --rebase` 经常会与这些文件产生冲突，**不需要手动合并，直接用本地版本覆盖即可**：
 
 ```bash
 # 一键解决所有生成文件冲突（用本地版本）
-git checkout --ours profile/github-stats.svg profile/line-stats.svg profile/org-languages.svg
-git checkout --ours sub-font/output/LXGWWenKaiMono-Medium.subset.woff2 sub-font/output/LXGWWenKaiMono-Regular.subset.woff2 sub-font/output/font_face.css
-git add profile/ sub-font/output/
+git checkout --ours profile/github-stats.svg profile/line-stats.svg profile/byte-stats.svg profile/profile-3d-night.svg
+git checkout --ours scripts/output/LXGWWenKaiMono-Medium.subset.woff2 scripts/output/LXGWWenKaiMono-Regular.subset.woff2 scripts/output/font_face.css
+git add profile/ scripts/output/
 git rebase --continue
 ```
 

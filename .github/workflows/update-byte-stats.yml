@@ -1,4 +1,4 @@
-name: Update Organization Language Stats
+name: Update Code Byte Stats
 
 on:
   schedule:
@@ -6,10 +6,10 @@ on:
   workflow_dispatch:         # 允许手动触发
   push:
     paths:
-      - 'lang-stats/**'     # Go 代码变更时也触发
+      - 'svg/byte-stats/**'     # Go 代码变更时也触发
 
 jobs:
-  update-lang-stats:
+  update-byte-stats:
     runs-on: ubuntu-latest
     permissions:
       contents: write        # 需要写权限来提交文件
@@ -24,19 +24,19 @@ jobs:
           go-version: '1.21'
           cache: false
 
-      - name: Run language stats generator
+      - name: Run byte stats generator
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        working-directory: ./lang-stats
+        working-directory: ./svg/byte-stats
         run: go run main.go
 
       - name: Commit and push changes
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add -f profile/org-languages.svg profile/README.md
+          git add -f profile/byte-stats.svg profile/README.md
           git diff --staged --quiet && exit 0
-          git commit -m "chore: auto-update org language stats [skip ci]"
+          git commit -m "chore: auto-update byte stats [skip ci]"
           for i in 1 2 3; do
             git pull --rebase origin main && git push && break
             echo "Retry $i..."

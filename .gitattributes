@@ -1,3 +1,3 @@
 profile/*.svg merge=ours
-sub-font/output/*.woff2 merge=ours
-sub-font/output/font_face.css merge=ours
+scripts/output/*.woff2 merge=ours
+scripts/output/font_face.css merge=ours

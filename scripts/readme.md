@@ -1,5 +1,5 @@
 ```shell
-uv venv --python 3.12
+uv venv --python 3.13
 uv pip install fonttools brotli
 uv pip freeze > ./requirements.txt
 uv run pip install -r requirements.txt

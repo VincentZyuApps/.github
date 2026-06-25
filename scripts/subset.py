@@ -124,7 +124,7 @@ def main():
 
     print("\n✅ 完成！")
     print(f"   输出目录: {os.path.abspath(OUTPUT_DIR)}")
-    print("   Go 程序通过 os.ReadFile(\"../sub-font/output/font_face.css\") 即可使用。")
+    print("   Go 程序通过 os.ReadFile(\"../../scripts/output/font_face.css\") 即可使用。")
 
 
 if __name__ == "__main__":

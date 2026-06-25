@@ -20,7 +20,7 @@ const (
 	org         = "VincentZyuApps"
 	user        = "VincentZyu233" // 个人账号（用于查询个人贡献数据）
 	svgWidth    = 480
-	outputDir   = "../profile"
+	outputDir   = "../../profile"
 	svgFileName = "github-stats.svg"
 )
 
@@ -310,7 +310,7 @@ func generateSVG(stats *GitStats) string {
 `, svgWidth, height, svgWidth, height))
 
 	// 读取字体 CSS
-	fontCSS, fontErr := os.ReadFile("../sub-font/output/font_face.css")
+	fontCSS, fontErr := os.ReadFile("../../scripts/output/font_face.css")
 	if fontErr != nil {
 		log.Printf("⚠️  无法读取字体 CSS: %v (将使用 fallback 字体)", fontErr)
 		fontCSS = []byte{}
@@ -352,7 +352,7 @@ func generateSVG(stats *GitStats) string {
 `, svgWidth, height))
 
 	// 标题
-	sb.WriteString(fmt.Sprintf(`<text class="title title-anim" x="20" y="28">📊 %s · GitHub Stats</text>
+	sb.WriteString(fmt.Sprintf(`<text class="title title-anim" x="20" y="28">📈 %s · GitHub Stats</text>
 `, user))
 	tz, _ := time.LoadLocation("Asia/Shanghai")
 	sb.WriteString(fmt.Sprintf(`<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="44">%s + %s</text>
@@ -451,12 +451,12 @@ var (
 
 func main() {
 	flag.StringVar(&proxyURL, "proxy", "", "HTTP proxy URL (e.g. http://192.168.31.233:7890)")
-	flag.BoolVar(&useTmp, "tmp", false, "Output to ../tmp instead of ../profile")
+	flag.BoolVar(&useTmp, "tmp", false, "Output to ../../tmp instead of ../../profile")
 	flag.Parse()
 
 	if useTmp {
-		actualOutputDir = "../tmp"
-		log.Println("📁 Output directory: ../tmp")
+		actualOutputDir = "../../tmp"
+		log.Println("📁 Output directory: ../../tmp")
 	} else {
 		actualOutputDir = outputDir
 	}

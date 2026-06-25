@@ -28,12 +28,17 @@
 </p>
 <!-- LINE_STATS_END -->
 
-<!-- ORG_LANG_STATS_START -->
+<!-- BYTE_STATS_START -->
 ### 📊 不同语言的代码字节数占比捏
 <p align="center">
-  <img src="org-languages.svg" alt="Organization Language Stats" />
+  <img src="byte-stats.svg" alt="Byte Stats" />
 </p>
-<!-- ORG_LANG_STATS_END -->
+<!-- BYTE_STATS_END -->
+
+### 🎨 3D GitHub 贡献图
+<p align="center">
+  <img src="profile-3d-night.svg" alt="3D GitHub Contribution Stats" />
+</p>
 
 ### 🔥 提交统计
 [![GitHub Streak](https://streak-stats.demolab.com?user=VincentZyu233&theme=tokyonight&hide_border=true&background=0a1929&ring=64b5f6&fire=1976d2&currStreakLabel=64b5f6&sideLabels=64b5f6&currStreakNum=ffffff&sideNums=ffffff&dates=ffffff)](https://github.com/VincentZyu233)

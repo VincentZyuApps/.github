@@ -31,11 +31,11 @@ jobs:
           python-version: '3.12'
 
       - name: Install font dependencies
-        working-directory: ./sub-font
+        working-directory: ./scripts
         run: pip install -r requirements.txt
 
       - name: Run font subset
-        working-directory: ./sub-font
+        working-directory: ./scripts
         run: python subset.py
 
       # ===== Go 出图 =====
@@ -45,30 +45,48 @@ jobs:
           go-version: '1.21'
           cache: false
 
-      - name: Run lang-stats
+      - name: Run byte-stats
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        working-directory: ./lang-stats
+        working-directory: ./svg/byte-stats
         run: go run main.go
 
       - name: Run git-stats
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        working-directory: ./git-stats
+        working-directory: ./svg/git-stats
         run: go run main.go
 
       - name: Run line-stats
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        working-directory: ./line-stats
+        working-directory: ./svg/line-stats
         run: go run main.go
+
+      - name: Generate 3D contribution stats
+        uses: VincentZyuApps/github-profile-3d-contrib@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: VincentZyu233
+          ORG_NAME: VincentZyuApps
+          ORG_INCLUDE_FORKS: 'true'
+          PIE_LANG_SOURCE: org
+          FOOTER_STAR_SOURCE: org
+          FOOTER_FORK_SOURCE: org
+          FOOTER_REPO_SOURCE: org
+          SETTING_JSON: conf/profile-3d-night.json
+
+      - name: Copy generated 3D svg
+        run: |
+          mkdir -p profile
+          cp profile-3d-contrib/profile-3d-night.svg profile/
 
       # ===== 提交 =====
       - name: Commit and push changes
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add -f sub-font/output/ profile/
+          git add -f scripts/output/ profile/
           git diff --staged --quiet && exit 0
           git commit -m "chore: auto-update all stats [skip ci]"
           for i in 1 2 3; do

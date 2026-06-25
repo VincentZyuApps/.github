@@ -1,8 +1,8 @@
 ```shell
 cd VincentZyuApps.github
 # cd D:\aaaStuffsaaa\from_git\github\VincentZyuApps.github
-cd sub-font
-uv venv --python 3.12
+cd scripts
+uv venv --python 3.13
 # uv pip install fonttools brotli
 # uv pip freeze > ./requirements.txt
 uv run pip install -r requirements.txt
@@ -12,17 +12,17 @@ $env:GH_TOKEN = "ghp_你的token"
 
 cd ..
 # cd D:\aaaStuffsaaa\from_git\github\VincentZyuApps.github
-cd line-stats
+cd svg/line-stats
 go run main.go --proxy http://192.168.31.233:7890 --tmp
 
-cd ..
+cd ..\..
 # cd D:\aaaStuffsaaa\from_git\github\VincentZyuApps.github
-cd lang-stats
+cd svg/byte-stats
 go run main.go --proxy http://192.168.31.233:7890 --tmp
 
-cd ..
+cd ..\..
 # cd D:\aaaStuffsaaa\from_git\github\VincentZyuApps.github
-cd git-stats
+cd svg/git-stats
 go run main.go --proxy http://192.168.31.233:7890 --tmp
 
 

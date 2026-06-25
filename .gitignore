@@ -1,15 +1,19 @@
-# 自动生成的文件（由 GitHub Action 维护）
-profile/org-languages.svg
+# 🤖 自动生成的 SVG 文件（由 GitHub Actions 维护）
+profile/byte-stats.svg
 profile/personal-languages.svg
 profile/github-stats.svg
 profile/line-stats.svg
+profile/profile-3d-night.svg
 
-# 本地调试输出
-tmp/
+# 🧪 本地调试输出 / 临时目录
+**/tmp/
+**/temp/
+**/.cache/
 
-# Python 虚拟环境
-.venv/
-venv/
+# 🐍 Python 虚拟环境 / 编译缓存
+**/.venv/
+**/venv/
+**/__pycache__/
 
-# Go 二进制
+# 🧱 Go 本地构建产物
 *.exe

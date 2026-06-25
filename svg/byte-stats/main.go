@@ -20,12 +20,12 @@ import (
 
 const (
 	org         = "VincentZyuApps"
-	maxLangs    = 114514       // 2026年3月21日20:36:48 改成 无限制~
-	svgWidth    = 480          // SVG 宽度
-	barHeight   = 32           // 每行高度
-	barPadding  = 2            // 行间距
-	outputDir   = "../profile" // 输出目录
-	svgFileName = "org-languages.svg"
+	maxLangs    = 114514          // 2026年3月21日20:36:48 改成 无限制~
+	svgWidth    = 480             // SVG 宽度
+	barHeight   = 32              // 每行高度
+	barPadding  = 2               // 行间距
+	outputDir   = "../../profile" // 输出目录
+	svgFileName = "byte-stats.svg"
 )
 
 // 排除的语言（占比过大导致其他语言看不清）
@@ -254,7 +254,7 @@ func generateSVG(stats []LangStat, totalBytes int64) string {
 `, svgWidth, height, svgWidth, height))
 
 	// 读取字体 CSS
-	fontCSS, err := os.ReadFile("../sub-font/output/font_face.css")
+	fontCSS, err := os.ReadFile("../../scripts/output/font_face.css")
 	if err != nil {
 		log.Printf("⚠️  无法读取字体 CSS: %v (将使用 fallback 字体)", err)
 		fontCSS = []byte{}
@@ -381,13 +381,13 @@ func updateReadme(readmePath, svgFile string) error {
 	text := string(content)
 
 	// 标记区域
-	startMarker := "<!-- ORG_LANG_STATS_START -->"
-	endMarker := "<!-- ORG_LANG_STATS_END -->"
+	startMarker := "<!-- BYTE_STATS_START -->"
+	endMarker := "<!-- BYTE_STATS_END -->"
 
 	newSection := fmt.Sprintf(`%s
 ### 📊 不同语言的代码字节数占比捏
 <p align="center">
-  <img src="%s" alt="Organization Language Stats" />
+  <img src="%s" alt="Byte Stats" />
 </p>
 %s`, startMarker, svgFile, endMarker)
 
@@ -421,12 +421,12 @@ var (
 
 func main() {
 	flag.StringVar(&proxyURL, "proxy", "", "HTTP proxy URL (e.g. http://192.168.31.233:7890)")
-	flag.BoolVar(&useTmp, "tmp", false, "Output to ../tmp instead of ../profile")
+	flag.BoolVar(&useTmp, "tmp", false, "Output to ../../tmp instead of ../../profile")
 	flag.Parse()
 
 	if useTmp {
-		actualOutputDir = "../tmp"
-		log.Println("📁 Output directory: ../tmp")
+		actualOutputDir = "../../tmp"
+		log.Println("📁 Output directory: ../../tmp")
 	} else {
 		actualOutputDir = outputDir
 	}
@@ -482,7 +482,7 @@ func main() {
 	}
 
 	// 打印统计结果
-	log.Println("\n📊 语言统计排行：")
+	log.Println("\n📊 代码字节统计排行：")
 	for i, s := range stats {
 		log.Printf("  %2d. %-15s %8s  %5.1f%%", i+1, s.Name, formatBytes(s.Bytes), s.Percent)
 	}

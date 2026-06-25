@@ -22,7 +22,7 @@ import (
 
 const (
 	org         = "VincentZyuApps"
-	outputDir   = "../profile"
+	outputDir   = "../../profile"
 	svgFileName = "line-stats.svg"
 	svgWidth    = 480
 	barHeight   = 32
@@ -121,12 +121,12 @@ var actualOutputDir string
 func main() {
 	// 解析命令行参数
 	flag.StringVar(&proxyURL, "proxy", "", "HTTP proxy URL (e.g. http://192.168.31.233:7890)")
-	flag.BoolVar(&useTmp, "tmp", false, "Output to ../tmp instead of ../profile")
+	flag.BoolVar(&useTmp, "tmp", false, "Output to ../../tmp instead of ../../profile")
 	flag.Parse()
 
 	if useTmp {
-		actualOutputDir = "../tmp"
-		fmt.Println("Output directory: ../tmp")
+		actualOutputDir = "../../tmp"
+		fmt.Println("Output directory: ../../tmp")
 	} else {
 		actualOutputDir = outputDir
 	}
@@ -381,7 +381,7 @@ func generateSVG(stats []LangStat, total int) error {
 `, svgWidth, svgContentHeight, svgWidth, svgContentHeight))
 
 	// 读取字体 CSS
-	fontCSS, err := os.ReadFile("../sub-font/output/font_face.css")
+	fontCSS, err := os.ReadFile("../../scripts/output/font_face.css")
 	if err != nil {
 		log.Printf("⚠️  无法读取字体 CSS: %v (将使用 fallback 字体)", err)
 		fontCSS = []byte{}

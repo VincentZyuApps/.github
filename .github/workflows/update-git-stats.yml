@@ -2,11 +2,11 @@ name: Update GitHub Stats
 
 on:
   schedule:
-    - cron: '30 */3 * * *'   # 每 3 小时（在语言统计后 30 分钟，错开执行）
+    - cron: '30 */3 * * *'   # 每 3 小时（在代码字节统计后 30 分钟，错开执行）
   workflow_dispatch:          # 允许手动触发
   push:
     paths:
-      - 'git-stats/**'       # Go 代码变更时也触发
+      - 'svg/git-stats/**'       # Go 代码变更时也触发
 
 jobs:
   update-git-stats:
@@ -27,7 +27,7 @@ jobs:
       - name: Run GitHub stats generator
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        working-directory: ./git-stats
+        working-directory: ./svg/git-stats
         run: go run main.go
 
       - name: Commit and push changes
