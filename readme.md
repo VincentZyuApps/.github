@@ -40,6 +40,7 @@
 
 ```
 .
+├── .github           # GitHub Actions 工作流配置
 ├── assets             # 字体资源文件
 ├── svg                # SVG 统计生成器集合
 ├── profile            # 生成的统计图表和组织主页
@@ -49,6 +50,7 @@
 
 ### 主要目录说明
 
+- **.github/**: 存放 GitHub Actions 工作流和相关说明文档
 - **assets/**: 存放 LXGWWenKaiMono 字体文件
 - **svg/git-stats/**: Go 语言实现的 GitHub 统计生成器
 - **svg/byte-stats/**: Go 语言实现的代码字节统计生成器
@@ -67,6 +69,7 @@
 | `update-byte-stats.yml` | 更新代码字节统计 | 定时、Push、手动 |
 | `update-git-stats.yml` | 更新 GitHub 统计 | 定时、Push、手动 |
 | `update-line-stats.yml` | 更新代码行数统计 | 定时、Push、手动 |
+| `update-3d-stats.yml` | 更新 3D GitHub 贡献图 | 定时、Push、手动 |
 | `update-font.yml` | 更新字体子集 | Push 触发 |
 
 ## 🌟 技术栈
