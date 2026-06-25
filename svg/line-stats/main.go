@@ -236,6 +236,7 @@ func main() {
 
 func getOrgRepos(token string) ([]Repo, error) {
 	var allRepos []Repo
+	excludeRepos := loadExcludeRepos()
 	apiURL := fmt.Sprintf("https://api.github.com/orgs/%s/repos?per_page=100&type=public", org)
 
 	// 如果设置了代理，创建带代理的 HTTP Client
@@ -273,7 +274,12 @@ func getOrgRepos(token string) ([]Repo, error) {
 		if err := json.NewDecoder(resp.Body).Decode(&repos); err != nil {
 			return nil, err
 		}
-		allRepos = append(allRepos, repos...)
+		for _, repo := range repos {
+			if excludeRepos[repo.Name] {
+				continue
+			}
+			allRepos = append(allRepos, repo)
+		}
 
 		// Pagination
 		link := resp.Header.Get("Link")
@@ -291,6 +297,23 @@ func getOrgRepos(token string) ([]Repo, error) {
 		}
 	}
 	return allRepos, nil
+}
+
+func loadExcludeRepos() map[string]bool {
+	result := make(map[string]bool)
+	data, err := os.ReadFile("../../conf/exclude_repo.txt")
+	if err != nil {
+		log.Printf("⚠️  无法读取统计配置: %v (不排除仓库)", err)
+		return result
+	}
+	for _, rawLine := range strings.Split(string(data), "\n") {
+		name := strings.TrimSpace(rawLine)
+		if name == "" || strings.HasPrefix(name, "#") {
+			continue
+		}
+		result[name] = true
+	}
+	return result
 }
 
 func countLines(root string) map[string]int {

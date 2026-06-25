@@ -77,6 +77,7 @@ type Repo struct {
 
 func getRepos(token string) ([]Repo, error) {
 	var allRepos []Repo
+	excludeRepos := loadExcludeRepos()
 	url := fmt.Sprintf("https://api.github.com/orgs/%s/repos?per_page=100&type=public", org)
 
 	for url != "" {
@@ -101,13 +102,35 @@ func getRepos(token string) ([]Repo, error) {
 		if err := json.NewDecoder(resp.Body).Decode(&repos); err != nil {
 			return nil, fmt.Errorf("decode repos: %w", err)
 		}
-		allRepos = append(allRepos, repos...)
+		for _, repo := range repos {
+			if excludeRepos[repo.Name] {
+				continue
+			}
+			allRepos = append(allRepos, repo)
+		}
 
 		// 解析 Link header 翻页
 		url = parseNextLink(resp.Header.Get("Link"))
 	}
 
 	return allRepos, nil
+}
+
+func loadExcludeRepos() map[string]bool {
+	result := make(map[string]bool)
+	data, err := os.ReadFile("../../conf/exclude_repo.txt")
+	if err != nil {
+		log.Printf("⚠️  无法读取统计配置: %v (不排除仓库)", err)
+		return result
+	}
+	for _, rawLine := range strings.Split(string(data), "\n") {
+		name := strings.TrimSpace(rawLine)
+		if name == "" || strings.HasPrefix(name, "#") {
+			continue
+		}
+		result[name] = true
+	}
+	return result
 }
 
 func getLanguages(url, token string) (map[string]int64, error) {

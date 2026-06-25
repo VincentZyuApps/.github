@@ -86,6 +86,7 @@ type GitStats struct {
 
 func getOrgRepos(token string) ([]Repo, error) {
 	var allRepos []Repo
+	excludeRepos := loadExcludeRepos()
 	url := fmt.Sprintf("https://api.github.com/orgs/%s/repos?per_page=100&type=public", org)
 
 	for url != "" {
@@ -110,7 +111,12 @@ func getOrgRepos(token string) ([]Repo, error) {
 		if err := json.NewDecoder(resp.Body).Decode(&repos); err != nil {
 			return nil, fmt.Errorf("decode repos: %w", err)
 		}
-		allRepos = append(allRepos, repos...)
+		for _, repo := range repos {
+			if excludeRepos[repo.Name] {
+				continue
+			}
+			allRepos = append(allRepos, repo)
+		}
 		url = parseNextLink(resp.Header.Get("Link"))
 	}
 
@@ -119,6 +125,7 @@ func getOrgRepos(token string) ([]Repo, error) {
 
 func getUserRepos(token string) ([]Repo, error) {
 	var allRepos []Repo
+	excludeRepos := loadExcludeRepos()
 	url := fmt.Sprintf("https://api.github.com/users/%s/repos?per_page=100&type=owner", user)
 
 	for url != "" {
@@ -143,11 +150,33 @@ func getUserRepos(token string) ([]Repo, error) {
 		if err := json.NewDecoder(resp.Body).Decode(&repos); err != nil {
 			return nil, fmt.Errorf("decode repos: %w", err)
 		}
-		allRepos = append(allRepos, repos...)
+		for _, repo := range repos {
+			if excludeRepos[repo.Name] {
+				continue
+			}
+			allRepos = append(allRepos, repo)
+		}
 		url = parseNextLink(resp.Header.Get("Link"))
 	}
 
 	return allRepos, nil
+}
+
+func loadExcludeRepos() map[string]bool {
+	result := make(map[string]bool)
+	data, err := os.ReadFile("../../conf/exclude_repo.txt")
+	if err != nil {
+		log.Printf("⚠️  无法读取统计配置: %v (不排除仓库)", err)
+		return result
+	}
+	for _, rawLine := range strings.Split(string(data), "\n") {
+		name := strings.TrimSpace(rawLine)
+		if name == "" || strings.HasPrefix(name, "#") {
+			continue
+		}
+		result[name] = true
+	}
+	return result
 }
 
 // ========== GitHub GraphQL API ==========
@@ -486,11 +515,9 @@ func main() {
 		log.Printf("⚠️  获取组织仓库失败: %v", err)
 	} else {
 		for _, repo := range orgRepos {
-			if !repo.Fork {
-				stats.TotalStars += repo.StargazersCount
-				stats.TotalForks += repo.ForksCount
-				stats.TotalRepos++
-			}
+			stats.TotalStars += repo.StargazersCount
+			stats.TotalForks += repo.ForksCount
+			stats.TotalRepos++
 		}
 		log.Printf("📦 组织: %d 仓库, ⭐ %d stars, 🔀 %d forks", stats.TotalRepos, stats.TotalStars, stats.TotalForks)
 	}
@@ -502,11 +529,9 @@ func main() {
 		log.Printf("⚠️  获取个人仓库失败: %v", err)
 	} else {
 		for _, repo := range userRepos {
-			if !repo.Fork {
-				stats.TotalStars += repo.StargazersCount
-				stats.TotalForks += repo.ForksCount
-				stats.TotalRepos++
-			}
+			stats.TotalStars += repo.StargazersCount
+			stats.TotalForks += repo.ForksCount
+			stats.TotalRepos++
 		}
 		log.Printf("📦 合计: %d 仓库, ⭐ %d stars, 🔀 %d forks", stats.TotalRepos, stats.TotalStars, stats.TotalForks)
 	}
