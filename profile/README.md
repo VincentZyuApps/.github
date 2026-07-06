@@ -16,6 +16,7 @@
 
 <!-- GIT_STATS_START -->
 ### 📈 GitHub 统计
+> 📂 公开仓库 ✅ ｜ 🔒 私人仓库 ⚠️ 部分统计（个人仓库 stars/forks/数量 ✅，组织仓库 ❌，贡献数据 ❌）
 <p align="center">
   <img src="github-stats.svg" alt="GitHub Stats" />
 </p>
@@ -23,6 +24,7 @@
 
 <!-- LINE_STATS_START -->
 ### 📏 不同语言的代码行数排行捏
+> 📂 公开仓库 ✅ ｜ 🔒 私人仓库 ❌
 <p align="center">
   <img src="line-stats.svg" alt="Line Stats" />
 </p>
@@ -30,26 +32,31 @@
 
 <!-- BYTE_STATS_START -->
 ### 📊 不同语言的代码字节数占比捏
+> 📂 公开仓库 ✅ ｜ 🔒 私人仓库 ❌
 <p align="center">
   <img src="byte-stats.svg" alt="Byte Stats" />
 </p>
 <!-- BYTE_STATS_END -->
 
 ### 🎨 3D GitHub 贡献图
+> 📂 公开仓库 ✅ ｜ 🔒 私人仓库 ❌
 <p align="center">
   <img src="profile-3d-night.svg" alt="3D GitHub Contribution Stats" />
 </p>
 
 ### 🔥 提交统计
+> 📂 公开仓库 ✅ ｜ 🔒 私人仓库 ❌
 [![GitHub Streak](https://streak-stats.demolab.com?user=VincentZyu233&theme=tokyonight&hide_border=true&background=0a1929&ring=64b5f6&fire=1976d2&currStreakLabel=64b5f6&sideLabels=64b5f6&currStreakNum=ffffff&sideNums=ffffff&dates=ffffff)](https://github.com/VincentZyu233)
 
 ### 📊 仓库语言分布
+> 📂 公开仓库 ✅ ｜ 🔒 私人仓库 ❌
 <p align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=VincentZyu233&theme=tokyonight" />
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=VincentZyu233&theme=tokyonight" />
 </p>
 
 ### 📈 活动概览
+> 📂 公开仓库 ✅ ｜ 🔒 私人仓库 ❌
 ![Profile Summary](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=VincentZyu233&theme=tokyonight)
 
 </div>
