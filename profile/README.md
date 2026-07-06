@@ -31,7 +31,6 @@
 
 <!-- BYTE_STATS_START -->
 ### 📊 不同语言的代码字节数占比捏
-> 📂 公开仓库 ✅ ｜ 🔒 私人仓库 ❌
 <p align="center">
   <img src="byte-stats.svg" alt="Byte Stats" />
 </p>
