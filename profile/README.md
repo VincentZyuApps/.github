@@ -16,7 +16,6 @@
 
 <!-- GIT_STATS_START -->
 ### 📈 GitHub 统计
-> 📂 公开仓库 ✅ ｜ 🔒 私人仓库 ⚠️ 部分统计（个人仓库 stars/forks/数量 ✅，组织仓库 ❌，贡献数据 ❌）
 <p align="center">
   <img src="github-stats.svg" alt="GitHub Stats" />
 </p>
