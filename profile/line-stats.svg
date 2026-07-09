@@ -33,9 +33,9 @@
 </defs>
 <rect class="bg" width="480" height="898" rx="10"/>
 <text class="header title-anim" x="20" y="30">📏 VincentZyuApps · 不同语言的代码行数排行捏</text>
-<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 124,385 行代码（不含空行和注释）</text>
-<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="68">Auto update: 2026-07-09 10:27:31 (UTC)</text>
-<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="88">自动更新于 2026-07-09 18:27:31 (UTC+8)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 126,743 行代码（不含空行和注释）</text>
+<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="68">Auto update: 2026-07-09 15:54:44 (UTC)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="88">自动更新于 2026-07-09 23:54:44 (UTC+8)</text>
 <g class="row" style="animation-delay: 0.3s;">
   <circle cx="30" cy="126" r="6" fill="#3178c6"/>
   <text x="44" y="126" class="lang-name" dominant-baseline="central">TypeScript</text>
@@ -43,43 +43,43 @@
   <rect x="120" y="114" width="0" height="24" fill="#3178c6" rx="4" opacity="0.85">
     <animate attributeName="width" from="0" to="290" dur="0.8s" begin="0.3s" fill="freeze" />
   </rect>
-  <text x="460" y="126" class="lang-count" dominant-baseline="central" text-anchor="end">51,326</text>
+  <text x="460" y="126" class="lang-count" dominant-baseline="central" text-anchor="end">51,826</text>
 </g>
 <g class="row" style="animation-delay: 0.4s;">
   <circle cx="30" cy="160" r="6" fill="#3572A5"/>
   <text x="44" y="160" class="lang-name" dominant-baseline="central">Python</text>
   <rect class="bar-bg" x="120" y="148" width="290" height="24"/>
   <rect x="120" y="148" width="0" height="24" fill="#3572A5" rx="4" opacity="0.85">
-    <animate attributeName="width" from="0" to="97" dur="0.8s" begin="0.4s" fill="freeze" />
+    <animate attributeName="width" from="0" to="98" dur="0.8s" begin="0.4s" fill="freeze" />
   </rect>
-  <text x="460" y="160" class="lang-count" dominant-baseline="central" text-anchor="end">17,212</text>
+  <text x="460" y="160" class="lang-count" dominant-baseline="central" text-anchor="end">17,538</text>
 </g>
 <g class="row" style="animation-delay: 0.5s;">
   <circle cx="30" cy="194" r="6" fill="#f1e05a"/>
   <text x="44" y="194" class="lang-name" dominant-baseline="central">JavaScript</text>
   <rect class="bar-bg" x="120" y="182" width="290" height="24"/>
   <rect x="120" y="182" width="0" height="24" fill="#f1e05a" rx="4" opacity="0.85">
-    <animate attributeName="width" from="0" to="75" dur="0.8s" begin="0.5s" fill="freeze" />
+    <animate attributeName="width" from="0" to="74" dur="0.8s" begin="0.5s" fill="freeze" />
   </rect>
   <text x="460" y="194" class="lang-count" dominant-baseline="central" text-anchor="end">13,291</text>
 </g>
 <g class="row" style="animation-delay: 0.6s;">
-  <circle cx="30" cy="228" r="6" fill="#41b883"/>
-  <text x="44" y="228" class="lang-name" dominant-baseline="central">Vue</text>
+  <circle cx="30" cy="228" r="6" fill="#dea584"/>
+  <text x="44" y="228" class="lang-name" dominant-baseline="central">Rust</text>
   <rect class="bar-bg" x="120" y="216" width="290" height="24"/>
-  <rect x="120" y="216" width="0" height="24" fill="#41b883" rx="4" opacity="0.85">
-    <animate attributeName="width" from="0" to="50" dur="0.8s" begin="0.6s" fill="freeze" />
+  <rect x="120" y="216" width="0" height="24" fill="#dea584" rx="4" opacity="0.85">
+    <animate attributeName="width" from="0" to="56" dur="0.8s" begin="0.6s" fill="freeze" />
   </rect>
-  <text x="460" y="228" class="lang-count" dominant-baseline="central" text-anchor="end">8,961</text>
+  <text x="460" y="228" class="lang-count" dominant-baseline="central" text-anchor="end">10,142</text>
 </g>
 <g class="row" style="animation-delay: 0.7s;">
-  <circle cx="30" cy="262" r="6" fill="#dea584"/>
-  <text x="44" y="262" class="lang-name" dominant-baseline="central">Rust</text>
+  <circle cx="30" cy="262" r="6" fill="#41b883"/>
+  <text x="44" y="262" class="lang-name" dominant-baseline="central">Vue</text>
   <rect class="bar-bg" x="120" y="250" width="290" height="24"/>
-  <rect x="120" y="250" width="0" height="24" fill="#dea584" rx="4" opacity="0.85">
-    <animate attributeName="width" from="0" to="48" dur="0.8s" begin="0.7s" fill="freeze" />
+  <rect x="120" y="250" width="0" height="24" fill="#41b883" rx="4" opacity="0.85">
+    <animate attributeName="width" from="0" to="50" dur="0.8s" begin="0.7s" fill="freeze" />
   </rect>
-  <text x="460" y="262" class="lang-count" dominant-baseline="central" text-anchor="end">8,610</text>
+  <text x="460" y="262" class="lang-count" dominant-baseline="central" text-anchor="end">8,961</text>
 </g>
 <g class="row" style="animation-delay: 0.8s;">
   <circle cx="30" cy="296" r="6" fill="#00B4AB"/>
