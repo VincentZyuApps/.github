@@ -33,9 +33,9 @@
 </defs>
 <rect class="bg" width="480" height="898" rx="10"/>
 <text class="header title-anim" x="20" y="30">📏 VincentZyuApps · 不同语言的代码行数排行捏</text>
-<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 130,312 行代码（不含空行和注释）</text>
-<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="68">Auto update: 2026-07-10 15:30:16 (UTC)</text>
-<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="88">自动更新于 2026-07-10 23:30:16 (UTC+8)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 130,529 行代码（不含空行和注释）</text>
+<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="68">Auto update: 2026-07-10 17:45:36 (UTC)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="88">自动更新于 2026-07-11 01:45:36 (UTC+8)</text>
 <g class="row" style="animation-delay: 0.3s;">
   <circle cx="30" cy="126" r="6" fill="#3178c6"/>
   <text x="44" y="126" class="lang-name" dominant-baseline="central">TypeScript</text>
@@ -68,9 +68,9 @@
   <text x="44" y="228" class="lang-name" dominant-baseline="central">Rust</text>
   <rect class="bar-bg" x="120" y="216" width="290" height="24"/>
   <rect x="120" y="216" width="0" height="24" fill="#dea584" rx="4" opacity="0.85">
-    <animate attributeName="width" from="0" to="59" dur="0.8s" begin="0.6s" fill="freeze" />
+    <animate attributeName="width" from="0" to="60" dur="0.8s" begin="0.6s" fill="freeze" />
   </rect>
-  <text x="460" y="228" class="lang-count" dominant-baseline="central" text-anchor="end">10,996</text>
+  <text x="460" y="228" class="lang-count" dominant-baseline="central" text-anchor="end">11,213</text>
 </g>
 <g class="row" style="animation-delay: 0.7s;">
   <circle cx="30" cy="262" r="6" fill="#41b883"/>
