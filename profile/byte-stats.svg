@@ -35,8 +35,8 @@
 <rect class="bg" width="480" height="1078" rx="10"/>
 <text class="title title-anim" x="20" y="30">📊 VincentZyuApps · 不同语言的代码字节数占比捏</text>
 <text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 5.2 MB 代码</text>
-<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="68">Auto update: 2026-07-16 18:53:26 (UTC)</text>
-<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="88">自动更新于 2026-07-17 02:53:26 (UTC+8)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="68">Auto update: 2026-07-16 21:54:19 (UTC)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="88">自动更新于 2026-07-17 05:54:19 (UTC+8)</text>
 <clipPath id="top-bar-clip">
   <rect x="20" y="100" width="440" height="12" rx="6"/>
 </clipPath>
@@ -54,7 +54,7 @@
 <rect x="347.6" y="100" width="0" height="12" fill="#f1e05a">
   <animate attributeName="width" from="0" to="30.7" dur="0.6s" begin="0.45s" fill="freeze" />
 </rect>
-<rect x="378.2" y="100" width="0" height="12" fill="#00B4AB">
+<rect x="378.3" y="100" width="0" height="12" fill="#00B4AB">
   <animate attributeName="width" from="0" to="14.8" dur="0.6s" begin="0.50s" fill="freeze" />
 </rect>
 <rect x="393.0" y="100" width="0" height="12" fill="#b07219">
