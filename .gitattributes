@@ -1,3 +1,5 @@
 profile/*.svg merge=ours
 scripts/output/*.woff2 merge=ours
 scripts/output/font_face.css merge=ours
+
+*.md linguist-detectable=true
