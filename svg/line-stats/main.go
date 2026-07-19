@@ -69,6 +69,8 @@ var extToLang = map[string]string{
 	".dart":  "Dart",
 	".lua":   "Lua",
 	".swift": "Swift",
+	".glsl": "GLSL", ".vert": "GLSL", ".frag": "GLSL",
+	".geom": "GLSL", ".tesc": "GLSL", ".tese": "GLSL", ".comp": "GLSL",
 }
 
 // 语言颜色
@@ -96,6 +98,7 @@ var langColors = map[string]string{
 	"Dart":       "#00B4AB",
 	"Lua":        "#000080",
 	"Swift":      "#F05138",
+	"GLSL":       "#5686a5",
 }
 
 // ========== 结构体 ==========

@@ -293,7 +293,7 @@ func generateSVG(stats []LangStat, totalBytes int64) string {
     .title { font-family: 'LXGW WenKai Mono', 'Inter', 'Segoe UI', sans-serif; font-size: 16px; font-weight: 600; fill: #64b5f6; }
     .subtitle { font-family: 'LXGW WenKai Mono', 'Inter', 'Segoe UI', sans-serif; font-size: 11px; fill: #8b949e; }
     .lang-name { font-family: 'LXGW WenKai Mono', 'Inter', 'Segoe UI', sans-serif; font-size: 14px; fill: #e6edf3; }
-    .lang-pct { font-family: 'LXGW WenKai Mono', 'Inter', 'Segoe UI', sans-serif; font-size: 13px; fill: #8b949e; }
+    .lang-pct { font-family: 'LXGW WenKai Mono', 'Inter', 'Segoe UI', sans-serif; font-size: 14px; font-weight: 600; fill: #e6edf3; }
     .bar-bg { fill: #161b22; rx: 4; }
     .top-bar-bg { fill: #161b22; rx: 6; }
     @keyframes fadeInRight { from { opacity: 0; transform: translateX(-8px); } to { opacity: 1; transform: translateX(0); } }
@@ -359,8 +359,8 @@ func generateSVG(stats []LangStat, totalBytes int64) string {
 `, y+float64(barHeight)/2+4, s.Name))
 
 		// 进度条背景
-		progX := 160.0
-		progW := float64(svgWidth) - progX - 80
+		progX := 120.0
+		progW := float64(svgWidth) - progX - 70
 		sb.WriteString(fmt.Sprintf(`  <rect class="bar-bg" x="%.0f" y="%.1f" width="%.0f" height="%.0f"/>
 `, progX, y+4, progW, float64(barHeight)-8))
 
@@ -373,8 +373,8 @@ func generateSVG(stats []LangStat, totalBytes int64) string {
 `, progX, y+4, float64(barHeight)-8, s.Color, fillW, delay))
 
 		// 百分比
-		sb.WriteString(fmt.Sprintf(`  <text class="lang-pct" x="%.0f" y="%.1f">%.1f%%</text>
-`, float64(svgWidth)-70, y+float64(barHeight)/2+4, s.Percent))
+		sb.WriteString(fmt.Sprintf(`  <text x="%d" y="%.1f" class="lang-pct" dominant-baseline="central" text-anchor="end">%.1f%%</text>
+`, svgWidth-20, y+float64(barHeight)/2, s.Percent))
 
 		sb.WriteString(`</g>
 `)
