@@ -45,8 +45,8 @@
 <rect class="bg" width="480" height="381" rx="10"/>
 <text class="title title-anim" x="20" y="28">📈 VincentZyu233 · GitHub Stats</text>
 <text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="44">VincentZyu233 + VincentZyuApps</text>
-<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="64">Auto update: 2026-08-06 14:53:23 (UTC)</text>
-<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="84">自动更新于 2026-08-06 22:53:23 (UTC+8)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="64">Auto update: 2026-08-07 00:23:56 (UTC)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="84">自动更新于 2026-08-07 08:23:56 (UTC+8)</text>
 <g class="stat-row" style="animation-delay: 0.0s;">
   <text class="stat-icon" x="24" y="111.0">⭐</text>
   <text class="stat-label" x="54" y="111.0">Total Stars</text>
@@ -70,12 +70,12 @@
 <g class="stat-row" style="animation-delay: 0.4s;">
   <text class="stat-icon" x="24" y="239.0">🔃</text>
   <text class="stat-label" x="54" y="239.0">Total PRs</text>
-  <text class="stat-value" x="350" y="239.0" text-anchor="end">27</text>
+  <text class="stat-value" x="350" y="239.0" text-anchor="end">31</text>
 </g>
 <g class="stat-row" style="animation-delay: 0.5s;">
   <text class="stat-icon" x="24" y="271.0">❗</text>
   <text class="stat-label" x="54" y="271.0">Total Issues</text>
-  <text class="stat-value" x="350" y="271.0" text-anchor="end">9</text>
+  <text class="stat-value" x="350" y="271.0" text-anchor="end">10</text>
 </g>
 <g class="stat-row" style="animation-delay: 0.6s;">
   <text class="stat-icon" x="24" y="303.0">👀</text>
