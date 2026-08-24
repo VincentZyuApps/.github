@@ -28,12 +28,12 @@
     .rank-label { font-family: 'LXGW WenKai Mono', 'Inter', 'Segoe UI', sans-serif; font-size: 10px; fill: #8b949e; }
     .rank-ring-bg { fill: none; stroke: #161b22; stroke-width: 6; }
     .rank-ring { fill: none; stroke: #64b5f6; stroke-width: 6; stroke-linecap: round;
-      stroke-dasharray: 251.3; stroke-dashoffset: 238.8;
+      stroke-dasharray: 251.3; stroke-dashoffset: 226.2;
       transform-origin: 420px 200px; transform: rotate(-90deg);
       animation: rankAnim 1.5s ease-in-out forwards; }
     @keyframes rankAnim {
       from { stroke-dashoffset: 251.3; }
-      to { stroke-dashoffset: 238.8; }
+      to { stroke-dashoffset: 226.2; }
     }
     .stat-icon { font-size: 18px; }
     @keyframes fadeIn { from { opacity: 0; transform: translateX(-5px); } to { opacity: 1; transform: translateX(0); } }
@@ -45,8 +45,8 @@
 <rect class="bg" width="480" height="381" rx="10"/>
 <text class="title title-anim" x="20" y="28">📈 VincentZyu233 · GitHub Stats</text>
 <text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="44">VincentZyu233 + VincentZyuApps</text>
-<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="64">Auto update: 2026-08-23 21:46:34 (UTC)</text>
-<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="84">自动更新于 2026-08-24 05:46:34 (UTC+8)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="64">Auto update: 2026-08-24 02:07:35 (UTC)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="84">自动更新于 2026-08-24 10:07:35 (UTC+8)</text>
 <g class="stat-row" style="animation-delay: 0.0s;">
   <text class="stat-icon" x="24" y="111.0">⭐</text>
   <text class="stat-label" x="54" y="111.0">Total Stars</text>
@@ -55,7 +55,7 @@
 <g class="stat-row" style="animation-delay: 0.1s;">
   <text class="stat-icon" x="24" y="143.0">📦</text>
   <text class="stat-label" x="54" y="143.0">Total Repos</text>
-  <text class="stat-value" x="350" y="143.0" text-anchor="end">238</text>
+  <text class="stat-value" x="350" y="143.0" text-anchor="end">239</text>
 </g>
 <g class="stat-row" style="animation-delay: 0.2s;">
   <text class="stat-icon" x="24" y="175.0">🔀</text>
@@ -70,7 +70,7 @@
 <g class="stat-row" style="animation-delay: 0.4s;">
   <text class="stat-icon" x="24" y="239.0">🔃</text>
   <text class="stat-label" x="54" y="239.0">Total PRs</text>
-  <text class="stat-value" x="350" y="239.0" text-anchor="end">34</text>
+  <text class="stat-value" x="350" y="239.0" text-anchor="end">32</text>
 </g>
 <g class="stat-row" style="animation-delay: 0.5s;">
   <text class="stat-icon" x="24" y="271.0">❗</text>
@@ -89,6 +89,6 @@
 </g>
 <circle class="rank-ring-bg" cx="420" cy="200" r="40"/>
 <circle class="rank-ring" cx="420" cy="200" r="40"/>
-<text class="rank-text" x="420" y="196" text-anchor="middle" dominant-baseline="central">S</text>
-<text class="rank-label" x="420" y="218" text-anchor="middle">Top 5%</text>
+<text class="rank-text" x="420" y="196" text-anchor="middle" dominant-baseline="central">A++</text>
+<text class="rank-label" x="420" y="218" text-anchor="middle">Top 10%</text>
 </svg>
