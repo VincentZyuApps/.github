@@ -2,4 +2,5 @@ profile/*.svg merge=ours
 scripts/output/*.woff2 merge=ours
 scripts/output/font_face.css merge=ours
 
-*.md linguist-detectable=true
+# 将所有 Markdown（包括各目录的 README）纳入 GitHub Linguist 语言统计。
+*.md linguist-language=Markdown linguist-detectable=true linguist-documentation=false

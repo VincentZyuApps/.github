@@ -15,5 +15,10 @@ profile/profile-3d-night.svg
 **/venv/
 **/__pycache__/
 
-# 🧱 Go 本地构建产物
+# 🧱 Go 本地构建产物 / 缓存
 *.exe
+**/.gocache/
+*.test
+coverage.out
+*.coverprofile
+*.prof
