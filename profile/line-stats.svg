@@ -33,9 +33,9 @@
 </defs>
 <rect class="bg" width="480" height="932" rx="10"/>
 <text class="header title-anim" x="20" y="30">📏 VincentZyuApps · 不同语言的代码行数排行捏</text>
-<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 166,887 行代码（不含空行和注释）</text>
-<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="68">Auto update: 2026-08-24 16:35:01 (UTC)</text>
-<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="88">自动更新于 2026-08-25 00:35:01 (UTC+8)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 167,012 行代码（不含空行和注释）</text>
+<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="68">Auto update: 2026-08-24 19:26:42 (UTC)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="88">自动更新于 2026-08-25 03:26:42 (UTC+8)</text>
 <g class="row" style="animation-delay: 0.3s;">
   <circle cx="30" cy="126" r="6" fill="#3178c6"/>
   <text x="44" y="126" class="lang-name" dominant-baseline="central">TypeScript</text>
@@ -43,7 +43,7 @@
   <rect x="120" y="114" width="0" height="24" fill="#3178c6" rx="4" opacity="0.85">
     <animate attributeName="width" from="0" to="290" dur="0.8s" begin="0.3s" fill="freeze" />
   </rect>
-  <text x="460" y="126" class="lang-count" dominant-baseline="central" text-anchor="end">71,481</text>
+  <text x="460" y="126" class="lang-count" dominant-baseline="central" text-anchor="end">71,575</text>
 </g>
 <g class="row" style="animation-delay: 0.4s;">
   <circle cx="30" cy="160" r="6" fill="#3572A5"/>
@@ -52,7 +52,7 @@
   <rect x="120" y="148" width="0" height="24" fill="#3572A5" rx="4" opacity="0.85">
     <animate attributeName="width" from="0" to="99" dur="0.8s" begin="0.4s" fill="freeze" />
   </rect>
-  <text x="460" y="160" class="lang-count" dominant-baseline="central" text-anchor="end">24,503</text>
+  <text x="460" y="160" class="lang-count" dominant-baseline="central" text-anchor="end">24,518</text>
 </g>
 <g class="row" style="animation-delay: 0.5s;">
   <circle cx="30" cy="194" r="6" fill="#f1e05a"/>
@@ -160,7 +160,7 @@
   <rect x="120" y="556" width="0" height="24" fill="#89e051" rx="4" opacity="0.85">
     <animate attributeName="width" from="0" to="6" dur="0.8s" begin="1.6s" fill="freeze" />
   </rect>
-  <text x="460" y="568" class="lang-count" dominant-baseline="central" text-anchor="end">1,520</text>
+  <text x="460" y="568" class="lang-count" dominant-baseline="central" text-anchor="end">1,536</text>
 </g>
 <g class="row" style="animation-delay: 1.7s;">
   <circle cx="30" cy="602" r="6" fill="#A97BFF"/>
