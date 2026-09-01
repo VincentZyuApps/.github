@@ -34,49 +34,49 @@
 </defs>
 <rect class="bg" width="480" height="1316" rx="10"/>
 <text class="title title-anim" x="20" y="30">📊 VincentZyuApps · 不同语言的代码字节数占比捏</text>
-<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 7.2 MB 代码</text>
-<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="68">Auto update: 2026-09-01 02:22:04 (UTC)</text>
-<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="88">自动更新于 2026-09-01 10:22:04 (UTC+8)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 7.3 MB 代码</text>
+<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="68">Auto update: 2026-09-01 08:03:40 (UTC)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="88">自动更新于 2026-09-01 16:03:40 (UTC+8)</text>
 <clipPath id="top-bar-clip">
   <rect x="20" y="100" width="440" height="12" rx="6"/>
 </clipPath>
 <rect class="top-bar-bg" x="20" y="100" width="440" height="12"/>
 <g clip-path="url(#top-bar-clip)">
 <rect x="20.0" y="100" width="0" height="12" fill="#3178c6">
-  <animate attributeName="width" from="0" to="209.6" dur="0.6s" begin="0.30s" fill="freeze" />
+  <animate attributeName="width" from="0" to="207.7" dur="0.6s" begin="0.30s" fill="freeze" />
 </rect>
-<rect x="229.6" y="100" width="0" height="12" fill="#3572A5">
-  <animate attributeName="width" from="0" to="63.1" dur="0.6s" begin="0.35s" fill="freeze" />
+<rect x="227.7" y="100" width="0" height="12" fill="#3572A5">
+  <animate attributeName="width" from="0" to="66.5" dur="0.6s" begin="0.35s" fill="freeze" />
 </rect>
-<rect x="292.7" y="100" width="0" height="12" fill="#dea584">
-  <animate attributeName="width" from="0" to="31.4" dur="0.6s" begin="0.40s" fill="freeze" />
+<rect x="294.2" y="100" width="0" height="12" fill="#dea584">
+  <animate attributeName="width" from="0" to="30.9" dur="0.6s" begin="0.40s" fill="freeze" />
 </rect>
-<rect x="324.2" y="100" width="0" height="12" fill="#f1e05a">
-  <animate attributeName="width" from="0" to="28.8" dur="0.6s" begin="0.45s" fill="freeze" />
+<rect x="325.1" y="100" width="0" height="12" fill="#f1e05a">
+  <animate attributeName="width" from="0" to="28.3" dur="0.6s" begin="0.45s" fill="freeze" />
 </rect>
-<rect x="353.0" y="100" width="0" height="12" fill="#8b8b8b">
-  <animate attributeName="width" from="0" to="18.2" dur="0.6s" begin="0.50s" fill="freeze" />
+<rect x="353.4" y="100" width="0" height="12" fill="#8b8b8b">
+  <animate attributeName="width" from="0" to="19.0" dur="0.6s" begin="0.50s" fill="freeze" />
 </rect>
-<rect x="371.2" y="100" width="0" height="12" fill="#f34b7d">
-  <animate attributeName="width" from="0" to="16.8" dur="0.6s" begin="0.55s" fill="freeze" />
+<rect x="372.4" y="100" width="0" height="12" fill="#f34b7d">
+  <animate attributeName="width" from="0" to="16.5" dur="0.6s" begin="0.55s" fill="freeze" />
 </rect>
-<rect x="388.0" y="100" width="0" height="12" fill="#00B4AB">
-  <animate attributeName="width" from="0" to="13.1" dur="0.6s" begin="0.60s" fill="freeze" />
+<rect x="388.9" y="100" width="0" height="12" fill="#00B4AB">
+  <animate attributeName="width" from="0" to="12.9" dur="0.6s" begin="0.60s" fill="freeze" />
 </rect>
-<rect x="401.1" y="100" width="0" height="12" fill="#178600">
-  <animate attributeName="width" from="0" to="12.5" dur="0.6s" begin="0.65s" fill="freeze" />
+<rect x="401.8" y="100" width="0" height="12" fill="#178600">
+  <animate attributeName="width" from="0" to="12.3" dur="0.6s" begin="0.65s" fill="freeze" />
 </rect>
-<rect x="413.6" y="100" width="0" height="12" fill="#b07219">
-  <animate attributeName="width" from="0" to="8.3" dur="0.6s" begin="0.70s" fill="freeze" />
+<rect x="414.1" y="100" width="0" height="12" fill="#b07219">
+  <animate attributeName="width" from="0" to="8.2" dur="0.6s" begin="0.70s" fill="freeze" />
 </rect>
-<rect x="421.9" y="100" width="0" height="12" fill="#8b8b8b">
-  <animate attributeName="width" from="0" to="7.4" dur="0.6s" begin="0.75s" fill="freeze" />
+<rect x="422.3" y="100" width="0" height="12" fill="#8b8b8b">
+  <animate attributeName="width" from="0" to="7.3" dur="0.6s" begin="0.75s" fill="freeze" />
 </rect>
-<rect x="429.3" y="100" width="0" height="12" fill="#563d7c">
-  <animate attributeName="width" from="0" to="6.6" dur="0.6s" begin="0.80s" fill="freeze" />
+<rect x="429.6" y="100" width="0" height="12" fill="#563d7c">
+  <animate attributeName="width" from="0" to="6.5" dur="0.6s" begin="0.80s" fill="freeze" />
 </rect>
-<rect x="436.0" y="100" width="0" height="12" fill="#00ADD8">
-  <animate attributeName="width" from="0" to="6.4" dur="0.6s" begin="0.85s" fill="freeze" />
+<rect x="436.1" y="100" width="0" height="12" fill="#00ADD8">
+  <animate attributeName="width" from="0" to="6.3" dur="0.6s" begin="0.85s" fill="freeze" />
 </rect>
 <rect x="442.4" y="100" width="0" height="12" fill="#e34c26">
   <animate attributeName="width" from="0" to="3.1" dur="0.6s" begin="0.90s" fill="freeze" />
@@ -84,16 +84,16 @@
 <rect x="445.5" y="100" width="0" height="12" fill="#A97BFF">
   <animate attributeName="width" from="0" to="2.8" dur="0.6s" begin="0.95s" fill="freeze" />
 </rect>
-<rect x="448.4" y="100" width="0" height="12" fill="#5686a5">
-  <animate attributeName="width" from="0" to="2.5" dur="0.6s" begin="1.00s" fill="freeze" />
+<rect x="448.3" y="100" width="0" height="12" fill="#5686a5">
+  <animate attributeName="width" from="0" to="2.4" dur="0.6s" begin="1.00s" fill="freeze" />
 </rect>
-<rect x="450.8" y="100" width="0" height="12" fill="#89e051">
+<rect x="450.7" y="100" width="0" height="12" fill="#89e051">
   <animate attributeName="width" from="0" to="1.8" dur="0.6s" begin="1.05s" fill="freeze" />
 </rect>
-<rect x="452.7" y="100" width="0" height="12" fill="#DA3434">
-  <animate attributeName="width" from="0" to="1.3" dur="0.6s" begin="1.10s" fill="freeze" />
+<rect x="452.5" y="100" width="0" height="12" fill="#8b8b8b">
+  <animate attributeName="width" from="0" to="1.4" dur="0.6s" begin="1.10s" fill="freeze" />
 </rect>
-<rect x="453.9" y="100" width="0" height="12" fill="#8b8b8b">
+<rect x="453.9" y="100" width="0" height="12" fill="#DA3434">
   <animate attributeName="width" from="0" to="1.2" dur="0.6s" begin="1.15s" fill="freeze" />
 </rect>
 <rect x="455.2" y="100" width="0" height="12" fill="#8b8b8b">
@@ -114,10 +114,10 @@
 <rect x="460.4" y="100" width="0" height="12" fill="#8b8b8b">
   <animate attributeName="width" from="0" to="1.0" dur="0.6s" begin="1.45s" fill="freeze" />
 </rect>
-<rect x="461.4" y="100" width="0" height="12" fill="#701516">
+<rect x="461.4" y="100" width="0" height="12" fill="#8b8b8b">
   <animate attributeName="width" from="0" to="1.0" dur="0.6s" begin="1.50s" fill="freeze" />
 </rect>
-<rect x="462.4" y="100" width="0" height="12" fill="#8b8b8b">
+<rect x="462.4" y="100" width="0" height="12" fill="#701516">
   <animate attributeName="width" from="0" to="1.0" dur="0.6s" begin="1.55s" fill="freeze" />
 </rect>
 <rect x="463.4" y="100" width="0" height="12" fill="#C1F12E">
@@ -149,68 +149,68 @@
   <rect x="120" y="146.0" width="0" height="24" rx="4" fill="#3178c6" opacity="0.85">
     <animate attributeName="width" from="0" to="290.0" dur="0.8s" begin="0.4s" fill="freeze" />
   </rect>
-  <text x="460" y="158.0" class="lang-pct" dominant-baseline="central" text-anchor="end">47.6%</text>
+  <text x="460" y="158.0" class="lang-pct" dominant-baseline="central" text-anchor="end">47.2%</text>
 </g>
 <g class="row" style="animation-delay: 0.5s;">
   <circle cx="30" cy="192.0" r="6" fill="#3572A5"/>
   <text class="lang-name" x="44" y="196.0">Python</text>
   <rect class="bar-bg" x="120" y="180.0" width="290" height="24"/>
   <rect x="120" y="180.0" width="0" height="24" rx="4" fill="#3572A5" opacity="0.85">
-    <animate attributeName="width" from="0" to="87.3" dur="0.8s" begin="0.5s" fill="freeze" />
+    <animate attributeName="width" from="0" to="92.9" dur="0.8s" begin="0.5s" fill="freeze" />
   </rect>
-  <text x="460" y="192.0" class="lang-pct" dominant-baseline="central" text-anchor="end">14.3%</text>
+  <text x="460" y="192.0" class="lang-pct" dominant-baseline="central" text-anchor="end">15.1%</text>
 </g>
 <g class="row" style="animation-delay: 0.6s;">
   <circle cx="30" cy="226.0" r="6" fill="#dea584"/>
   <text class="lang-name" x="44" y="230.0">Rust</text>
   <rect class="bar-bg" x="120" y="214.0" width="290" height="24"/>
   <rect x="120" y="214.0" width="0" height="24" rx="4" fill="#dea584" opacity="0.85">
-    <animate attributeName="width" from="0" to="43.5" dur="0.8s" begin="0.6s" fill="freeze" />
+    <animate attributeName="width" from="0" to="43.2" dur="0.8s" begin="0.6s" fill="freeze" />
   </rect>
-  <text x="460" y="226.0" class="lang-pct" dominant-baseline="central" text-anchor="end">7.1%</text>
+  <text x="460" y="226.0" class="lang-pct" dominant-baseline="central" text-anchor="end">7.0%</text>
 </g>
 <g class="row" style="animation-delay: 0.7s;">
   <circle cx="30" cy="260.0" r="6" fill="#f1e05a"/>
   <text class="lang-name" x="44" y="264.0">JavaScript</text>
   <rect class="bar-bg" x="120" y="248.0" width="290" height="24"/>
   <rect x="120" y="248.0" width="0" height="24" rx="4" fill="#f1e05a" opacity="0.85">
-    <animate attributeName="width" from="0" to="39.8" dur="0.8s" begin="0.7s" fill="freeze" />
+    <animate attributeName="width" from="0" to="39.5" dur="0.8s" begin="0.7s" fill="freeze" />
   </rect>
-  <text x="460" y="260.0" class="lang-pct" dominant-baseline="central" text-anchor="end">6.5%</text>
+  <text x="460" y="260.0" class="lang-pct" dominant-baseline="central" text-anchor="end">6.4%</text>
 </g>
 <g class="row" style="animation-delay: 0.8s;">
   <circle cx="30" cy="294.0" r="6" fill="#8b8b8b"/>
   <text class="lang-name" x="44" y="298.0">Markdown</text>
   <rect class="bar-bg" x="120" y="282.0" width="290" height="24"/>
   <rect x="120" y="282.0" width="0" height="24" rx="4" fill="#8b8b8b" opacity="0.85">
-    <animate attributeName="width" from="0" to="25.2" dur="0.8s" begin="0.8s" fill="freeze" />
+    <animate attributeName="width" from="0" to="26.6" dur="0.8s" begin="0.8s" fill="freeze" />
   </rect>
-  <text x="460" y="294.0" class="lang-pct" dominant-baseline="central" text-anchor="end">4.1%</text>
+  <text x="460" y="294.0" class="lang-pct" dominant-baseline="central" text-anchor="end">4.3%</text>
 </g>
 <g class="row" style="animation-delay: 0.9s;">
   <circle cx="30" cy="328.0" r="6" fill="#f34b7d"/>
   <text class="lang-name" x="44" y="332.0">C++</text>
   <rect class="bar-bg" x="120" y="316.0" width="290" height="24"/>
   <rect x="120" y="316.0" width="0" height="24" rx="4" fill="#f34b7d" opacity="0.85">
-    <animate attributeName="width" from="0" to="23.2" dur="0.8s" begin="0.9s" fill="freeze" />
+    <animate attributeName="width" from="0" to="23.0" dur="0.8s" begin="0.9s" fill="freeze" />
   </rect>
-  <text x="460" y="328.0" class="lang-pct" dominant-baseline="central" text-anchor="end">3.8%</text>
+  <text x="460" y="328.0" class="lang-pct" dominant-baseline="central" text-anchor="end">3.7%</text>
 </g>
 <g class="row" style="animation-delay: 1.0s;">
   <circle cx="30" cy="362.0" r="6" fill="#00B4AB"/>
   <text class="lang-name" x="44" y="366.0">Dart</text>
   <rect class="bar-bg" x="120" y="350.0" width="290" height="24"/>
   <rect x="120" y="350.0" width="0" height="24" rx="4" fill="#00B4AB" opacity="0.85">
-    <animate attributeName="width" from="0" to="18.2" dur="0.8s" begin="1.0s" fill="freeze" />
+    <animate attributeName="width" from="0" to="18.0" dur="0.8s" begin="1.0s" fill="freeze" />
   </rect>
-  <text x="460" y="362.0" class="lang-pct" dominant-baseline="central" text-anchor="end">3.0%</text>
+  <text x="460" y="362.0" class="lang-pct" dominant-baseline="central" text-anchor="end">2.9%</text>
 </g>
 <g class="row" style="animation-delay: 1.1s;">
   <circle cx="30" cy="396.0" r="6" fill="#178600"/>
   <text class="lang-name" x="44" y="400.0">C#</text>
   <rect class="bar-bg" x="120" y="384.0" width="290" height="24"/>
   <rect x="120" y="384.0" width="0" height="24" rx="4" fill="#178600" opacity="0.85">
-    <animate attributeName="width" from="0" to="17.3" dur="0.8s" begin="1.1s" fill="freeze" />
+    <animate attributeName="width" from="0" to="17.1" dur="0.8s" begin="1.1s" fill="freeze" />
   </rect>
   <text x="460" y="396.0" class="lang-pct" dominant-baseline="central" text-anchor="end">2.8%</text>
 </g>
@@ -219,7 +219,7 @@
   <text class="lang-name" x="44" y="434.0">Java</text>
   <rect class="bar-bg" x="120" y="418.0" width="290" height="24"/>
   <rect x="120" y="418.0" width="0" height="24" rx="4" fill="#b07219" opacity="0.85">
-    <animate attributeName="width" from="0" to="11.5" dur="0.8s" begin="1.2s" fill="freeze" />
+    <animate attributeName="width" from="0" to="11.4" dur="0.8s" begin="1.2s" fill="freeze" />
   </rect>
   <text x="460" y="430.0" class="lang-pct" dominant-baseline="central" text-anchor="end">1.9%</text>
 </g>
@@ -237,7 +237,7 @@
   <text class="lang-name" x="44" y="502.0">CSS</text>
   <rect class="bar-bg" x="120" y="486.0" width="290" height="24"/>
   <rect x="120" y="486.0" width="0" height="24" rx="4" fill="#563d7c" opacity="0.85">
-    <animate attributeName="width" from="0" to="9.2" dur="0.8s" begin="1.4s" fill="freeze" />
+    <animate attributeName="width" from="0" to="9.1" dur="0.8s" begin="1.4s" fill="freeze" />
   </rect>
   <text x="460" y="498.0" class="lang-pct" dominant-baseline="central" text-anchor="end">1.5%</text>
 </g>
@@ -246,9 +246,9 @@
   <text class="lang-name" x="44" y="536.0">Go</text>
   <rect class="bar-bg" x="120" y="520.0" width="290" height="24"/>
   <rect x="120" y="520.0" width="0" height="24" rx="4" fill="#00ADD8" opacity="0.85">
-    <animate attributeName="width" from="0" to="8.9" dur="0.8s" begin="1.5s" fill="freeze" />
+    <animate attributeName="width" from="0" to="8.8" dur="0.8s" begin="1.5s" fill="freeze" />
   </rect>
-  <text x="460" y="532.0" class="lang-pct" dominant-baseline="central" text-anchor="end">1.5%</text>
+  <text x="460" y="532.0" class="lang-pct" dominant-baseline="central" text-anchor="end">1.4%</text>
 </g>
 <g class="row" style="animation-delay: 1.6s;">
   <circle cx="30" cy="566.0" r="6" fill="#e34c26"/>
@@ -287,19 +287,19 @@
   <text x="460" y="668.0" class="lang-pct" dominant-baseline="central" text-anchor="end">0.4%</text>
 </g>
 <g class="row" style="animation-delay: 2.0s;">
-  <circle cx="30" cy="702.0" r="6" fill="#DA3434"/>
-  <text class="lang-name" x="44" y="706.0">CMake</text>
+  <circle cx="30" cy="702.0" r="6" fill="#8b8b8b"/>
+  <text class="lang-name" x="44" y="706.0">YAML</text>
   <rect class="bar-bg" x="120" y="690.0" width="290" height="24"/>
-  <rect x="120" y="690.0" width="0" height="24" rx="4" fill="#DA3434" opacity="0.85">
+  <rect x="120" y="690.0" width="0" height="24" rx="4" fill="#8b8b8b" opacity="0.85">
     <animate attributeName="width" from="0" to="2.0" dur="0.8s" begin="2.0s" fill="freeze" />
   </rect>
   <text x="460" y="702.0" class="lang-pct" dominant-baseline="central" text-anchor="end">0.3%</text>
 </g>
 <g class="row" style="animation-delay: 2.1s;">
-  <circle cx="30" cy="736.0" r="6" fill="#8b8b8b"/>
-  <text class="lang-name" x="44" y="740.0">YAML</text>
+  <circle cx="30" cy="736.0" r="6" fill="#DA3434"/>
+  <text class="lang-name" x="44" y="740.0">CMake</text>
   <rect class="bar-bg" x="120" y="724.0" width="290" height="24"/>
-  <rect x="120" y="724.0" width="0" height="24" rx="4" fill="#8b8b8b" opacity="0.85">
+  <rect x="120" y="724.0" width="0" height="24" rx="4" fill="#DA3434" opacity="0.85">
     <animate attributeName="width" from="0" to="2.0" dur="0.8s" begin="2.1s" fill="freeze" />
   </rect>
   <text x="460" y="736.0" class="lang-pct" dominant-baseline="central" text-anchor="end">0.3%</text>
@@ -359,19 +359,19 @@
   <text x="460" y="940.0" class="lang-pct" dominant-baseline="central" text-anchor="end">0.1%</text>
 </g>
 <g class="row" style="animation-delay: 2.8s;">
-  <circle cx="30" cy="974.0" r="6" fill="#701516"/>
-  <text class="lang-name" x="44" y="978.0">Ruby</text>
+  <circle cx="30" cy="974.0" r="6" fill="#8b8b8b"/>
+  <text class="lang-name" x="44" y="978.0">TOML</text>
   <rect class="bar-bg" x="120" y="962.0" width="290" height="24"/>
-  <rect x="120" y="962.0" width="0" height="24" rx="4" fill="#701516" opacity="0.85">
+  <rect x="120" y="962.0" width="0" height="24" rx="4" fill="#8b8b8b" opacity="0.85">
     <animate attributeName="width" from="0" to="2.0" dur="0.8s" begin="2.8s" fill="freeze" />
   </rect>
-  <text x="460" y="974.0" class="lang-pct" dominant-baseline="central" text-anchor="end">0.0%</text>
+  <text x="460" y="974.0" class="lang-pct" dominant-baseline="central" text-anchor="end">0.1%</text>
 </g>
 <g class="row" style="animation-delay: 2.9s;">
-  <circle cx="30" cy="1008.0" r="6" fill="#8b8b8b"/>
-  <text class="lang-name" x="44" y="1012.0">TOML</text>
+  <circle cx="30" cy="1008.0" r="6" fill="#701516"/>
+  <text class="lang-name" x="44" y="1012.0">Ruby</text>
   <rect class="bar-bg" x="120" y="996.0" width="290" height="24"/>
-  <rect x="120" y="996.0" width="0" height="24" rx="4" fill="#8b8b8b" opacity="0.85">
+  <rect x="120" y="996.0" width="0" height="24" rx="4" fill="#701516" opacity="0.85">
     <animate attributeName="width" from="0" to="2.0" dur="0.8s" begin="2.9s" fill="freeze" />
   </rect>
   <text x="460" y="1008.0" class="lang-pct" dominant-baseline="central" text-anchor="end">0.0%</text>
