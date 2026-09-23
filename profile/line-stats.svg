@@ -33,9 +33,9 @@
 </defs>
 <rect class="bg" width="480" height="932" rx="10"/>
 <text class="header title-anim" x="20" y="30">📏 VincentZyuApps · 不同语言的代码行数排行捏</text>
-<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 215,062 行代码（不含空行和注释）</text>
-<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="68">Auto update: 2026-09-23 12:32:40 (UTC)</text>
-<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="88">自动更新于 2026-09-23 20:32:40 (UTC+8)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 215,085 行代码（不含空行和注释）</text>
+<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="68">Auto update: 2026-09-23 17:41:52 (UTC)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="88">自动更新于 2026-09-24 01:41:52 (UTC+8)</text>
 <g class="row" style="animation-delay: 0.3s;">
   <circle cx="30" cy="126" r="6" fill="#3178c6"/>
   <text x="44" y="126" class="lang-name" dominant-baseline="central">TypeScript</text>
@@ -79,7 +79,7 @@
   <rect x="120" y="250" width="0" height="24" fill="#41b883" rx="4" opacity="0.85">
     <animate attributeName="width" from="0" to="42" dur="0.8s" begin="0.7s" fill="freeze" />
   </rect>
-  <text x="460" y="262" class="lang-count" dominant-baseline="central" text-anchor="end">12,685</text>
+  <text x="460" y="262" class="lang-count" dominant-baseline="central" text-anchor="end">12,706</text>
 </g>
 <g class="row" style="animation-delay: 0.8s;">
   <circle cx="30" cy="296" r="6" fill="#178600"/>
@@ -133,7 +133,7 @@
   <rect x="120" y="454" width="0" height="24" fill="#e34c26" rx="4" opacity="0.85">
     <animate attributeName="width" from="0" to="11" dur="0.8s" begin="1.3s" fill="freeze" />
   </rect>
-  <text x="460" y="466" class="lang-count" dominant-baseline="central" text-anchor="end">3,405</text>
+  <text x="460" y="466" class="lang-count" dominant-baseline="central" text-anchor="end">3,407</text>
 </g>
 <g class="row" style="animation-delay: 1.4s;">
   <circle cx="30" cy="500" r="6" fill="#b07219"/>
