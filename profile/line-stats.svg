@@ -33,9 +33,9 @@
 </defs>
 <rect class="bg" width="480" height="932" rx="10"/>
 <text class="header title-anim" x="20" y="30">📏 VincentZyuApps · 不同语言的代码行数排行捏</text>
-<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 230,418 行代码（不含空行和注释）</text>
-<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="68">Auto update: 2026-10-14 17:46:40 (UTC)</text>
-<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="88">自动更新于 2026-10-15 01:46:40 (UTC+8)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 232,246 行代码（不含空行和注释）</text>
+<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="68">Auto update: 2026-10-14 22:02:42 (UTC)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="88">自动更新于 2026-10-15 06:02:42 (UTC+8)</text>
 <g class="row" style="animation-delay: 0.3s;">
   <circle cx="30" cy="126" r="6" fill="#3178c6"/>
   <text x="44" y="126" class="lang-name" dominant-baseline="central">TypeScript</text>
@@ -43,23 +43,23 @@
   <rect x="120" y="114" width="0" height="24" fill="#3178c6" rx="4" opacity="0.85">
     <animate attributeName="width" from="0" to="290" dur="0.8s" begin="0.3s" fill="freeze" />
   </rect>
-  <text x="460" y="126" class="lang-count" dominant-baseline="central" text-anchor="end">97,150</text>
+  <text x="460" y="126" class="lang-count" dominant-baseline="central" text-anchor="end">98,830</text>
 </g>
 <g class="row" style="animation-delay: 0.4s;">
   <circle cx="30" cy="160" r="6" fill="#3572A5"/>
   <text x="44" y="160" class="lang-name" dominant-baseline="central">Python</text>
   <rect class="bar-bg" x="120" y="148" width="290" height="24"/>
   <rect x="120" y="148" width="0" height="24" fill="#3572A5" rx="4" opacity="0.85">
-    <animate attributeName="width" from="0" to="100" dur="0.8s" begin="0.4s" fill="freeze" />
+    <animate attributeName="width" from="0" to="99" dur="0.8s" begin="0.4s" fill="freeze" />
   </rect>
-  <text x="460" y="160" class="lang-count" dominant-baseline="central" text-anchor="end">33,647</text>
+  <text x="460" y="160" class="lang-count" dominant-baseline="central" text-anchor="end">33,795</text>
 </g>
 <g class="row" style="animation-delay: 0.5s;">
   <circle cx="30" cy="194" r="6" fill="#f1e05a"/>
   <text x="44" y="194" class="lang-name" dominant-baseline="central">JavaScript</text>
   <rect class="bar-bg" x="120" y="182" width="290" height="24"/>
   <rect x="120" y="182" width="0" height="24" fill="#f1e05a" rx="4" opacity="0.85">
-    <animate attributeName="width" from="0" to="50" dur="0.8s" begin="0.5s" fill="freeze" />
+    <animate attributeName="width" from="0" to="49" dur="0.8s" begin="0.5s" fill="freeze" />
   </rect>
   <text x="460" y="194" class="lang-count" dominant-baseline="central" text-anchor="end">16,851</text>
 </g>
@@ -68,7 +68,7 @@
   <text x="44" y="228" class="lang-name" dominant-baseline="central">Vue</text>
   <rect class="bar-bg" x="120" y="216" width="290" height="24"/>
   <rect x="120" y="216" width="0" height="24" fill="#41b883" rx="4" opacity="0.85">
-    <animate attributeName="width" from="0" to="45" dur="0.8s" begin="0.6s" fill="freeze" />
+    <animate attributeName="width" from="0" to="44" dur="0.8s" begin="0.6s" fill="freeze" />
   </rect>
   <text x="460" y="228" class="lang-count" dominant-baseline="central" text-anchor="end">15,175</text>
 </g>
@@ -95,7 +95,7 @@
   <text x="44" y="330" class="lang-name" dominant-baseline="central">C++</text>
   <rect class="bar-bg" x="120" y="318" width="290" height="24"/>
   <rect x="120" y="318" width="0" height="24" fill="#f34b7d" rx="4" opacity="0.85">
-    <animate attributeName="width" from="0" to="27" dur="0.8s" begin="0.9s" fill="freeze" />
+    <animate attributeName="width" from="0" to="26" dur="0.8s" begin="0.9s" fill="freeze" />
   </rect>
   <text x="460" y="330" class="lang-count" dominant-baseline="central" text-anchor="end">9,077</text>
 </g>
@@ -131,7 +131,7 @@
   <text x="44" y="466" class="lang-name" dominant-baseline="central">HTML</text>
   <rect class="bar-bg" x="120" y="454" width="290" height="24"/>
   <rect x="120" y="454" width="0" height="24" fill="#e34c26" rx="4" opacity="0.85">
-    <animate attributeName="width" from="0" to="11" dur="0.8s" begin="1.3s" fill="freeze" />
+    <animate attributeName="width" from="0" to="10" dur="0.8s" begin="1.3s" fill="freeze" />
   </rect>
   <text x="460" y="466" class="lang-count" dominant-baseline="central" text-anchor="end">3,741</text>
 </g>
@@ -149,7 +149,7 @@
   <text x="44" y="534" class="lang-name" dominant-baseline="central">TSX</text>
   <rect class="bar-bg" x="120" y="522" width="290" height="24"/>
   <rect x="120" y="522" width="0" height="24" fill="#3178c6" rx="4" opacity="0.85">
-    <animate attributeName="width" from="0" to="6" dur="0.8s" begin="1.5s" fill="freeze" />
+    <animate attributeName="width" from="0" to="5" dur="0.8s" begin="1.5s" fill="freeze" />
   </rect>
   <text x="460" y="534" class="lang-count" dominant-baseline="central" text-anchor="end">2,035</text>
 </g>
