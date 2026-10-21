@@ -64,7 +64,18 @@ var langColors = map[string]string{
 	"GLSL":       "#5686a5",
 	"HLSL":       "#aace60",
 	"Svelte":     "#ff3e00",
-	"Astro":      "#ff5a03",
+	"Astro":           "#ff5a03",
+	"Markdown":        "#083fa1",
+	"markdown":        "#083fa1",
+	"Typst":           "#239dad",
+	"Git Attributes":  "#F44D27",
+	"gitattributes":   "#F44D27",
+	"JSON":            "#292929",
+	"YAML":            "#cb171e",
+	"TOML":            "#9c4221",
+	"Protocol Buffer": "#485a64",
+	"Xmake":           "#2a73a6",
+	"Inno Setup":      "#264b99",
 }
 
 // ========== GitHub API ==========

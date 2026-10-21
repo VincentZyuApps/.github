@@ -69,6 +69,7 @@ var extToLang = map[string]string{
 	".dart":  "Dart",
 	".lua":   "Lua",
 	".swift": "Swift",
+	".typ": "Typst",
 	".glsl": "GLSL", ".vert": "GLSL", ".frag": "GLSL",
 	".geom": "GLSL", ".tesc": "GLSL", ".tese": "GLSL", ".comp": "GLSL",
 }
@@ -98,7 +99,18 @@ var langColors = map[string]string{
 	"Dart":       "#00B4AB",
 	"Lua":        "#000080",
 	"Swift":      "#F05138",
-	"GLSL":       "#5686a5",
+	"GLSL":              "#5686a5",
+	"Typst":             "#239dad",
+	"Markdown":          "#083fa1",
+	"markdown":          "#083fa1",
+	"Git Attributes":    "#F44D27",
+	"gitattributes":     "#F44D27",
+	"JSON":              "#292929",
+	"YAML":              "#cb171e",
+	"TOML":              "#9c4221",
+	"Protocol Buffer":   "#485a64",
+	"Xmake":             "#2a73a6",
+	"Inno Setup":        "#264b99",
 }
 
 // ========== 结构体 ==========
