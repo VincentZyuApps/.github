@@ -35,35 +35,35 @@
 <rect class="bg" width="480" height="1452" rx="10"/>
 <text class="title title-anim" x="20" y="30">📊 VincentZyuApps · 不同语言的代码字节数占比捏</text>
 <text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 11.2 MB 代码</text>
-<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="68">Auto update: 2026-10-22 02:12:31 (UTC)</text>
-<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="88">自动更新于 2026-10-22 10:12:31 (UTC+8)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="68">Auto update: 2026-10-22 08:02:31 (UTC)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="88">自动更新于 2026-10-22 16:02:31 (UTC+8)</text>
 <clipPath id="top-bar-clip">
   <rect x="20" y="100" width="440" height="12" rx="6"/>
 </clipPath>
 <rect class="top-bar-bg" x="20" y="100" width="440" height="12"/>
 <g clip-path="url(#top-bar-clip)">
 <rect x="20.0" y="100" width="0" height="12" fill="#3178c6">
-  <animate attributeName="width" from="0" to="176.9" dur="0.6s" begin="0.30s" fill="freeze" />
+  <animate attributeName="width" from="0" to="176.8" dur="0.6s" begin="0.30s" fill="freeze" />
 </rect>
-<rect x="196.9" y="100" width="0" height="12" fill="#083fa1">
-  <animate attributeName="width" from="0" to="73.3" dur="0.6s" begin="0.35s" fill="freeze" />
+<rect x="196.8" y="100" width="0" height="12" fill="#083fa1">
+  <animate attributeName="width" from="0" to="73.2" dur="0.6s" begin="0.35s" fill="freeze" />
 </rect>
-<rect x="270.2" y="100" width="0" height="12" fill="#3572A5">
-  <animate attributeName="width" from="0" to="55.3" dur="0.6s" begin="0.40s" fill="freeze" />
+<rect x="270.1" y="100" width="0" height="12" fill="#3572A5">
+  <animate attributeName="width" from="0" to="55.4" dur="0.6s" begin="0.40s" fill="freeze" />
 </rect>
 <rect x="325.5" y="100" width="0" height="12" fill="#f1e05a">
   <animate attributeName="width" from="0" to="22.0" dur="0.6s" begin="0.45s" fill="freeze" />
 </rect>
-<rect x="347.4" y="100" width="0" height="12" fill="#dea584">
+<rect x="347.5" y="100" width="0" height="12" fill="#dea584">
   <animate attributeName="width" from="0" to="20.2" dur="0.6s" begin="0.50s" fill="freeze" />
 </rect>
 <rect x="367.7" y="100" width="0" height="12" fill="#f34b7d">
   <animate attributeName="width" from="0" to="18.7" dur="0.6s" begin="0.55s" fill="freeze" />
 </rect>
-<rect x="386.3" y="100" width="0" height="12" fill="#178600">
+<rect x="386.4" y="100" width="0" height="12" fill="#178600">
   <animate attributeName="width" from="0" to="15.4" dur="0.6s" begin="0.60s" fill="freeze" />
 </rect>
-<rect x="401.7" y="100" width="0" height="12" fill="#00B4AB">
+<rect x="401.8" y="100" width="0" height="12" fill="#00B4AB">
   <animate attributeName="width" from="0" to="14.1" dur="0.6s" begin="0.65s" fill="freeze" />
 </rect>
 <rect x="415.8" y="100" width="0" height="12" fill="#563d7c">
@@ -75,7 +75,7 @@
 <rect x="428.6" y="100" width="0" height="12" fill="#00ADD8">
   <animate attributeName="width" from="0" to="5.6" dur="0.6s" begin="0.80s" fill="freeze" />
 </rect>
-<rect x="434.2" y="100" width="0" height="12" fill="#b07219">
+<rect x="434.3" y="100" width="0" height="12" fill="#b07219">
   <animate attributeName="width" from="0" to="5.4" dur="0.6s" begin="0.85s" fill="freeze" />
 </rect>
 <rect x="439.6" y="100" width="0" height="12" fill="#e34c26">
@@ -170,14 +170,14 @@
   <rect x="120" y="180.0" width="0" height="24" rx="4" fill="#083fa1" opacity="0.85">
     <animate attributeName="width" from="0" to="120.1" dur="0.8s" begin="0.5s" fill="freeze" />
   </rect>
-  <text x="460" y="192.0" class="lang-pct" dominant-baseline="central" text-anchor="end">16.7%</text>
+  <text x="460" y="192.0" class="lang-pct" dominant-baseline="central" text-anchor="end">16.6%</text>
 </g>
 <g class="row" style="animation-delay: 0.6s;">
   <circle cx="30" cy="226.0" r="6" fill="#3572A5"/>
   <text class="lang-name" x="44" y="230.0">Python</text>
   <rect class="bar-bg" x="120" y="214.0" width="290" height="24"/>
   <rect x="120" y="214.0" width="0" height="24" rx="4" fill="#3572A5" opacity="0.85">
-    <animate attributeName="width" from="0" to="90.6" dur="0.8s" begin="0.6s" fill="freeze" />
+    <animate attributeName="width" from="0" to="90.9" dur="0.8s" begin="0.6s" fill="freeze" />
   </rect>
   <text x="460" y="226.0" class="lang-pct" dominant-baseline="central" text-anchor="end">12.6%</text>
 </g>
