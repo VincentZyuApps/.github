@@ -4,3 +4,7 @@ scripts/output/font_face.css merge=ours
 
 # 将所有 Markdown（包括各目录的 README）纳入 GitHub Linguist 语言统计。
 *.md linguist-language=Markdown linguist-detectable=true linguist-documentation=false
+# 将所有 JSON 与 .gitattributes 自身纳入 GitHub Linguist 语言统计
+*.json linguist-detectable=true linguist-documentation=false
+.gitattributes linguist-detectable=true linguist-documentation=false
+*.gitattributes linguist-detectable=true linguist-documentation=false

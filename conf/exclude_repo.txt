@@ -2,3 +2,4 @@
 github-profile-3d-contrib
 sky-shards
 OpenHardwareMonitorWinUI
+gaokaomath-typst-page

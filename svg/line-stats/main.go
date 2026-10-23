@@ -111,6 +111,10 @@ var langColors = map[string]string{
 	"Protocol Buffer":   "#485a64",
 	"Xmake":             "#2a73a6",
 	"Inno Setup":        "#264b99",
+	"Objective-C":       "#438eff",
+	"XML":              "#0060ac",
+	"Ignore List":      "#2c2d72",
+	"Pip Requirements": "#ffd343",
 }
 
 // ========== 结构体 ==========
