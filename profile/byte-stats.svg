@@ -35,8 +35,8 @@
 <rect class="bg" width="480" height="1452" rx="10"/>
 <text class="title title-anim" x="20" y="30">📊 VincentZyuApps · 不同语言的代码字节数占比捏</text>
 <text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 12.0 MB 代码</text>
-<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="68">Auto update: 2026-11-14 03:51:15 (UTC)</text>
-<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="88">自动更新于 2026-11-14 11:51:15 (UTC+8)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="68">Auto update: 2026-11-14 12:38:23 (UTC)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="88">自动更新于 2026-11-14 20:38:23 (UTC+8)</text>
 <clipPath id="top-bar-clip">
   <rect x="20" y="100" width="440" height="12" rx="6"/>
 </clipPath>
@@ -46,7 +46,7 @@
   <animate attributeName="width" from="0" to="180.4" dur="0.6s" begin="0.30s" fill="freeze" />
 </rect>
 <rect x="200.4" y="100" width="0" height="12" fill="#083fa1">
-  <animate attributeName="width" from="0" to="71.8" dur="0.6s" begin="0.35s" fill="freeze" />
+  <animate attributeName="width" from="0" to="71.7" dur="0.6s" begin="0.35s" fill="freeze" />
 </rect>
 <rect x="272.2" y="100" width="0" height="12" fill="#3572A5">
   <animate attributeName="width" from="0" to="53.5" dur="0.6s" begin="0.40s" fill="freeze" />
@@ -57,10 +57,10 @@
 <rect x="346.6" y="100" width="0" height="12" fill="#dea584">
   <animate attributeName="width" from="0" to="18.8" dur="0.6s" begin="0.50s" fill="freeze" />
 </rect>
-<rect x="365.5" y="100" width="0" height="12" fill="#f34b7d">
+<rect x="365.4" y="100" width="0" height="12" fill="#f34b7d">
   <animate attributeName="width" from="0" to="17.4" dur="0.6s" begin="0.55s" fill="freeze" />
 </rect>
-<rect x="382.9" y="100" width="0" height="12" fill="#00B4AB">
+<rect x="382.8" y="100" width="0" height="12" fill="#00B4AB">
   <animate attributeName="width" from="0" to="17.0" dur="0.6s" begin="0.60s" fill="freeze" />
 </rect>
 <rect x="399.8" y="100" width="0" height="12" fill="#178600">
