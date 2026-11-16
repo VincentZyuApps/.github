@@ -33,9 +33,9 @@
 </defs>
 <rect class="bg" width="480" height="966" rx="10"/>
 <text class="header title-anim" x="20" y="30">📏 VincentZyuApps · 不同语言的代码行数排行捏</text>
-<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 254,627 行代码（不含空行和注释）</text>
-<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="68">Auto update: 2026-11-16 07:38:15 (UTC)</text>
-<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="88">自动更新于 2026-11-16 15:38:15 (UTC+8)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 254,882 行代码（不含空行和注释）</text>
+<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="68">Auto update: 2026-11-16 19:59:24 (UTC)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="88">自动更新于 2026-11-17 03:59:24 (UTC+8)</text>
 <g class="row" style="animation-delay: 0.3s;">
   <circle cx="30" cy="126" r="6" fill="#3178c6"/>
   <text x="44" y="126" class="lang-name" dominant-baseline="central">TypeScript</text>
@@ -43,7 +43,7 @@
   <rect x="120" y="114" width="0" height="24" fill="#3178c6" rx="4" opacity="0.85">
     <animate attributeName="width" from="0" to="290" dur="0.8s" begin="0.3s" fill="freeze" />
   </rect>
-  <text x="460" y="126" class="lang-count" dominant-baseline="central" text-anchor="end">112,044</text>
+  <text x="460" y="126" class="lang-count" dominant-baseline="central" text-anchor="end">112,176</text>
 </g>
 <g class="row" style="animation-delay: 0.4s;">
   <circle cx="30" cy="160" r="6" fill="#3572A5"/>
@@ -86,7 +86,7 @@
   <text x="44" y="296" class="lang-name" dominant-baseline="central">Dart</text>
   <rect class="bar-bg" x="120" y="284" width="290" height="24"/>
   <rect x="120" y="284" width="0" height="24" fill="#00B4AB" rx="4" opacity="0.85">
-    <animate attributeName="width" from="0" to="32" dur="0.8s" begin="0.8s" fill="freeze" />
+    <animate attributeName="width" from="0" to="31" dur="0.8s" begin="0.8s" fill="freeze" />
   </rect>
   <text x="460" y="296" class="lang-count" dominant-baseline="central" text-anchor="end">12,367</text>
 </g>
@@ -199,22 +199,22 @@
   <text x="460" y="704" class="lang-count" dominant-baseline="central" text-anchor="end">459</text>
 </g>
 <g class="row" style="animation-delay: 2.1s;">
-  <circle cx="30" cy="738" r="6" fill="#F05138"/>
-  <text x="44" y="738" class="lang-name" dominant-baseline="central">Swift</text>
+  <circle cx="30" cy="738" r="6" fill="#c6538c"/>
+  <text x="44" y="738" class="lang-name" dominant-baseline="central">SCSS</text>
   <rect class="bar-bg" x="120" y="726" width="290" height="24"/>
-  <rect x="120" y="726" width="0" height="24" fill="#F05138" rx="4" opacity="0.85">
+  <rect x="120" y="726" width="0" height="24" fill="#c6538c" rx="4" opacity="0.85">
     <animate attributeName="width" from="0" to="2" dur="0.8s" begin="2.1s" fill="freeze" />
   </rect>
-  <text x="460" y="738" class="lang-count" dominant-baseline="central" text-anchor="end">319</text>
+  <text x="460" y="738" class="lang-count" dominant-baseline="central" text-anchor="end">439</text>
 </g>
 <g class="row" style="animation-delay: 2.2s;">
-  <circle cx="30" cy="772" r="6" fill="#c6538c"/>
-  <text x="44" y="772" class="lang-name" dominant-baseline="central">SCSS</text>
+  <circle cx="30" cy="772" r="6" fill="#F05138"/>
+  <text x="44" y="772" class="lang-name" dominant-baseline="central">Swift</text>
   <rect class="bar-bg" x="120" y="760" width="290" height="24"/>
-  <rect x="120" y="760" width="0" height="24" fill="#c6538c" rx="4" opacity="0.85">
+  <rect x="120" y="760" width="0" height="24" fill="#F05138" rx="4" opacity="0.85">
     <animate attributeName="width" from="0" to="2" dur="0.8s" begin="2.2s" fill="freeze" />
   </rect>
-  <text x="460" y="772" class="lang-count" dominant-baseline="central" text-anchor="end">316</text>
+  <text x="460" y="772" class="lang-count" dominant-baseline="central" text-anchor="end">319</text>
 </g>
 <g class="row" style="animation-delay: 2.3s;">
   <circle cx="30" cy="806" r="6" fill="#C1F12E"/>
