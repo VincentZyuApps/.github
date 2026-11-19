@@ -35,32 +35,32 @@
 <rect class="bg" width="480" height="1486" rx="10"/>
 <text class="title title-anim" x="20" y="30">📊 VincentZyuApps · 不同语言的代码字节数占比捏</text>
 <text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 12.0 MB 代码</text>
-<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="68">Auto update: 2026-11-18 19:41:51 (UTC)</text>
-<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="88">自动更新于 2026-11-19 03:41:51 (UTC+8)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="68">Auto update: 2026-11-19 02:06:15 (UTC)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="88">自动更新于 2026-11-19 10:06:15 (UTC+8)</text>
 <clipPath id="top-bar-clip">
   <rect x="20" y="100" width="440" height="12" rx="6"/>
 </clipPath>
 <rect class="top-bar-bg" x="20" y="100" width="440" height="12"/>
 <g clip-path="url(#top-bar-clip)">
 <rect x="20.0" y="100" width="0" height="12" fill="#3178c6">
-  <animate attributeName="width" from="0" to="180.2" dur="0.6s" begin="0.30s" fill="freeze" />
+  <animate attributeName="width" from="0" to="180.1" dur="0.6s" begin="0.30s" fill="freeze" />
 </rect>
-<rect x="200.2" y="100" width="0" height="12" fill="#083fa1">
+<rect x="200.1" y="100" width="0" height="12" fill="#083fa1">
   <animate attributeName="width" from="0" to="72.3" dur="0.6s" begin="0.35s" fill="freeze" />
 </rect>
 <rect x="272.4" y="100" width="0" height="12" fill="#3572A5">
-  <animate attributeName="width" from="0" to="53.4" dur="0.6s" begin="0.40s" fill="freeze" />
+  <animate attributeName="width" from="0" to="53.3" dur="0.6s" begin="0.40s" fill="freeze" />
 </rect>
 <rect x="325.8" y="100" width="0" height="12" fill="#f1e05a">
   <animate attributeName="width" from="0" to="20.9" dur="0.6s" begin="0.45s" fill="freeze" />
 </rect>
-<rect x="346.7" y="100" width="0" height="12" fill="#dea584">
+<rect x="346.6" y="100" width="0" height="12" fill="#dea584">
   <animate attributeName="width" from="0" to="18.8" dur="0.6s" begin="0.50s" fill="freeze" />
 </rect>
 <rect x="365.4" y="100" width="0" height="12" fill="#f34b7d">
   <animate attributeName="width" from="0" to="17.3" dur="0.6s" begin="0.55s" fill="freeze" />
 </rect>
-<rect x="382.8" y="100" width="0" height="12" fill="#00B4AB">
+<rect x="382.7" y="100" width="0" height="12" fill="#00B4AB">
   <animate attributeName="width" from="0" to="17.0" dur="0.6s" begin="0.60s" fill="freeze" />
 </rect>
 <rect x="399.7" y="100" width="0" height="12" fill="#178600">
@@ -72,10 +72,10 @@
 <rect x="420.7" y="100" width="0" height="12" fill="#563d7c">
   <animate attributeName="width" from="0" to="6.2" dur="0.6s" begin="0.75s" fill="freeze" />
 </rect>
-<rect x="427.0" y="100" width="0" height="12" fill="#cb171e">
+<rect x="426.9" y="100" width="0" height="12" fill="#cb171e">
   <animate attributeName="width" from="0" to="6.1" dur="0.6s" begin="0.80s" fill="freeze" />
 </rect>
-<rect x="433.1" y="100" width="0" height="12" fill="#000080">
+<rect x="433.0" y="100" width="0" height="12" fill="#000080">
   <animate attributeName="width" from="0" to="5.9" dur="0.6s" begin="0.85s" fill="freeze" />
 </rect>
 <rect x="438.9" y="100" width="0" height="12" fill="#b07219">
@@ -288,7 +288,7 @@
   <text class="lang-name" x="44" y="638.0">JSON</text>
   <rect class="bar-bg" x="120" y="622.0" width="290" height="24"/>
   <rect x="120" y="622.0" width="0" height="24" rx="4" fill="#292929" opacity="0.85">
-    <animate attributeName="width" from="0" to="4.6" dur="0.8s" begin="1.8s" fill="freeze" />
+    <animate attributeName="width" from="0" to="4.7" dur="0.8s" begin="1.8s" fill="freeze" />
   </rect>
   <text x="460" y="634.0" class="lang-pct" dominant-baseline="central" text-anchor="end">0.7%</text>
 </g>
