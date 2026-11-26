@@ -35,17 +35,17 @@
 <rect class="bg" width="480" height="1520" rx="10"/>
 <text class="title title-anim" x="20" y="30">📊 VincentZyuApps · 不同语言的代码字节数占比捏</text>
 <text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 12.2 MB 代码</text>
-<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="68">Auto update: 2026-11-25 16:21:16 (UTC)</text>
-<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="88">自动更新于 2026-11-26 00:21:16 (UTC+8)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="68">Auto update: 2026-11-26 01:15:32 (UTC)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="88">自动更新于 2026-11-26 09:15:32 (UTC+8)</text>
 <clipPath id="top-bar-clip">
   <rect x="20" y="100" width="440" height="12" rx="6"/>
 </clipPath>
 <rect class="top-bar-bg" x="20" y="100" width="440" height="12"/>
 <g clip-path="url(#top-bar-clip)">
 <rect x="20.0" y="100" width="0" height="12" fill="#3178c6">
-  <animate attributeName="width" from="0" to="179.7" dur="0.6s" begin="0.30s" fill="freeze" />
+  <animate attributeName="width" from="0" to="179.6" dur="0.6s" begin="0.30s" fill="freeze" />
 </rect>
-<rect x="199.7" y="100" width="0" height="12" fill="#083fa1">
+<rect x="199.6" y="100" width="0" height="12" fill="#083fa1">
   <animate attributeName="width" from="0" to="73.5" dur="0.6s" begin="0.35s" fill="freeze" />
 </rect>
 <rect x="273.1" y="100" width="0" height="12" fill="#3572A5">
@@ -57,7 +57,7 @@
 <rect x="346.8" y="100" width="0" height="12" fill="#dea584">
   <animate attributeName="width" from="0" to="18.6" dur="0.6s" begin="0.50s" fill="freeze" />
 </rect>
-<rect x="365.4" y="100" width="0" height="12" fill="#f34b7d">
+<rect x="365.3" y="100" width="0" height="12" fill="#f34b7d">
   <animate attributeName="width" from="0" to="17.1" dur="0.6s" begin="0.55s" fill="freeze" />
 </rect>
 <rect x="382.5" y="100" width="0" height="12" fill="#00B4AB">
@@ -66,23 +66,23 @@
 <rect x="399.3" y="100" width="0" height="12" fill="#178600">
   <animate attributeName="width" from="0" to="14.3" dur="0.6s" begin="0.65s" fill="freeze" />
 </rect>
-<rect x="413.6" y="100" width="0" height="12" fill="#00ADD8">
+<rect x="413.5" y="100" width="0" height="12" fill="#00ADD8">
   <animate attributeName="width" from="0" to="6.5" dur="0.6s" begin="0.70s" fill="freeze" />
 </rect>
-<rect x="420.1" y="100" width="0" height="12" fill="#563d7c">
+<rect x="420.0" y="100" width="0" height="12" fill="#563d7c">
   <animate attributeName="width" from="0" to="6.2" dur="0.6s" begin="0.75s" fill="freeze" />
 </rect>
 <rect x="426.3" y="100" width="0" height="12" fill="#cb171e">
   <animate attributeName="width" from="0" to="6.0" dur="0.6s" begin="0.80s" fill="freeze" />
 </rect>
-<rect x="432.4" y="100" width="0" height="12" fill="#000080">
+<rect x="432.3" y="100" width="0" height="12" fill="#000080">
   <animate attributeName="width" from="0" to="5.8" dur="0.6s" begin="0.85s" fill="freeze" />
 </rect>
 <rect x="438.1" y="100" width="0" height="12" fill="#b07219">
   <animate attributeName="width" from="0" to="4.9" dur="0.6s" begin="0.90s" fill="freeze" />
 </rect>
-<rect x="443.1" y="100" width="0" height="12" fill="#292929">
-  <animate attributeName="width" from="0" to="3.8" dur="0.6s" begin="0.95s" fill="freeze" />
+<rect x="443.0" y="100" width="0" height="12" fill="#292929">
+  <animate attributeName="width" from="0" to="3.9" dur="0.6s" begin="0.95s" fill="freeze" />
 </rect>
 <rect x="446.9" y="100" width="0" height="12" fill="#e34c26">
   <animate attributeName="width" from="0" to="3.3" dur="0.6s" begin="1.00s" fill="freeze" />
