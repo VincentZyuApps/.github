@@ -35,8 +35,8 @@
 <rect class="bg" width="480" height="1520" rx="10"/>
 <text class="title title-anim" x="20" y="30">📊 VincentZyuApps · 不同语言的代码字节数占比捏</text>
 <text class="subtitle title-anim" style="animation-delay: 0.2s;" x="20" y="48">共 12.3 MB 代码</text>
-<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="68">Auto update: 2026-11-28 11:00:56 (UTC)</text>
-<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="88">自动更新于 2026-11-28 19:00:56 (UTC+8)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.3s;" x="20" y="68">Auto update: 2026-11-28 19:14:22 (UTC)</text>
+<text class="subtitle title-anim" style="animation-delay: 0.4s;" x="20" y="88">自动更新于 2026-11-29 03:14:22 (UTC+8)</text>
 <clipPath id="top-bar-clip">
   <rect x="20" y="100" width="440" height="12" rx="6"/>
 </clipPath>
@@ -51,16 +51,16 @@
 <rect x="273.1" y="100" width="0" height="12" fill="#3572A5">
   <animate attributeName="width" from="0" to="52.5" dur="0.6s" begin="0.40s" fill="freeze" />
 </rect>
-<rect x="325.6" y="100" width="0" height="12" fill="#f1e05a">
+<rect x="325.5" y="100" width="0" height="12" fill="#f1e05a">
   <animate attributeName="width" from="0" to="20.7" dur="0.6s" begin="0.45s" fill="freeze" />
 </rect>
-<rect x="346.3" y="100" width="0" height="12" fill="#dea584">
+<rect x="346.2" y="100" width="0" height="12" fill="#dea584">
   <animate attributeName="width" from="0" to="18.5" dur="0.6s" begin="0.50s" fill="freeze" />
 </rect>
 <rect x="364.7" y="100" width="0" height="12" fill="#f34b7d">
   <animate attributeName="width" from="0" to="17.0" dur="0.6s" begin="0.55s" fill="freeze" />
 </rect>
-<rect x="381.8" y="100" width="0" height="12" fill="#00B4AB">
+<rect x="381.7" y="100" width="0" height="12" fill="#00B4AB">
   <animate attributeName="width" from="0" to="16.7" dur="0.6s" begin="0.60s" fill="freeze" />
 </rect>
 <rect x="398.4" y="100" width="0" height="12" fill="#178600">
@@ -78,10 +78,10 @@
 <rect x="432.5" y="100" width="0" height="12" fill="#000080">
   <animate attributeName="width" from="0" to="5.8" dur="0.6s" begin="0.85s" fill="freeze" />
 </rect>
-<rect x="438.2" y="100" width="0" height="12" fill="#b07219">
+<rect x="438.3" y="100" width="0" height="12" fill="#b07219">
   <animate attributeName="width" from="0" to="4.9" dur="0.6s" begin="0.90s" fill="freeze" />
 </rect>
-<rect x="443.1" y="100" width="0" height="12" fill="#292929">
+<rect x="443.2" y="100" width="0" height="12" fill="#292929">
   <animate attributeName="width" from="0" to="3.8" dur="0.6s" begin="0.95s" fill="freeze" />
 </rect>
 <rect x="447.0" y="100" width="0" height="12" fill="#e34c26">
